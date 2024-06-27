@@ -1,7 +1,7 @@
 +++
 title = 'Drop the Topster'
 date = 2024-06-26T18:14:43-07:00
-draft = true
+draft = false
 +++
 Who could've possibly seen this one coming. With apologies to all my friends who had to endure my constantly updated music charts for years on end. But for real this time, here are my current top 40 albums.
 {{< images "https://i.imgur.com/LpmicrH.jpg" "100%">}}

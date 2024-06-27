@@ -1,7 +1,7 @@
 +++
 title = 'Portfolio'
 date = 2024-06-25T16:07:25-07:00
-draft = true
+draft = false
 +++
 
 Most of the pictures you'll find here were shot on my Nikon D750 with a Nikkor 35mm f2D lens.

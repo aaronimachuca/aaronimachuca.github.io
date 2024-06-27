@@ -1,7 +1,7 @@
 +++
 title = 'Academia'
 date = 2024-06-24T23:09:44-07:00
-draft = true
+draft = false
 +++
 
 In the future, I plan to create LaTeX posts here where I discuss snippets of cool or useful information I find throughout my research and classes. For now I'll format this page like an FAQ section until I can formally write something about my career choice. 

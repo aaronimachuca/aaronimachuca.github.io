@@ -1,7 +1,7 @@
 +++
 title = 'Art and Poetry'
 date = 2024-06-25T01:52:09-07:00
-draft = true
+draft = false
 +++
 
 [^1] 

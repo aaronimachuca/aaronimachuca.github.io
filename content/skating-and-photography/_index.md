@@ -1,7 +1,7 @@
 +++
 title = 'Skating and Photography'
 date = 2024-06-25T01:52:21-07:00
-draft = true
+draft = false
 +++
 
 _Aside: If you're just here to see cool pictures and/or get a quote on photography commissions, check out my portfolio with the link above._
