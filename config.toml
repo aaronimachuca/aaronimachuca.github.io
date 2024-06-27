@@ -1,0 +1,35 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Aaron Machuca'
+theme = 'hugo-theme-cactus'
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "academia"
+        name = "Academia"
+        url = "/academia/"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "art-and-poetry"
+        name = "Art and Poetry"
+        url = "/art-and-poetry/"
+        weight = 3
+
+    [[menu.main]]
+        identifier = "skating-and-photography"
+        name = "Skating and Photography"
+        url = "/skating-and-photography/"
+        weight = 4
+
+    [[menu.main]]
+        identifier = "musings"
+        name = "Musings"
+        url = "/musings/"
+        weight = 5
