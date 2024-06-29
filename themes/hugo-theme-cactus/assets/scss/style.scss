@@ -40,11 +40,10 @@ body {
 .content {
   text-align: justify;
   text-justify: inter-word;
-  width: 48em;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   overflow-wrap: break-word;
 
   p {
@@ -266,3 +265,4 @@ code {
   font-family: inherit;
   font-weight: 900;
 }
+
