@@ -24,7 +24,7 @@ console.log(null < 0) // false
 ```
 They all output `false`!
 
-I googled a lot and finally found answers in [Ecma-262 Specification](http://www.ecma-international.org/ecma-262/8.0/#sec-abstract-equality-comparison).
+I googled a lot and finally found answers in [Ecma-262 Specification](https://www.ecma-international.org/ecma-262/8.0/#sec-abstract-equality-comparison).
 
 The comparison `x == y`, where x and y are values, produces true or false. Such a comparison is performed as follows:
 <!-- more -->
@@ -41,14 +41,14 @@ The comparison `x == y`, where x and y are values, produces true or false. Such 
 10. Return false.
 ```
 
-Relational comparison is much more complex so I'm not copying that section. Read at the [spec website](http://www.ecma-international.org/ecma-262/8.0/#sec-abstract-relational-comparison).
+Relational comparison is much more complex so I'm not copying that section. Read at the [spec website](https://www.ecma-international.org/ecma-262/8.0/#sec-abstract-relational-comparison).
 
 ## TL;DR
 
 Anyway it seems that in `null == 0`, `null` is treated just as is, and **equality** comparison between `null` and `Number` always return **false** (No 10).
-But when it comes `null > -1`, `null` is conversed to 0 using [ToNumber()](http://www.ecma-international.org/ecma-262/8.0/#sec-tonumber) algorithm.
+But when it comes `null > -1`, `null` is conversed to 0 using [ToNumber()](https://www.ecma-international.org/ecma-262/8.0/#sec-tonumber) algorithm.
 
 Read more:
 * [https://github.com/getify/You-Dont-Know-JS/issues/1238](https://github.com/getify/You-Dont-Know-JS/issues/1238)
-* [http://www.ecma-international.org/ecma-262/8.0/#sec-abstract-relational-comparison](http://www.ecma-international.org/ecma-262/8.0/#sec-abstract-relational-comparison)
-* [http://www.ecma-international.org/ecma-262/8.0/#sec-tonumber](http://www.ecma-international.org/ecma-262/8.0/#sec-tonumber)
+* [http://www.ecma-international.org/ecma-262/8.0/#sec-abstract-relational-comparison](https://www.ecma-international.org/ecma-262/8.0/#sec-abstract-relational-comparison)
+* [https://www.ecma-international.org/ecma-262/8.0/#sec-tonumber](https://www.ecma-international.org/ecma-262/8.0/#sec-tonumber)

@@ -151,7 +151,7 @@ for example, `data/projects.json`:
       },
       {
          "name":"Font Awesome",
-         "url":"http://fontawesome.io/",
+         "url":"https://fontawesome.io/",
          "desc":"The iconic font and CSS toolkit"
       }
    ]

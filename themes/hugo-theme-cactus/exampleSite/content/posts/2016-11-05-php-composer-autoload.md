@@ -69,10 +69,10 @@ The PSR-4 references are all combined, during install/update, into a single key 
 
 __相关链接__
 
-[Example Implementations of PSR-4](http://www.php-fig.org/psr/psr-4/examples/)
+[Example Implementations of PSR-4](https://www.php-fig.org/psr/psr-4/examples/)
 
 [The composer.json Schema](https://getcomposer.org/doc/04-schema.md#autoload)
 
-[如何使用composer的autoload来自动加载自己编写的函数库与类库](http://drops.leavesongs.com/php/composer-autoload-class-and-function-written-myself.html)
+[如何使用composer的autoload来自动加载自己编写的函数库与类库](https://drops.leavesongs.com/php/composer-autoload-class-and-function-written-myself.html)
 
-[使用composer中的autoload](http://gywbd.github.io/posts/2014/12/composer-autoload.html)
+[使用composer中的autoload](https://gywbd.github.io/posts/2014/12/composer-autoload.html)
