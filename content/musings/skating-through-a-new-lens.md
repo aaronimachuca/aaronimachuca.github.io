@@ -1,10 +1,12 @@
 +++
-title = 'Skating and Photography'
-date = 2024-06-25T01:52:21-07:00
+title = 'Skating Through a New Lens'
+date = 2024-07-14T11:43:22-07:00
 draft = false
 +++
 
-_Aside: If you're just here to see cool pictures and/or get a quote on photography commissions, check out my portfolio with the link above._
+| ![ollie.jpg](https://i.imgur.com/dnkBNIn.jpeg) | 
+|:--:| 
+| *Photo by Ruijie Shao* |
 
 Having been born and raised in the slums of eastern Los Angeles, I used to hold a strong disdain for urban society and the lifestyle imposed upon its residents (myself included). This sentiment is of course no secret those who have held a conversation with me for more than a day, but is something I regularly felt compelled to mention because I failed to understand the appeal of big cities. Within the past year, though, my attitudes on this matter have somewhat pivoted with skating and photography being introduced into my life.
 {{% linebreak %}}
@@ -17,4 +19,3 @@ Oh by the way, for anyone interested I currently have a 8.25" deck with indy tru
 Part of what charms me about street photography is being able to make a mundane scene interesting just by adding some basic compositional structure. Funny enough, Michael Slovis's cinematography on Breaking Bad is what originally convinced me of this idea being true. If you can make a lame dump like Albuquerque (no offense) into a national landmark, then surely you could make anything a little more stimulating with enough creativity. Although it definitely helps to have strong subjects enter your frame and do all the heavy lifting for you. And you'd be surprised how many times sparse moments that shout "PUNCTUM!" comes at you in your everday life. It's happened to me so often that I have to wonder how many times I can label a photo as a "miracle shot," before admitting that maybe they weren't just coincidences. The downside is sometimes you have to get in people's faces and disrupt the basic social etiquette boundary construed in our heads. The mixed bag of reactions is interesting to observe in how some people will cheerfully go along with it and how others will mad dog the hell out of you. Regardless, it hasn't stopped me from trying to be bolder and ignore the moral dilemma presented to me as a street photographer. But I'd photograph a grizzly charging at me if it meant I'd end up with a legendary shot to display next to my grave. It's been fun! And adventerous to scout out urban and rural areas alike to create my own narrative snippets I've come across to look forward to the prospect of a new day.
 {{% linebreak %}}
 Where I had once yearned to withdraw as a recluse in the woods (with no relation to any Berkeley math professor...), I can now at least appreciate the cultural colors that paint my neighborhoods in northern and southern California. That's not to say I have completely forgiven the faults readily found every which way you look, but it doesn't fill me with nihilistic dread as much as it did in my youth and young adulthood. Though I have my reservations about California, I hold hope that the paths these pastimes take me will make my time here feel a little more worthwhile.
-

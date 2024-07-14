@@ -23,9 +23,9 @@ theme = 'hugo-theme-cactus'
         weight = 3
 
     [[menu.main]]
-        identifier = "skating-and-photography"
-        name = "Skating and Photography"
-        url = "/skating-and-photography/"
+        identifier = "photography"
+        name = "Photography"
+        url = "/photography/"
         weight = 4
 
     [[menu.main]]
