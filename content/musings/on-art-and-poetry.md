@@ -1,7 +1,7 @@
 +++
 title = 'On Art and Poetry'
 date = 2024-07-14T11:42:25-07:00
-draft = true
+draft = false
 +++
 
 _"The mapping of the human genome was completed early this century. As a result, the evolutionary log of the human race lay open to us. We started with genetic engineering, and in the end, we succeeded in digitizing life itself. But there are things not covered by genetic information. Human memories, ideas. Culture. History. Genes don't contain any record of human history. Is it something that should not be passed on? Should that information be left at the mercy of nature? We've always kept records of our lives. Through words, pictures, symbols... from tablets to books... But not all the information was inherited by later generations. A small percentage of the whole was selected and processed, then passed on. Not unlike genes, really. That's what history is, Jack."_
