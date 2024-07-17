@@ -9,12 +9,15 @@ Van Gogh greens & mythic tapestries, \
 of the Earth’s water-blood & soil-skin, \
 dawned of the frost father, Ymir, \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in his dismembered image. \
-Struggling — \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to jot the tempest movement of a moment, \
+I struggle — \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to jot tempest movements in a moment, \
 when my marionette muscles strain in age; \
-I torch my ghost in ghastly flames, \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stirred in my scorn to live, \
-even if the Lord's trumpeters would not \
+but I would write still, on broken fingers, \
+even if a humble life would allow me to tenant \
+in Elysium and crown a hero-halo over my brow, \
+I would torch my ghost in ghastly flames, \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stirred in my scorn to live now, even if \
+in this life the Lord's trumpeters would not \
 bless me with silver-gleamed wisdom. \
 And lightning-barbs would have to \
 thorn my baying heart before I \
