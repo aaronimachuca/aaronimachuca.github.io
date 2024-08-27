@@ -4,8 +4,6 @@ date = 2024-06-24T23:09:44-07:00
 draft = false
 +++
 
-In the future, I plan to create LaTeX posts here where I discuss snippets of cool or useful information I find throughout my research and classes. For now I'll format this page like an FAQ section until I can formally write something about my career choice. 
-
 **_What do you do for research?_** \
 I work at the intersection of theory and numerical analysis, my main interests primarily involve using continuum theory to create robust material models and pressure test those models via computational validiation verified with known experimental data. Currently, I am looking into the stefan problem to better understand material behavior as it undergoes phase transformations along a moving boundary. This is of particular interest to improving additive manufacturing techniques in metallurgy as the rapid solidifcation processes that occur in metal printing are currently not well understood. I've also been interested in understanding plastic flow in bingham solids like gel or toothpaste, mostly because it seems reminiscent to turbulent structures in fluid flow only here the phenomenon occurs in discrete time intervals. They're not easy problems to research but that's what makes it fun!
 
