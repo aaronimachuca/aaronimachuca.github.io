@@ -1,7 +1,7 @@
 +++
 title = 'For My Students'
 date = 2024-08-27T06:40:22-07:00
-draft = false
+draft = true
 +++
 
 This page is dedicated to my present (and potentially future) students who are taking the 'Introduction to Continuum Mechanics' course at Berkeley, also known as ME 185/287. 
