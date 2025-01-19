@@ -1,0 +1,4 @@
+{{ $filePath := .Get "file" }}
+{{ $content := readFile $filePath }}
+{{ .Scratch.Set "content" $content }}
+{{ .Scratch.Get "content" | safeHTML }}
