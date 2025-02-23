@@ -8,7 +8,7 @@ layout = "art-and-poetry"
 
 {{< summary "Artwork" >}}
   <ul>
-    <li><a href="artwork/leon/">Leon</a></li>
+    <li><a href="artwork/serge/">Serge</a></li>
   </ul>
 {{< /summary >}}
 
