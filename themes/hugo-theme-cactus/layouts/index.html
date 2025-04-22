@@ -98,7 +98,7 @@ prescence in my life and his warmth to keep me grounded. But I also can't STAND 
       {{ if isset .Site.Params "postsonhomepage" }}
         {{ .Scratch.Set "count" .Site.Params.postsOnHomePage }}
       {{ end }}
-      {{ range (first (.Scratch.Get "count") $mainPosts) }}
+      {{ range (first (.Scratch.Get "count") (where .Site.RegularPages "Section" "musings")) }}
         <li class="post-item">
           <div class="meta"><time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time></div>
           <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
