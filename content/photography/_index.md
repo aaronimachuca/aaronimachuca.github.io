@@ -11,6 +11,7 @@ layout = "photography"
     <li><a href="portfolio/portraits">Portraits</a></li>
     <li><a href="portfolio/street-set-1">Street Set 1</a></li>
     <li><a href="portfolio/bw-street-set-1">B&W Street Set 1</a></li>
+    <li><a href="portfolio/collages">Collages (wip)</a></li>
   </ul>
 {{< /summary >}}
 
