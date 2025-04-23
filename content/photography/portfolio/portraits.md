@@ -1,9 +1,9 @@
 +++
 +++
 
-{{< gallery "https://i.imgur.com/ADfqWOC.jpeg"
-"https://i.imgur.com/tzg2HJ5.jpeg"
-"https://i.imgur.com/CTlKj0K.jpeg"
-"https://i.imgur.com/Qr0Cq0I.jpeg" 
-"https://i.imgur.com/EsElZin.jpeg" 
-"https://i.imgur.com/kTSPHy2.jpeg"  >}}
+{{< gallery "https://i.imgur.com/E7OJ0w6.jpeg"
+"https://i.imgur.com/sfiMBP9.jpeg"
+"https://i.imgur.com/AUBF8nO.jpeg"
+"https://i.imgur.com/codyXZN.jpeg"
+"https://i.imgur.com/WzlErqw.jpeg" 
+"https://i.imgur.com/d8jVYQJ.jpeg"   >}}

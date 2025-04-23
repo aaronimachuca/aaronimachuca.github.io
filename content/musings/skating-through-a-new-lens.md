@@ -1,6 +1,6 @@
 +++
 title = 'Skating Through a New Lens'
-date = 2024-07-14T11:43:22-07:00
+date = 2024-07-16T11:43:22-07:00
 draft = false
 +++
 

@@ -266,3 +266,73 @@ code {
   font-weight: 900;
 }
 
+@media (max-width: 768px) {
+  #nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  #nav li {
+    flex-shrink: 0;
+    margin: 0 0.5rem;
+  }
+
+  #nav::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.custom-font {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+
+
+body {
+  background-color: #f5f5f5; /* Light Beige */
+  color: #4e4e4e; /* Grayish Black text */
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+
+a:hover {
+  color: #d8ccb4;  /* Highlight color */
+}
+
+
+/* Main photo container */
+.main-photo {
+  padding-top: 30px;            /* Push image down */
+  width: 100%;                  /* Ensure full width */
+  height: auto;                 /* Let the height adjust based on image */
+  overflow: hidden;             /* Hide overflow */
+  margin: 0 auto;               /* Center it horizontally */
+  border: none;                 /* Make sure there's no border */
+  background-color: transparent;/* Set background to transparent (to match site background) */
+  box-shadow: none;             /* Remove any unwanted shadow */
+}
+
+/* Main photo image */
+.main-photo img {
+  width: 100%;                  /* Ensure image fills container */
+  height: auto;                 /* Maintain aspect ratio */
+  object-fit: contain;          /* Prevent stretching */
+  display: block;               /* Remove space below image */
+}
+
+/* Optional: If the issue is with a container wrapping the image */
+.photo-container { 
+  border: none;                 /* Remove border */
+  background-color: transparent; /* Ensure background is transparent */
+}

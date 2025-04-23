@@ -1,15 +1,15 @@
 +++
 +++
 
-{{< gallery "https://i.imgur.com/Sig3lfa.jpeg" 
-"https://i.imgur.com/9owbITQ.jpeg" 
-"https://i.imgur.com/m9ZwvXz.jpeg" 
-"https://i.imgur.com/yBjCKUk.jpeg" 
-"https://i.imgur.com/XGZUHt4.jpeg"
-"https://i.imgur.com/H58DYsj.jpg" 
-"https://i.imgur.com/qHGlVPn.jpeg" 
-"https://i.imgur.com/N8V6jr8.jpeg" 
-"https://i.imgur.com/nmm0bCW.jpg" 
-"https://i.imgur.com/RIzlt7M.jpeg" >}}
+{{< gallery "https://i.imgur.com/aB9AzyP.jpeg" 
+"https://i.imgur.com/bWumT9U.jpeg" 
+"https://i.imgur.com/jzDh9Tn.jpeg" 
+"https://i.imgur.com/RHcseFl.jpeg" 
+"https://i.imgur.com/cDkRmmg.jpeg"
+"https://i.imgur.com/ytgesPS.jpeg" 
+"https://i.imgur.com/6Jawe5j.jpeg" 
+"https://i.imgur.com/yUBt8YG.jpeg" 
+"https://i.imgur.com/7qD5o9h.jpeg" 
+"https://i.imgur.com/CpLBup6.jpeg" >}}
 
 
