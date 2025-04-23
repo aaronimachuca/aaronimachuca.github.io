@@ -310,6 +310,27 @@ a:hover {
   color: #d8ccb4;  /* Highlight color */
 }
 
+/* Button style */
+.gallery .photo-buttons button {
+  background-color: transparent;
+  border: none;
+  color: #000;  /* Normal text color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Highlight the button when hovering */
+.gallery .photo-buttons button:hover {
+  color: #d8ccb4;  /* Change this to your preferred highlight color */
+}
+
+/* Highlight the active button */
+.gallery .photo-buttons button.active {
+  color: #d8ccb4;  /* Use a distinct color for the active photo */
+  font-weight: bold;  /* Optional for emphasis */
+}
+
+
 
 /* Main photo container */
 .main-photo {

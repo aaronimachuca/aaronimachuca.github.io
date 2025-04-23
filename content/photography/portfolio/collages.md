@@ -1,6 +1,6 @@
 +++
 +++
 
-{{< gallery "https://i.imgur.com/f2bZGSY.jpeg"
-"https://i.imgur.com/WRDs67v.jpeg"
-"https://i.imgur.com/sEcJlSb.jpeg"  >}}
+{{< gallery "https://i.imgur.com/Av7YRzw.png"
+"https://i.imgur.com/GWLh4bj.png"
+"https://i.imgur.com/3YmdCIh.png"  >}}

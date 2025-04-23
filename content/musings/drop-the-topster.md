@@ -63,7 +63,7 @@ _" 'I'm dying.' \
 
 {{< summary "On Sunbather" >}}
 <p>
-And we're back to the despairing music. Deafheaven's one of the few bands I came across organically from an opening performance they did for Anthrax back in 2015. I actually really enjoyed their New Bermuda album they were touring for at the time, but little did I know the band had an even more grandiose project they had whipped up two years prior, and it only took me three years to discover it. On a summer evening after my freshman year in university, I took an impromptu trip to the Albany Bulb to do some soul-searching, or maybe just get away from my life for a little while. I can't remember what compelled me to give Sunbather a whirl, I just remember being suspended in absolute awe, every, single, minute of the album. I had once described Sunbather as being "what I imagine it's like to come to terms with your own death," and honestly I still think that's an apt description. Their signature blackgaze style, fusing black metal and shoegaze characteristics, presented on this album was a wild and ambitious idea that they somehow managed to pull off with flying colors. Dense walls of noise interupted by spoken word samples and clean guitar interludes bring forth this overwhelming prescence of searing bliss. I almost always play this album in its entirety every time I want to hear it because it doesn't feel right to _not_ immerse myself in the tapestry of the tracklist, seamlessly woven together in each subsequent song. George Clarke's icy shrieks bleeds so well into the album's dreamy atmosphere that it makes me feel as though I'm flashing through a blurred slideshow of my memories, or a dream. And I wish the dream never ended. 
+And we're back to the despairing music. Deafheaven's one of the few bands I came across organically from an opening performance they did for Anthrax back in 2015. I actually really enjoyed their New Bermuda album they were touring for at the time, but little did I know the band had an even more grandiose project they had whipped up two years prior, and it only took me three years to discover it. On a summer evening after my freshman year in university, I took an impromptu trip to the Albany Bulb to do some soul-searching, or maybe just get away from my life for a little while. I can't remember what compelled me to give Sunbather a whirl, I just remember being suspended in absolute awe, every, single, minute of the album. I had once described Sunbather as being "what I imagine it's like to come to terms with your own death," and honestly I still think that's an apt description. Their signature blackgaze style, fusing black metal and shoegaze characteristics, presented on this album was a wild and ambitious idea that they somehow managed to pull off with flying colors. Dense walls of noise interupted by spoken word samples and clean guitar interludes bring forth this overwhelming prescence of searing bliss. I almost always play this album in its entirety every time I want to hear it because it doesn't feel right to <em>not</em> immerse myself in the tapestry of the tracklist, seamlessly woven together in each subsequent song. George Clarke's icy shrieks bleeds so well into the album's dreamy atmosphere that it makes me feel as though I'm flashing through a blurred slideshow of my memories, or a dream. And I wish the dream never ended. 
 </p>
 
 5/5
@@ -83,3 +83,79 @@ Can someone please give God's strongest soldier a break, this poor boy has been 
 5/5
 {{< /summary  >}}
 
+**6. 伊藤真澄 (Masumi Ito) - Wonder Wonderful**
+{{< centered-images "https://i.imgur.com/iykHMME.png" "60%">}}
+
+_"虹を越える羽の音 やがて耳に届く"_
+
+{{< summary "On Wonder Wonderful" >}}
+<p>
+If I had a nickel for every time I gave an album Ruijie recommended a 5/5, I would have fifteen cents. 
+</p>
+
+5/5
+{{< /summary  >}}
+
+**7. Haru Nemuri - harutosyura**
+{{< centered-images "https://i.imgur.com/OgWDNJ1.jpeg" "60%">}}
+
+_"ワンダー・ワンダー 真っ黒い海で鳴らした"_
+
+{{< summary "On harutosyura" >}}
+<p>
+...
+</p>
+
+5/5
+{{< /summary  >}}
+
+**8. Megadeth - Rust in Peace**
+{{< centered-images "https://i.imgur.com/FDRrA1O.jpeg" "60%">}}
+
+_"I rule on land, air, and sea \
+Pass judgment on humanity \
+Winds blow from the bowels of Hell"_
+
+{{< summary "On Rust in Peace" >}}
+<p>
+This is the best thrash metal album to exist and no one can change my mind on that.
+</p>
+
+5/5
+{{< /summary  >}}
+
+**9. Metallica - Master of Puppets**
+{{< centered-images "https://i.imgur.com/s6T6QqN.png" "60%">}}
+
+_"Welcome to where time stands still \
+No one leaves and no one will"_
+
+{{< summary "On Master of Puppets" >}}
+<p>
+This is the second best thrash metal album to exist.
+</p>
+
+5/5
+{{< /summary  >}}
+
+**10. Porter Robinson - Nurture**
+{{< centered-images "https://i.imgur.com/nc18dLr.jpeg" "60%">}}
+
+_"Look at the sky, I'm still here \
+I'll be alive next year \
+I can make something good"_
+
+{{< summary "On Nurture" >}}
+<p>
+I first came across Nurture while lurking a discussion some friends were having about the recent release of the album. Admittedly, my initial impressions of the record were pretty poor as I was turned off by the voice synthesizer, despite thinking the instrumentals were great. It wasn't until the start of 2022 that I revisited the album by sheer coincidence after stumbling on a synopsis explaining the context behind Nurture and Porter's struggles with depression throughout his seven-year creative drought. To say that this album concept struck a chord with me would be putting it pretty lightly. I won't divulge too much into the details on why Nuture is so sentimental to me, but it was a wonderfully serendipitous and healing album for me to reencounter through an incredibly trying time in my life.
+</p>
+
+<p>
+While I'm not very well-versed with EDM or House music, I think Nuture brought some amazingly creative ideas on what are otherwise simple ideas on the production end of the album. Despite that much of the instrumentals are heaviled spliced up and crafted virtually, there's a surprising organic quality to the soundscape as a whole. Much of this stems from how the glitchy electronic collages and piano melodies are brought together — especially during the interludes where the static negative space resemble the tranquil sounds found in quiet, windy meadows. Good examples of this are found in the tracks including Lifelike, Wind Tempos, do-re-mi-fa-so-la-ti-do, but this technique is sprinkled out all throughout the album and plays nicely into the main songs. Now, I will say that my personal feelings on this album obscures the quality of the chiptune-like vocal synths, but there are definitely noteworthy aspects to it that's worth mentioning. Musician is probably the best example of this, given the context of how Porter chopped up the intro (as noted in this <a href="https://www.youtube.com/watch?v=nB8tGHvakWI" target="_blank">tweet</a>) from an early demo of the song. 
+
+</p>
+
+note to self: this Nurture discussion feels too much like a review without really elaborating on why it's special to me
+
+4.5+/5
+{{< /summary  >}}
