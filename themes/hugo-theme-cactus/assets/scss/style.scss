@@ -271,6 +271,7 @@ code {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     padding: 0;
@@ -291,12 +292,10 @@ code {
   }
 }
 
-
 .custom-font {
   font-family: 'Merriweather', serif;
   font-weight: 700;
 }
-
 
 body {
   background-color: #f5f5f5;
@@ -359,7 +358,6 @@ header a:hover::after {
   font-weight: bold; 
 }
 
-
 .main-photo {
   padding-top: 30px;            
   width: 100%;                 
@@ -370,7 +368,6 @@ header a:hover::after {
   background-color: transparent;
   box-shadow: none;            
 }
-
 
 .main-photo img {
   width: 100%;                 
