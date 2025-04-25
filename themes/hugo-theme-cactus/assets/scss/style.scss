@@ -404,3 +404,7 @@ details[open] > summary::before {
 details.closing > summary::before {
   transform: rotate(0deg);
 }
+
+summary::-webkit-details-marker {
+  display: none; 
+}
