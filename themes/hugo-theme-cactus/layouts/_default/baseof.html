@@ -23,3 +23,20 @@
 <script src="/js/gallery.js?2"></script>
 </html>
 
+<script>
+  document.querySelectorAll('details').forEach((detail) => {
+  const summary = detail.querySelector('summary');
+
+  summary.addEventListener('click', (e) => {
+    if (detail.open) {
+      e.preventDefault(); 
+      detail.classList.add('closing'); 
+
+      setTimeout(() => {
+        detail.open = false;
+        detail.classList.remove('closing');
+      }, 500); 
+    }
+  });
+});
+</script>
