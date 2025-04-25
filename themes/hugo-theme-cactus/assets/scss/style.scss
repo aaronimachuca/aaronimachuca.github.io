@@ -276,17 +276,21 @@ code {
     padding: 0;
     margin: 0;
     list-style: none;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  #nav ul::-webkit-scrollbar {
+    display: none;
   }
 
   #nav li {
     flex-shrink: 0;
     margin: 0 0.5rem;
   }
-
-  #nav::-webkit-scrollbar {
-    display: none;
-  }
 }
+
 
 .custom-font {
   font-family: 'Merriweather', serif;
@@ -294,10 +298,9 @@ code {
 }
 
 
-
 body {
-  background-color: #f5f5f5; /* Light Beige */
-  color: #4e4e4e; /* Grayish Black text */
+  background-color: #f5f5f5;
+  color: #4e4e4e;
 }
 
 a {
@@ -307,53 +310,76 @@ a {
 }
 
 a:hover {
-  color: #d8ccb4;  /* Highlight color */
+  color: #d8ccb4; 
 }
 
-/* Button style */
+a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; 
+  background-color: #d8ccb4; 
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover::after {
+  background-color: transparent; 
+}
+
 .gallery .photo-buttons button {
   background-color: transparent;
   border: none;
-  color: #000;  /* Normal text color */
+  color: #000;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-/* Highlight the button when hovering */
 .gallery .photo-buttons button:hover {
-  color: #d8ccb4;  /* Change this to your preferred highlight color */
+  color: #d8ccb4;  
 }
 
-/* Highlight the active button */
+
 .gallery .photo-buttons button.active {
-  color: #d8ccb4;  /* Use a distinct color for the active photo */
-  font-weight: bold;  /* Optional for emphasis */
+  color: #d8ccb4; 
+  font-weight: bold; 
 }
 
 
-
-/* Main photo container */
 .main-photo {
-  padding-top: 30px;            /* Push image down */
-  width: 100%;                  /* Ensure full width */
-  height: auto;                 /* Let the height adjust based on image */
-  overflow: hidden;             /* Hide overflow */
-  margin: 0 auto;               /* Center it horizontally */
-  border: none;                 /* Make sure there's no border */
-  background-color: transparent;/* Set background to transparent (to match site background) */
-  box-shadow: none;             /* Remove any unwanted shadow */
+  padding-top: 30px;            
+  width: 100%;                 
+  height: auto;                 
+  overflow: hidden;            
+  margin: 0 auto;               
+  border: none;                 
+  background-color: transparent;
+  box-shadow: none;            
 }
 
-/* Main photo image */
+
 .main-photo img {
-  width: 100%;                  /* Ensure image fills container */
-  height: auto;                 /* Maintain aspect ratio */
-  object-fit: contain;          /* Prevent stretching */
-  display: block;               /* Remove space below image */
+  width: 100%;                 
+  height: auto;                
+  object-fit: contain;         
+  display: block;              
 }
 
-/* Optional: If the issue is with a container wrapping the image */
 .photo-container { 
-  border: none;                 /* Remove border */
-  background-color: transparent; /* Ensure background is transparent */
+  border: none;                 
+  background-color: transparent; 
 }

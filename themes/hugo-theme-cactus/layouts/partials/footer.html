@@ -39,5 +39,41 @@ document.querySelectorAll('.gallery .photo-buttons button').forEach(button => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const details = document.querySelectorAll("details");
+
+  details.forEach((el) => {
+    const summary = el.querySelector("summary");
+    const content = document.createElement("div");
+
+    // Move all non-summary elements into the content wrapper
+    const contentNodes = Array.from(el.childNodes).filter(
+      (node) => node !== summary
+    );
+    contentNodes.forEach((node) => content.appendChild(node));
+
+    content.style.overflow = "hidden";
+    content.style.maxHeight = "0";
+    content.style.transition = "max-height 0.5s ease";
+
+    el.appendChild(content);
+
+    summary.addEventListener("click", (e) => {
+      e.preventDefault(); // Prevent instant toggle
+      if (!el.open) {
+        el.open = true;
+        requestAnimationFrame(() => {
+          content.style.maxHeight = content.scrollHeight + "px";
+        });
+      } else {
+        content.style.maxHeight = "0";
+        setTimeout(() => {
+          el.open = false;
+        }, 500); // Match the transition duration
+      }
+    });
+  });
+});
+
 </script>
 
