@@ -449,8 +449,130 @@ ul {
   margin-bottom: 0.4em; 
 }
 
+// bold navbar links
 #nav a {
-  font-weight: 250;  // For bold navbar links
+  font-weight: 250;  
+}
+
+.content.index.py4 {
+  position: relative;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  z-index: 10; /* Ensure container is in front */
+}
+
+/* Top and Bottom Borders */
+.content.index.py4::before,
+.content.index.py4::after {
+  content: "";
+  position: absolute;
+  background-repeat: repeat-x;
+  background-size: calc(100% - 320px) 160px; /* Subtract corners width */
+  width: calc(100% - 320px); /* 160px for each corner */
+  height: 160px;
+  left: 160px; /* Start after left corner */
+  pointer-events: none;
+  z-index: 5;
+}
+
+.content.index.py4::before {
+  top: 0;
+  background-image: url('/border/border-top.png');
+}
+
+.content.index.py4::after {
+  bottom: 0;
+  background-image: url('/border/border-bottom.png');
+}
+
+/* Left and Right Borders */
+.content.index.py4 > .side-left,
+.content.index.py4 > .side-right {
+  content: "";
+  position: absolute;
+  top: 160px; /* Start after top corner */
+  width: 160px;
+  height: calc(100% - 320px); /* Subtract top and bottom corners */
+  background-repeat: repeat-y;
+  background-size: 160px auto;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.content.index.py4 > .side-left {
+  left: 0;
+  background-image: url('/border/border-left.png');
+}
+
+.content.index.py4 > .side-right {
+  right: 0;
+  background-image: url('/border/border-right.png');
 }
 
 
+/* Corners */
+.content.index.py4 > .corner-tl,
+.content.index.py4 > .corner-tr,
+.content.index.py4 > .corner-bl,
+.content.index.py4 > .corner-br {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.content.index.py4 > .corner-tl {
+  top: 0;
+  left: 0;
+  background-image: url('/border/corner-top-left.png');
+}
+
+.content.index.py4 > .corner-tr {
+  top: 0;
+  right: 0;
+  background-image: url('/border/corner-top-right.png');
+}
+
+.content.index.py4 > .corner-bl {
+  bottom: 0;
+  left: 0;
+  background-image: url('/border/corner-bottom-left.png');
+}
+
+.content.index.py4 > .corner-br {
+  bottom: 0;
+  right: 0;
+  background-image: url('/border/corner-bottom-right.png');
+}
+
+/* Bottom Left Corner */
+.content.index.py4 > .corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('/border/corner-bottom-left.png');
+  background-size: contain;
+  background-repeat: no-repeat; /* Prevents duplication */
+  pointer-events: none;
+}
+
+/* Bottom Right Corner */
+.content.index.py4 > .corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('/border/corner-bottom-right.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  background-position: bottom right; /* Ensures the corner is positioned correctly */
+}
