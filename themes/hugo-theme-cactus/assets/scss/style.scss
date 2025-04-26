@@ -440,6 +440,16 @@ a[href*="/musings/"]:hover::after {
   content: none !important;
 }
 
+a[href*="/musings/"] {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+// On hover, add underline back to musings links
+header a[href*="/musings/"]:hover {
+  text-decoration: underline !important;
+}
+
 // controls bullet-point/list UI
 ul {
   list-style: none;  
@@ -461,19 +471,19 @@ ul {
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
-  z-index: 10; /* Ensure container is in front */
+  z-index: 10;
 }
 
-/* Top and Bottom Borders */
+// Top and Bottom Borders
 .content.index.py4::before,
 .content.index.py4::after {
   content: "";
   position: absolute;
   background-repeat: repeat-x;
-  background-size: calc(100% - 320px) 160px; /* Subtract corners width */
-  width: calc(100% - 320px); /* 160px for each corner */
-  height: 160px;
-  left: 160px; /* Start after left corner */
+  background-size: auto 200px;
+  width: calc(100% - 320px);
+  height: 200px;
+  left: 160px;
   pointer-events: none;
   z-index: 5;
 }
@@ -488,14 +498,14 @@ ul {
   background-image: url('/border/border-bottom.png');
 }
 
-/* Left and Right Borders */
+// Left and Right Borders 
 .content.index.py4 > .side-left,
 .content.index.py4 > .side-right {
   content: "";
   position: absolute;
-  top: 160px; /* Start after top corner */
+  top: 160px;
   width: 160px;
-  height: calc(100% - 320px); /* Subtract top and bottom corners */
+  height: calc(100% - 320px);
   background-repeat: repeat-y;
   background-size: 160px auto;
   pointer-events: none;
@@ -513,7 +523,7 @@ ul {
 }
 
 
-/* Corners */
+// Corners
 .content.index.py4 > .corner-tl,
 .content.index.py4 > .corner-tr,
 .content.index.py4 > .corner-bl,
@@ -550,7 +560,7 @@ ul {
   background-image: url('/border/corner-bottom-right.png');
 }
 
-/* Bottom Left Corner */
+// Bottom Left Corner
 .content.index.py4 > .corner-bl {
   position: absolute;
   bottom: 0;
@@ -559,11 +569,11 @@ ul {
   height: 200px;
   background-image: url('/border/corner-bottom-left.png');
   background-size: contain;
-  background-repeat: no-repeat; /* Prevents duplication */
+  background-repeat: no-repeat; 
   pointer-events: none;
 }
 
-/* Bottom Right Corner */
+// Bottom Right Corner
 .content.index.py4 > .corner-br {
   position: absolute;
   bottom: 0;
@@ -574,5 +584,5 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
-  background-position: bottom right; /* Ensures the corner is positioned correctly */
+  background-position: bottom right; 
 }
