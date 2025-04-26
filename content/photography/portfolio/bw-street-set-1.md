@@ -5,7 +5,6 @@
 "https://i.imgur.com/0UVztGF.jpeg" 
 "https://i.imgur.com/dEgvYJ3.jpeg" 
 "https://i.imgur.com/JYCnUI9.jpeg" 
-"https://i.imgur.com/dNfFK3I.jpeg" 
 "https://i.imgur.com/bh2849b.jpeg" 
 "https://i.imgur.com/Y64CFHE.jpeg" 
 "https://i.imgur.com/IpJ38aQ.jpeg" 

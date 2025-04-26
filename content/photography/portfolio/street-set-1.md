@@ -3,7 +3,6 @@
 
 {{< gallery "https://i.imgur.com/aB9AzyP.jpeg" 
 "https://i.imgur.com/bWumT9U.jpeg" 
-"https://i.imgur.com/jzDh9Tn.jpeg" 
 "https://i.imgur.com/RHcseFl.jpeg" 
 "https://i.imgur.com/cDkRmmg.jpeg"
 "https://i.imgur.com/ytgesPS.jpeg" 

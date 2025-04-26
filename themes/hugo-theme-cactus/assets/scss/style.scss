@@ -266,6 +266,61 @@ code {
   font-weight: 900;
 }
 
+.main-photo {
+  padding-top: 30px;            
+  width: 100%;                 
+  height: auto;                 
+  overflow: hidden;            
+  margin: 0 auto;               
+  border: none;                 
+  background-color: transparent;
+  box-shadow: none;            
+}
+
+.main-photo img {
+  width: 100%;                 
+  height: auto;                
+  object-fit: contain;         
+  display: block;              
+}
+
+.photo-container { 
+  border: none;                 
+  background-color: transparent; 
+}
+
+.gallery .photo-buttons button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.gallery .photo-buttons button:hover {
+  color: #d8ccb4;  
+}
+
+
+.gallery .photo-buttons button.active {
+  color: #d8ccb4; 
+  font-weight: bold; 
+}
+
+.main-photo img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.main-photo img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.main-photo img.fade {
+  opacity: 0;
+}
+
 @media (max-width: 768px) {
   #nav ul {
     display: flex;
@@ -340,47 +395,6 @@ header a:hover::after {
   background-color: transparent; 
 }
 
-.gallery .photo-buttons button {
-  background-color: transparent;
-  border: none;
-  color: #000;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.gallery .photo-buttons button:hover {
-  color: #d8ccb4;  
-}
-
-
-.gallery .photo-buttons button.active {
-  color: #d8ccb4; 
-  font-weight: bold; 
-}
-
-.main-photo {
-  padding-top: 30px;            
-  width: 100%;                 
-  height: auto;                 
-  overflow: hidden;            
-  margin: 0 auto;               
-  border: none;                 
-  background-color: transparent;
-  box-shadow: none;            
-}
-
-.main-photo img {
-  width: 100%;                 
-  height: auto;                
-  object-fit: contain;         
-  display: block;              
-}
-
-.photo-container { 
-  border: none;                 
-  background-color: transparent; 
-}
-
 summary {
   list-style: none;
   cursor: pointer;
@@ -407,20 +421,6 @@ details.closing > summary::before {
 
 summary::-webkit-details-marker {
   display: none; 
-}
-
-.main-photo img {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.main-photo img {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.main-photo img.fade {
-  opacity: 0;
 }
 
 // removes hyperlinks from "Musings" page
@@ -585,4 +585,11 @@ ul {
   background-repeat: no-repeat;
   pointer-events: none;
   background-position: bottom right; 
+}
+
+.gallery, .photo-collection {
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
 }
