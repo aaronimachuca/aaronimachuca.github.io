@@ -409,18 +409,16 @@ summary::-webkit-details-marker {
   display: none; 
 }
 
-/* Shorten the transition duration to make it faster */
 .main-photo img {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;  /* Adjusted to 0.3s */
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* Fade-out effect */
-.main-photo img.fade-out {
-  opacity: 0;
-}
-
-/* Fade-in effect */
-.main-photo img.fade-in {
+.main-photo img {
   opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.main-photo img.fade {
+  opacity: 0;
 }
