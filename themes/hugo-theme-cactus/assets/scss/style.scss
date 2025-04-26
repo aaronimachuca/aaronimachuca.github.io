@@ -55,7 +55,7 @@ body {
   a {
     color: $color-text;
     text-decoration: none;
-    @include underline(5px, $color-text);
+    font-weight: 450;
 
     &:hover {
       // background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link);
@@ -422,3 +422,35 @@ summary::-webkit-details-marker {
 .main-photo img.fade {
   opacity: 0;
 }
+
+// removes hyperlinks from "Musings" page
+a[href*="/musings/"] {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+a[href*="/musings/"]:hover {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+a[href*="/musings/"]::after,
+a[href*="/musings/"]:hover::after {
+  background-color: transparent !important;
+  content: none !important;
+}
+
+// controls bullet-point/list UI
+ul {
+  list-style: none;  
+  padding-left: 1.2em; 
+  margin-left: 0;  
+  margin-top: 0.4em;  
+  margin-bottom: 0.4em; 
+}
+
+#nav a {
+  font-weight: 250;  // For bold navbar links
+}
+
+
