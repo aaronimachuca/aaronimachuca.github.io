@@ -593,3 +593,43 @@ ul {
   border: none;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+
+  header {
+    padding: 5px !important;
+    width: 100%;
+  }
+
+  #logo {
+    background-size: contain !important;
+    height: 40px !important;
+    width: 40px !important;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  header h1 {
+    font-size: 16px !important;
+    margin: 0;
+  }
+
+  #nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+  }
+
+
+  
+
+
+
+

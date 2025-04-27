@@ -3,26 +3,26 @@
 
 {{ if ne ($sections | len) 0 }}
   {{ range $sections }}
-    <div style="margin-bottom: 10px; display: flex; align-items: center;">
+    <div style="margin-bottom: 0px; display: flex; align-items: center;">
       {{ if eq .Section "musings" }}
-        <small style="width: 90px; margin-right: 10px; text-align: left;">{{ .Date.Format "January 2, 2006" }}</small>
+        <small style="width: 90px; margin-right: 0px; text-align: left;">{{ .Date.Format "January 2, 2006" }}</small>
       {{ else }}
         <span></span>
       {{ end }}
-      <a href="{{ .Permalink }}" style="text-decoration: none; display: inline;">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" style="text-decoration: none; display: inline; font-size: small; {{ if lt .Site.Params.deviceWidth 768 }}font-size: 12px;{{ end }}">{{ .Title }}</a>
     </div>
   {{ end }}
 {{ end }}
 
 {{ if ne ($singles | len) 0 }}
   {{ range $singles }}
-    <div style="margin-bottom: 10px; display: flex; align-items: center;">
+    <div style="margin-bottom: 0px; display: flex; align-items: center;">
       {{ if eq .Section "musings" }}
-        <small style="width: 90px; margin-right: 10px; text-align: left;">{{ .Date.Format "January 2, 2006" }}</small>
+        <small style="width: 90px; margin-right: 0px; text-align: left;">{{ .Date.Format "January 2, 2006" }}</small>
       {{ else }}
         <span></span>
       {{ end }}
-      <a href="{{ .Permalink }}" style="text-decoration: none; display: inline;">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" style="text-decoration: none; display: inline; font-size: small; {{ if lt .Site.Params.deviceWidth 768 }}font-size: 12px;{{ end }}">{{ .Title }}</a>
     </div>
   {{ end }}
 {{ end }}
