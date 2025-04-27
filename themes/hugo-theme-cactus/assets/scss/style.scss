@@ -237,6 +237,7 @@ code {
   width: 50%;
 }
 
+// adjusting gallery UI
 .gallery {
   margin: auto;
 } .main-photo img {
@@ -253,6 +254,7 @@ code {
   margin-right: 10em;
 } .photo-buttons {
   display: flex;
+  justify-content: center;
 } .photo-buttons button {
   cursor: pointer;
   width: fit-content;
@@ -309,11 +311,6 @@ code {
 
 .main-photo img {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.main-photo img {
-  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
@@ -321,6 +318,14 @@ code {
   opacity: 0;
 }
 
+.gallery, .photo-collection {
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+
+// adding scrollbar to nav on mobile
 @media (max-width: 768px) {
   #nav ul {
     display: flex;
@@ -347,11 +352,13 @@ code {
   }
 }
 
+// defining custom font for h1
 .custom-font {
   font-family: 'Merriweather', serif;
   font-weight: 700;
 }
 
+// off-white bg color
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
@@ -363,6 +370,7 @@ a {
   color: inherit;
 }
 
+// highlight links on hover
 a:hover {
   color: #d8ccb4; 
 }
@@ -395,6 +403,7 @@ header a:hover::after {
   background-color: transparent; 
 }
 
+// animation & custom UI for dropdown
 summary {
   list-style: none;
   cursor: pointer;
@@ -464,6 +473,7 @@ ul {
   font-weight: 250;  
 }
 
+// creating borders
 .content.index.py4 {
   position: relative;
   margin: auto;
@@ -521,7 +531,6 @@ ul {
   right: 0;
   background-image: url('/border/border-right.png');
 }
-
 
 // Corners
 .content.index.py4 > .corner-tl,
@@ -587,16 +596,10 @@ ul {
   background-position: bottom right; 
 }
 
-.gallery, .photo-collection {
-  margin: 0;
-  padding: 0;
-  border: none;
-  overflow: hidden;
-}
-
+// mobile UI adjustments
 @media (max-width: 768px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   header {
@@ -606,14 +609,14 @@ ul {
 
   #logo {
     background-size: contain !important;
-    height: 40px !important;
-    width: 40px !important;
+    height: 50px !important;
+    width: 50px !important;
     margin-left: 5px;
     margin-top: 5px;
   }
 
   header h1 {
-    font-size: 16px !important;
+    font-size: 18px !important;
     margin: 0;
   }
 
@@ -621,10 +624,13 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    font-size: 10px;
+    font-size: 12px;
     margin-right: 10px;
   }
 
+ .photo-buttons button {
+  font-size:12px;
+ }
   }
 
 
