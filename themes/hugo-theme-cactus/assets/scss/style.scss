@@ -306,7 +306,7 @@ code {
   transition: color 0.3s ease;
   font-weight: 100;
   font-family: 'Wild Youth', sans-serif;
-  font-size: 30px
+  font-size: 1.875rem;
 }
 
 .gallery .photo-buttons button:hover {
@@ -338,13 +338,13 @@ code {
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
-    font-size: 25x;
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 480px) {
   .gallery .photo-buttons button {
-    font-size: 25px;
+    font-size: 1.6rem;
   }
 }
 
