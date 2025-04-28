@@ -338,13 +338,19 @@ code {
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
-    font-size: 15x;
+    font-size: 20x;
+  }
+  .gallery .photo-buttons {
+    min-width: 1%;
   }
 }
 
 @media (max-width: 480px) {
   .gallery .photo-buttons button {
-    font-size: 15px;
+    font-size: 20px;
+  }
+  .gallery .photo-buttons {
+    min-width: 1%;
   }
 }
 
