@@ -7,13 +7,6 @@
 
 // global-reset()
 
-@font-face {
-  font-family: 'Wild Youth';
-  src: url('/fonts/Wild Youth.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 *,
 *:before,
 *:after {
@@ -264,7 +257,7 @@ code {
   justify-content: center;
 } .photo-buttons button {
   cursor: pointer;
-  width: 3%;
+  width: 2.5%;
   background-color: transparent;
   border: none;
   text-align: center;
@@ -338,6 +331,7 @@ code {
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
+    width: 2.5%;
     font-size: 22x;
   }
   .gallery .photo-buttons {
@@ -348,6 +342,7 @@ code {
 
 @media (max-width: 480px) {
   .gallery .photo-buttons button {
+    width: 2.5%;
     font-size: 22px;
   }
   .gallery .photo-buttons {
