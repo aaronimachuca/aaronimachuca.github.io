@@ -257,7 +257,7 @@ code {
   justify-content: center;
 } .photo-buttons button {
   cursor: pointer;
-  width: 2.5%;
+  width: 2.8%;
   background-color: transparent;
   border: none;
   text-align: center;
@@ -331,7 +331,7 @@ code {
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
-    font-size: 22x;
+    font-size: 16x;
   }
   .gallery .photo-buttons {
     display: flex;
@@ -342,7 +342,7 @@ code {
 
 @media (max-width: 480px) {
   .gallery .photo-buttons button {
-    font-size: 22px;
+    font-size: 16px;
   }
   .gallery .photo-buttons {
     display: flex;
