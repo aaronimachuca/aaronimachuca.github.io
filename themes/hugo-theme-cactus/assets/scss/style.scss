@@ -238,31 +238,81 @@ code {
 }
 
 // adjusting image gallery UI
-.gallery, .photo-collection, .photo-container {
-  margin: 0 auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  overflow: hidden;
-}
-
-// display main photo
-.main-photo {
-  padding-top: 30px;
+.gallery {
+  margin: auto;
+} .main-photo img {
   width: 100%;
   height: auto;
-  overflow: hidden;
-  margin: 0 auto;
-  box-shadow: none;
+} .gallery .photo-collection {
+  display: flex;
+  overflow-x: scroll;
+} .photo-collection img {
+  min-width: 30%;
+  max-width: 50%;
+  height: auto;
+} .single-image {
+  margin-right: 10em;
+} .photo-buttons {
+  display: flex;
+  justify-content: center;
+} .photo-buttons button {
+  cursor: pointer;
+  width: 2.8%;
   background-color: transparent;
   border: none;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 900;
+}
+
+.main-photo {
+  padding-top: 30px;            
+  width: 100%;                 
+  height: auto;                 
+  overflow: hidden;            
+  margin: 0 auto;               
+  border: none;                 
+  background-color: transparent;
+  box-shadow: none;            
 }
 
 .main-photo img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  width: 100%;                 
+  height: auto;                
+  object-fit: contain;         
+  display: block;              
+}
+
+.photo-container { 
+  border: none;                 
+  background-color: transparent; 
+}
+
+.gallery .photo-buttons button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.gallery .photo-buttons button:hover {
+  color: #d8ccb4;  
+}
+
+
+.gallery .photo-buttons button.active {
+  color: #d8ccb4; 
+  font-weight: bold; 
+}
+
+.main-photo img {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -271,56 +321,28 @@ code {
   opacity: 0;
 }
 
-/* Photo collection (scrollable thumbnails) */
-.gallery .photo-collection {
-  display: flex;
-  overflow-x: scroll;
-}
-
-.photo-collection img {
-  min-width: 30%;
-  max-width: 50%;
-  height: auto;
-}
-
-.single-image {
-  margin-right: 10em;
-}
-
-// photo buttons UI
-.gallery .photo-buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.gallery .photo-buttons button {
-  cursor: pointer;
-  width: 2.8%;
-  background: transparent;
+.gallery, .photo-collection {
+  margin: 0;
+  padding: 0;
   border: none;
-  text-align: center;
-  color: #000;
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 30px;
-  transition: color 0.3s ease;
+  overflow: hidden;
 }
-
-.gallery .photo-buttons button:hover,
-.gallery .photo-buttons button.active {
-  color: #d8ccb4;
-}
-
-.gallery .photo-buttons button.active {
-  font-weight: bold;
-}
-
 
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
-    font-size: 25px;
+    font-size: 16x;
+  }
+  .gallery .photo-buttons {
+    display: flex;
+    flex-shrink: 3;
+    min-width: 1%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery .photo-buttons button {
+    font-size: 16px;
   }
   .gallery .photo-buttons {
     display: flex;
