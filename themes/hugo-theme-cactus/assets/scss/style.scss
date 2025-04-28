@@ -264,8 +264,7 @@ code {
   justify-content: center;
 } .photo-buttons button {
   cursor: pointer;
-  width: fit-content;
-  min-width: 1%;
+  width: 3%;
   background-color: transparent;
   border: none;
   text-align: center;
@@ -304,8 +303,9 @@ code {
   color: #000;
   cursor: pointer;
   transition: color 0.3s ease;
-  font-weight: 100;
-  font-family: 'Wild Youth', sans-serif;
+  font-weight: 600;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-style: italic;
   font-size: 30px;
 }
 
@@ -338,19 +338,19 @@ code {
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
-    font-size: 20x;
+    font-size: 22x;
   }
   .gallery .photo-buttons {
-    max-width: 1%;
+    min-width: 1%;
   }
 }
 
 @media (max-width: 480px) {
   .gallery .photo-buttons button {
-    font-size: 20px;
+    font-size: 22px;
   }
   .gallery .photo-buttons {
-    max-width: 1%;
+    min-width: 1%;
   }
 }
 
