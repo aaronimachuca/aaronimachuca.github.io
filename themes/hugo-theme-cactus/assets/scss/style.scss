@@ -7,6 +7,13 @@
 
 // global-reset()
 
+@font-face {
+  font-family: 'Wild Youth';
+  src: url('/fonts/Wild Youth.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *:before,
 *:after {
@@ -237,7 +244,7 @@ code {
   width: 50%;
 }
 
-// adjusting gallery UI
+// adjusting image gallery UI
 .gallery {
   margin: auto;
 } .main-photo img {
@@ -258,7 +265,7 @@ code {
 } .photo-buttons button {
   cursor: pointer;
   width: fit-content;
-  min-width: 5%;
+  min-width: 1%;
   background-color: transparent;
   border: none;
   text-align: center;
@@ -297,6 +304,9 @@ code {
   color: #000;
   cursor: pointer;
   transition: color 0.3s ease;
+  font-weight: 100;
+  font-family: 'Wild Youth', sans-serif;
+  font-size: 30px
 }
 
 .gallery .photo-buttons button:hover {
@@ -323,6 +333,19 @@ code {
   padding: 0;
   border: none;
   overflow: hidden;
+}
+
+// photo button size on mobile devices
+@media (max-width: 768px) {
+  .gallery .photo-buttons button {
+    font-size: 25x;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery .photo-buttons button {
+    font-size: 25px;
+  }
 }
 
 // adding scrollbar to nav on mobile
