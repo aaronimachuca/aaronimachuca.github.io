@@ -328,26 +328,37 @@ code {
   overflow: hidden;
 }
 
+  //REALLY BAD BANDAID SOLUTION BUT IT WORKS
+  .gallery .photo-buttons {
+    display: flex;
+    flex-wrap: nowrap; // NEVER wrap, force on one line
+    justify-content: center; // center photo buttons
+    align-items: center; // vertical alignment
+    gap: 0; // NO flexbox gap
+    padding: 0;
+    margin: 0;
+    overflow-x: auto; // Allow scrolling IF absolutely needed 
+  }
+  
+  .gallery .photo-buttons button {
+    flex: 0 0 auto; // don't shrink or grow
+    width: auto;
+    min-width: 20px; // set a tiny minimum clickable width
+    padding: 0 2px; // control horizontal padding manually
+    margin: 0; // kill any button margin
+    font-size: 30px; // control font size exactly
+  }
+
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
-    font-size: 16x;
+    font-size: 25px;
+    width: 1%;
   }
   .gallery .photo-buttons {
     display: flex;
-    flex-shrink: 3;
-    min-width: 1%;
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery .photo-buttons button {
-    font-size: 16px;
-  }
-  .gallery .photo-buttons {
-    display: flex;
-    flex-shrink: 3;
-    min-width: 1%;
+    min-width: 10%;
+    max-width: 100%;
   }
 }
 
@@ -653,13 +664,9 @@ ul {
     font-size: 12px;
     margin-right: 10px;
   }
-
- .photo-buttons button {
-  font-size:12px;
- }
   }
 
-
+  
   
 
 
