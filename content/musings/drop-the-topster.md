@@ -49,8 +49,6 @@ _"물에 발 담가 모두 함께 정화를 시켜"_
 Transitioning onto a lighter note, Crumbling is another album that Ruijie recommended me and this was a special album because it opened a gateway to another world of music whose existence I was unaware of up until that point. And my god what an unfortunate precedent this album set for every other folktronica artist I listened to afterwards. Pinning down an exact explanation as to what makes this record so great feels almost as elusive as Mid-Air Thief's zero social media presence. There's something about the bubbling synthesizers scales and the spaced out mixing and the feathering guitar plucks washing together in a psychedelic haze that makes my brain melt away in a flush of euphoria. I absolutely love Summer Soul being on the backup vocals here, bringing in a lush breath to the production, like a gentle tide ebbing in and out of the sea shorelines. Then there are times when the instrumentation blends with the vocal harmonies in a magnificent crescendo that transcends what was already great music into a majesty of an album. This is one of the few accessible records in my music library I think anyone could enjoy and I would heavily recommend listening to if you haven't already.
 </p>
 
-<br>
-<br>
 5/5
 {{< /summary  >}}
 
@@ -82,4 +80,3 @@ Can someone please give God's strongest soldier a break, this poor boy has been 
 
 5/5
 {{< /summary  >}}
-
