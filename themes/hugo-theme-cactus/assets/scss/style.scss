@@ -7,6 +7,13 @@
 
 // global-reset()
 
+@font-face {
+  font-family: 'Theano';
+  src: url('/fonts/TheanoDidot.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *:before,
 *:after {
@@ -343,7 +350,7 @@ code {
   .gallery .photo-buttons button {
     flex: 0 0 auto; // don't shrink or grow
     width: auto;
-    min-width: 20px; // set a tiny minimum clickable width
+    min-width: 15px; // set a tiny minimum clickable width
     padding: 0 2px; // control horizontal padding manually
     margin: 0; // kill any button margin
     font-size: 30px; // control font size exactly
@@ -352,7 +359,8 @@ code {
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
-    font-size: 25px;
+    font-size: 22px;
+    min-width: 14px;
     width: 1%;
   }
   .gallery .photo-buttons {
@@ -452,7 +460,6 @@ summary::before {
   content: '➣'; 
   position: absolute;
   left: 0;
-  top: 0.1em;
   font-size: 1em;
   transition: transform 0.3s ease;
 }
@@ -666,9 +673,13 @@ ul {
   }
   }
 
+  h1 {
+    display: inline-block;
+    max-height: 2rem;
+    overflow: hidden;
+    line-height: 1.1;
+  }
   
   
-
-
 
 

@@ -27,6 +27,25 @@
     }
   }
 }
+@media (max-width: 780px) {
+  .post-list {
+    padding: 0;
+  
+    .post-item {
+      margin-bottom: 1rem;
+      margin-left: 0;
+      list-style-type: none;
+  
+      .meta {
+        display: block;
+        margin-right: 16px;
+        min-width: 100px;
+        color: $color-meta;
+        font-size: 12px;
+      }
+    }
+  }
+}
 .project-list {
   padding: 0;
   list-style: none;

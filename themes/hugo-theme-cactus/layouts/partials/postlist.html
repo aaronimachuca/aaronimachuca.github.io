@@ -9,7 +9,7 @@
       {{ else }}
         <span></span>
       {{ end }}
-      <a href="{{ .Permalink }}" style="text-decoration: none; display: inline; font-size: small; {{ if lt .Site.Params.deviceWidth 768 }}font-size: 12px;{{ end }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" class="postlink">{{ .Title }}</a>
     </div>
   {{ end }}
 {{ end }}
@@ -22,7 +22,7 @@
       {{ else }}
         <span></span>
       {{ end }}
-      <a href="{{ .Permalink }}" style="text-decoration: none; display: inline; font-size: small; {{ if lt .Site.Params.deviceWidth 768 }}font-size: 12px;{{ end }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" class="postlink">{{ .Title }}</a>
     </div>
   {{ end }}
 {{ end }}

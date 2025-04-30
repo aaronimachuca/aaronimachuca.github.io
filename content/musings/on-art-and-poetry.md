@@ -49,7 +49,7 @@ Cosmogonies underpin mythology as a concept fundamental to their usual worldbuil
 [^3] 
 [^3]: _Kevin Crossley-Holland, THE NORSE MYTHS (New York: Pantheon Books, 1980), p.xxii_
 
-{{< centered-images "https://i.imgur.com/5l9hIcn.png" "60%">}}
+{{< centered-images "https://i.imgur.com/9FKlUUN.png" "80%">}}
 
 Apologies to _The Odyssey_ enthusiasts out there but I'm going to neglect the Greek folklore to provide Norse mythology a chance in the spotlight. A big portion of our information on the Norse mythos primarily comes from Snorri Sturluson's _Prose_ and _Poetic Edda_. ...
 

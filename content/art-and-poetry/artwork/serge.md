@@ -5,4 +5,5 @@ draft = false
 +++
 
 {{< images "https://i.imgur.com/qDu0sMU.png" "100%" >}}
-[Reference](https://i.imgur.com/hOJO9PH.png)
+|:--:| 
+Reference: _Unknown, [Serge & Leena on Opassa Beach](https://i.imgur.com/hOJO9PH.png)_
