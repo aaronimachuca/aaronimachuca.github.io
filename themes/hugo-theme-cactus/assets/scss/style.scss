@@ -674,5 +674,51 @@ ul {
   }
   
   
+  .photography summary,
+.art-and-poetry summary,
+.academia summary {
+  font-family: 'Noto Serif', serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.photography details ul,
+.art-and-poetry details ul,
+.academia details ul {
+  margin-left: .65rem;
+}
+
+.photography details,
+.art-and-poetry details,
+.academia details {
+  font-family: 'Roboto', serif;
+  font-size: 14px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+@media (max-width: 780px) {
+  .photography summary,
+  .art-and-poetry summary,
+  .academia summary {
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .photography details,
+  .art-and-poetry details,
+  .academia details {
+  font-family: 'Roboto', serif;
+  font-size: 12px;
+  font-weight: 100;
+  font-style: italic;
+}
+}
+
+.art-and-poetry .page-markdown a {
+  font-style: italic;
+}
 
 
