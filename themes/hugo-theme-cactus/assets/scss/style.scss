@@ -306,7 +306,6 @@ code {
   color: #d8ccb4;  
 }
 
-
 .gallery .photo-buttons button.active {
   color: #d8ccb4; 
   font-weight: bold; 
@@ -347,6 +346,59 @@ code {
     padding: 0 2px; // control horizontal padding manually
     margin: 0; // kill any button margin
     font-size: 30px; // control font size exactly
+  }
+
+  .gallery-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+  }
+  
+  .photo-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .arrow {
+    font-size: 1rem; 
+    background: none; 
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem; 
+    align-items: center;
+    transition: color 0.2s ease;
+    position: relative;
+    top: 0.45rem;
+  }
+  
+  .arrow:hover {
+    color: #d8ccb4;
+  }
+
+  @media (max-width: 768px) {
+    .arrow {
+      font-size: .9rem; 
+      background: none; 
+      border: none;
+      cursor: pointer;
+      padding: 0.15rem; 
+      align-items: center;
+      transition: color 0.2s ease;
+      position: relative;
+      top: 0.35rem;
+      color: black;
+    }
+    
+    .arrow:hover {
+      color: black;
+    }
   }
 
 // photo button size on mobile devices
@@ -674,7 +726,7 @@ ul {
   }
   
   
-  .photography summary,
+.photography summary,
 .art-and-poetry summary,
 .academia summary {
   font-family: 'Noto Serif', serif;
@@ -717,8 +769,6 @@ ul {
 }
 }
 
-.art-and-poetry .page-markdown a {
-  font-style: italic;
-}
+
 
 

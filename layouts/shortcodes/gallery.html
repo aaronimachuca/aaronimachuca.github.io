@@ -1,14 +1,17 @@
-{{ $num_photos := .Params | len }}
-{{ $img_counter := 1 }}
 <div class="gallery">
-  <div class="photo-buttons">
-    {{ range $img := .Params }}
-      {{ if gt $img_counter $num_photos }}
-        {{ break }}
+  <div class="gallery-controls">
+    <div class="photo-buttons">
+      {{ $img_counter := 1 }}
+      {{ range $index, $img := .Params }}
+        <button onclick="update_gallery_img('{{ $img }}', {{ $index }})">{{ $img_counter }}</button>
+        {{ $img_counter = add $img_counter 1 }}
       {{ end }}
-      <button onclick="update_gallery_img('{{ $img }}')">{{ $img_counter }}</button>
-      {{ $img_counter = add $img_counter 1 }}
-    {{ end }}
+    </div>
+
+    <div class="arrow-buttons">
+      <button id="prev-photo" class="arrow">&lt;&lt;</button>
+      <button id="next-photo" class="arrow">&gt;&gt;</button>      
+    </div>    
   </div>
 
   <div class="main-photo">
@@ -16,5 +19,83 @@
       <img id="main-photo" src="{{ .Get 0 }}">
     </div>
   </div>
-
 </div>
+
+
+<script>
+  // Track the current image index
+  let currentIndex = 0;
+
+  // Function to update the gallery image and active photo button
+  function update_gallery_img(img_src, index) {
+    const mainPhoto = document.getElementById("main-photo");
+    mainPhoto.classList.add("fade");
+
+    setTimeout(function () {
+      mainPhoto.setAttribute("src", img_src);
+      mainPhoto.onload = function () {
+        mainPhoto.classList.remove("fade");
+      };
+    }, 300);
+
+    // Remove active class from all photo buttons
+    document.querySelectorAll('.gallery .photo-buttons button').forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    // Add active class to the button corresponding to the current image
+    document.querySelectorAll('.gallery .photo-buttons button')[index].classList.add('active');
+  }
+
+  // Set active class on the first photo button when the page loads
+  document.addEventListener('DOMContentLoaded', () => {
+    const firstButton = document.querySelector('.gallery .photo-buttons button');
+    if (firstButton) {
+      firstButton.classList.add('active');
+      currentIndex = 0; // Set initial index to 0
+    }
+  });
+
+  // Add event listener to each photo button to set it as active
+  document.querySelectorAll('.gallery .photo-buttons button').forEach((button, index) => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.gallery .photo-buttons button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+      currentIndex = index; // Update the current index based on the clicked button
+      update_gallery_img(button.getAttribute('onclick').match(/'([^']+)'/)[1], currentIndex);
+    });
+  });
+
+  // Handle previous photo arrow click
+  document.getElementById("prev-photo").addEventListener("click", () => {
+    // Update index to previous photo (with looping)
+    currentIndex = (currentIndex - 1 + document.querySelectorAll('.gallery .photo-buttons button').length) % document.querySelectorAll('.gallery .photo-buttons button').length;
+    const imgSrc = document.querySelectorAll('.gallery .photo-buttons button')[currentIndex].getAttribute('onclick').match(/'([^']+)'/)[1];
+    update_gallery_img(imgSrc, currentIndex);
+
+    // Update the active photo button
+    document.querySelectorAll('.gallery .photo-buttons button').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.querySelectorAll('.gallery .photo-buttons button')[currentIndex].classList.add('active');
+  });
+
+  // Handle next photo arrow click
+  document.getElementById("next-photo").addEventListener("click", () => {
+    // Update index to next photo (with looping)
+    currentIndex = (currentIndex + 1) % document.querySelectorAll('.gallery .photo-buttons button').length;
+    const imgSrc = document.querySelectorAll('.gallery .photo-buttons button')[currentIndex].getAttribute('onclick').match(/'([^']+)'/)[1];
+    update_gallery_img(imgSrc, currentIndex);
+
+    // Update the active photo button
+    document.querySelectorAll('.gallery .photo-buttons button').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.querySelectorAll('.gallery .photo-buttons button')[currentIndex].classList.add('active');
+  });
+  
+</script>
+
+
