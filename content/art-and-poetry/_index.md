@@ -15,7 +15,7 @@ layout = "art-and-poetry"
 {{< summary "Poems" >}}
   <ul>
     <li><a href="poems/anthology/">Anthology</a></li>
-    <li><a href="poems/star-sieged-mind/">Star Sieged Mind</a></li>
+    <li><a href="poems/star-sieged-mind/">Star-Sieged Mind</a></li>
   </ul>
 {{< /summary >}}
 
