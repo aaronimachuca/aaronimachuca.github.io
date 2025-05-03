@@ -348,12 +348,12 @@ code {
     margin: 0; // kill any button margin
     font-size: 30px; // control font size exactly
   }
-
+  
 // photo button size on mobile devices
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
     font-size: 22px;
-    min-width: 14px;
+    min-width: 13px;
     width: 1%;
   }
   .gallery .photo-buttons {
@@ -361,6 +361,83 @@ code {
     min-width: 10%;
     max-width: 100%;
   }
+}
+
+// arrows UI adjustments
+.gallery .photo-buttons {
+  position: relative;  
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 0;
+  overflow: hidden; 
+}
+
+.gallery .photo-buttons button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  flex-grow: 0; 
+  margin: 0; 
+}
+
+.gallery .photo-buttons #prev-photo,
+.gallery .photo-buttons #next-photo {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-40%); 
+  font-size: 32px; 
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  margin: 0;
+}
+
+.gallery .photo-buttons #prev-photo {
+  right: 30px;  // move the "previous" arrow reduce spacing
+}
+
+.gallery .photo-buttons #next-photo {
+  right: 0; 
+}
+
+.gallery .photo-buttons button:hover,
+.gallery .photo-buttons #prev-photo:hover,
+.gallery .photo-buttons #next-photo:hover {
+  color: #d8ccb4; 
+}
+
+.gallery .photo-buttons button.active {
+  color: #d8ccb4;
+  font-weight: bold;
+}
+
+// mobile adjustments to arrows
+@media (max-width: 768px) {
+  .gallery .photo-buttons {
+    overflow-x: hidden;  // prevent horizontal overflow
+    overflow-y: hidden;  // prevent vertical overflow
+  }
+
+  .gallery .photo-buttons #prev-photo,
+  .gallery .photo-buttons #next-photo {
+    font-size: 24px; 
+    right: 0px;  // reduce spacing on the mobile version
+    padding-right: 12px;  // add padding to the right
+  }
+
+  .gallery .photo-buttons #prev-photo {
+    right: 20px;  //space between the "previous" and "next" arrows
+  }
+  .gallery .photo-buttons #prev-photo:hover,
+  .gallery .photo-buttons #next-photo:hover {
+    color: black !important;  // force the arrow hover color to black
+  }
+  
 }
 
 // adding scrollbar to nav on mobile
@@ -673,7 +750,7 @@ ul {
     line-height: 1.1;
   }
   
-  
+  // dropdown menu UI adjustments for nav directory pages
   .photography summary,
 .art-and-poetry summary,
 .academia summary {
@@ -717,4 +794,11 @@ ul {
 }
 }
 
+// ensures only hyperlinks in 'anthology' subdirectory is italicized 
+body.art-and-poetry .page-markdown a {
+  font-style: normal;
+}
 
+body.art-and-poetry .page-markdown a[href*="/anthology/"] {
+  font-style: italic;
+}

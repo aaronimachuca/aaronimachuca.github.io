@@ -2,13 +2,18 @@
 {{ $img_counter := 1 }}
 <div class="gallery">
   <div class="photo-buttons">
-    {{ range $img := .Params }}
-      {{ if gt $img_counter $num_photos }}
-        {{ break }}
-      {{ end }}
-      <button onclick="update_gallery_img('{{ $img }}')">{{ $img_counter }}</button>
+    {{ range $index, $img := .Params }}
+      <button 
+        class="photo-button" 
+        type="button" 
+        data-src="{{ $img }}" 
+        data-index="{{ $index }}"
+      >{{ $img_counter }}</button>
       {{ $img_counter = add $img_counter 1 }}
     {{ end }}
+    <!-- Arrow buttons -->
+    <button id="prev-photo" class="arrow" type="button">«</button>
+    <button id="next-photo" class="arrow" type="button">»</button>
   </div>
 
   <div class="main-photo">
@@ -16,5 +21,77 @@
       <img id="main-photo" src="{{ .Get 0 }}">
     </div>
   </div>
-
 </div>
+
+<script>
+  let currentIndex = 0;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const mainPhoto = document.getElementById("main-photo");
+    const buttons = document.querySelectorAll(".photo-button");
+    const prev = document.getElementById("prev-photo");
+    const next = document.getElementById("next-photo");
+
+    // Function to update the gallery based on the index
+    function updateGallery(index) {
+      const button = buttons[index];
+      const src = button.dataset.src;
+
+      // Transition effect for changing image
+      mainPhoto.classList.add("fade");
+      setTimeout(() => {
+        mainPhoto.src = src;
+        mainPhoto.onload = () => {
+          mainPhoto.classList.remove("fade");
+        };
+      }, 300);
+
+      // Highlight the active photo button (not the arrows)
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      currentIndex = index;
+    }
+
+    // Initialize gallery and highlight the first button
+    if (buttons.length > 0) {
+      updateGallery(0);
+    }
+
+    // Handle photo button clicks (highlight active)
+    buttons.forEach((btn, idx) => {
+      btn.addEventListener("click", () => {
+        updateGallery(idx);
+        // Ensure the arrows are not active after clicking a photo button
+        prev.classList.remove("active");
+        next.classList.remove("active");
+      });
+    });
+
+    // Arrow logic to shift images on prev/next click
+    function shiftImage(dir) {
+      const total = buttons.length;
+      const newIndex = (currentIndex + dir + total) % total;
+      updateGallery(newIndex);
+
+      // Ensure the arrows are not active after clicking an arrow
+      prev.classList.remove("active");
+      next.classList.remove("active");
+    }
+
+    // Handle previous arrow click (remove focus from the arrow)
+    prev.addEventListener("click", (e) => {
+      shiftImage(-1);  // Move to the previous image
+      e.preventDefault();  // Prevent any default behavior (focus)
+      prev.blur();        // Remove focus from the prev arrow immediately
+    });
+
+    // Handle next arrow click (remove focus from the arrow)
+    next.addEventListener("click", (e) => {
+      shiftImage(1);   // Move to the next image
+      e.preventDefault();  // Prevent any default behavior (focus)
+      next.blur();         // Remove focus from the next arrow immediately
+    });
+  });
+</script>
+
