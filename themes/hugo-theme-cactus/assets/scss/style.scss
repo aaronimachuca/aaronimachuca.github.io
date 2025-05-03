@@ -795,10 +795,7 @@ ul {
 }
 
 // ensures only hyperlinks in 'anthology' subdirectory is italicized 
-body.art-and-poetry .page-markdown a {
-  font-style: normal;
-}
-
 body.art-and-poetry .page-markdown a[href*="/anthology/"] {
   font-style: italic;
 }
+

@@ -1,17 +1,25 @@
 +++
 title = 'Academia'
-date = 2024-06-24T23:09:44-07:00
+date = 2025-05-03T09:54:31-07:00
 draft = false
+type = "section"
+layout = "academia"
 +++
 
-**_What do you do for research?_** \
-I work at the intersection of theory and numerical analysis, my main interests primarily involve using continuum theory to create robust material models and pressure test those models via computational validiation verified with known experimental data. Currently, I am looking into the stefan problem to better understand material behavior as it undergoes phase transformations along a moving boundary. This problem is of particular interest to improving additive manufacturing techniques in metallurgy as the rapid solidifcation processes that occur in metal printing are currently not well understood. I've also been interested in understanding plastic flow in bingham solids like gel or toothpaste, mostly because it seems reminiscent to turbulent structures in viscous fluid flow. They're not easy problems to research but that's what makes it fun!
+{{< summary "Simulations" >}}
+  <ul>
+    <li><a href="simulations/construct/">under construction</a></li>
+  </ul>
+{{< /summary >}}
 
-**_Why mechanics?_** \
-This is a bit of a loaded question that can either be answered with a personal essay or a couple of sentences, I'll opt towards the latter. Originally I wanted to be a structural engineer when I started my undergrad career and work in philanthropic groups dedicated to helping impoverished countries have reliable and structurally sound infastructures catered to their climate. However, I realized late in my academic years that I found my studies to be very unfulfilling and discovered my true passions to lie in the realm of continuum mechanics. It was a risky move but I decided to pivot towards taking more math and mechanical engineering courses to set me up for a Ph.D program and now here I am!
+{{< summary "Notes" >}}
+  <ul>
+    <li><a href="notes/cmech/">Continuum Mechanics</a></li>
+  </ul>
+{{< /summary >}}
 
+I work in the [Computational Solid Mechanics Lab](https://csml.berkeley.edu/) at Berkeley under the supervision of Professor Papadopoulos. If you have ever visited the lab, you would know it's rather unassuming and is certainly not the poster boy as far as *fun*, *exciting*, *modern* labs go. But major strides are made here.
 
-**_What can you do with mechanics?_** \
-I mean this with no hint of exaggeration when I say anything, literally anything. Continuum mechanics is about as close as you can get to an all-emcompassing mathematical theory to study the dynamics or mechanical response of materials under various scenarios, be it fluid, solid, or anything classified in between (and sometimes even on the molecular scale!). Nowadays, especially with the advancements of FEM simulations, you can do whatever you damn well please with a janky laptop and some early 90s looking software. Want to study the crush analysis in cars during dynamic collisions? How transitions of turbulent flames propagate within a confined space? The ballistics of a chameleon tongue as it springs out to catch its prey? Understand the geodesics of soap bubbles and their pattern formation? All completely achievable with some finesse in tensor analysis and the proper choices in your constitutive models. 
+The main approach to our research lies at the intersection of theory and numerical analysis, using continuum theory to create robust material models and pressure test those models via computational validation and experimental data. Currently, I am looking into the stefan problem to better understand material behavior as it undergoes phase transformations along a moving boundary. Otherwise, I've also been interested in problems involving plastic flow in bingham solids (like gel or toothpaste), mostly because it seems reminiscent to turbulent structures in viscous fluid flow. 
 
-
+These aren't easy problems, but that's what makes them fun, exiciting, *and* modern! And above all else, I hope that my work serves to honor the legacy of my professors and the remarkable mechanicians who have built this field of study.
