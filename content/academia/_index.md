@@ -8,13 +8,14 @@ layout = "academia"
 
 {{< summary "Simulations" >}}
   <ul>
-    <li><a href="simulations/construct/">under construction</a></li>
+    <li><a href="simulations/lid-driven-cavity-fsi/">Lid-Driven Cavity FSI</a></li>
   </ul>
 {{< /summary >}}
 
 {{< summary "Notes" >}}
   <ul>
     <li><a href="notes/cmech/">Continuum Mechanics</a></li>
+    <li><a href="notes/van-der-waals-derivation/">Van Der Waals Derivation</a></li>
   </ul>
 {{< /summary >}}
 
