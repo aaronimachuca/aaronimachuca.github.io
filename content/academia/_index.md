@@ -19,7 +19,7 @@ layout = "academia"
   </ul>
 {{< /summary >}}
 
-I work in the [Computational Solid Mechanics Lab](https://csml.berkeley.edu/) at Berkeley under the supervision of Professor Papadopoulos. My main research interests lies at the intersection of continuum mechanics and the numerical analysis, using continuum theory to create robust material models and pressure test those models via computational validation (i.e. finite element analysis) and experimental data.
+I work in the [Computational Solid Mechanics Lab](https://csml.berkeley.edu/) at Berkeley under the supervision of Professor Papadopoulos. My main research interests lies at the intersection of continuum mechanics and the numerical analysis, using continuum theory to create robust material models and pressure test those models via computational validation (i.e. finite element methods) and experimental data.
 
 Currently, I am looking into the stefan problem to better understand material behavior as it undergoes phase transformations along a moving boundary. Otherwise, I've also been interested in problems involving plastic flow in bingham solids (like gel or toothpaste), mostly because it seems reminiscent to turbulent structures in viscous fluid flow. 
 
