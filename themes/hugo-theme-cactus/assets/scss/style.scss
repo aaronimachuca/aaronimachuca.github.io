@@ -55,7 +55,7 @@ body {
   a {
     color: $color-text;
     text-decoration: none;
-    font-weight: 450;
+    font-weight: 550;
 
     &:hover {
       // background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link);
@@ -470,7 +470,7 @@ code {
 // defining custom font for h1
 .custom-font {
   font-family: 'Merriweather', serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 // off-white bg color
@@ -754,8 +754,8 @@ ul {
   .photography summary,
 .art-and-poetry summary,
 .academia summary {
-  font-family: 'Noto Serif', serif;
-  font-size: 14px;
+  font-family: 'Oswald', serif;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -768,7 +768,7 @@ ul {
 .photography details,
 .art-and-poetry details,
 .academia details {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto Condensed', serif;
   font-size: 14px;
   font-weight: 100;
   font-style: italic;
@@ -779,15 +779,15 @@ ul {
   .art-and-poetry summary,
   .academia summary {
     font-size: 1rem;
-    font-family: 'Noto Serif', serif;
-    font-size: 12px;
+    font-family: 'Oswald', serif;
+    font-size: 13px;
     font-weight: 400;
   }
 
   .photography details,
   .art-and-poetry details,
   .academia details {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto Condensed', serif;
   font-size: 12px;
   font-weight: 100;
   font-style: italic;
@@ -798,4 +798,43 @@ ul {
 body.art-and-poetry .page-markdown a[href*="/anthology/"] {
   font-style: italic;
 }
+
+// LaTeX equation styling
+.katex-display {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.katex-display > .katex {
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 600px) {
+  .katex-display {
+    overflow-x: auto;           // enable horizontal scrolling
+    white-space: nowrap;        // prevent wrapping
+    -ms-overflow-style: none;   // for Internet Explorer
+    scrollbar-width: none;      // for Firefox
+    padding-bottom: 0.25rem; 
+  }
+  
+
+  .katex-display::-webkit-scrollbar {
+    display: none;              // hide the scrollbar in WebKit browsers 
+  }
+
+  .eqn-num {
+    display: none !important; // hide equation tags on mobile 
+  }
+}
+
+
+
+
+
 

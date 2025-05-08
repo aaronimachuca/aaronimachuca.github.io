@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 {{ partial "head.html" . }}
+{{ partial "math.html" . }} 
 <body class="max-width mx-auto px3 ltr {{ .Section }}">
   <div class="content index py4">
     <div class="side-left"></div>
@@ -52,6 +53,8 @@
   {{ partial "favicon.html" . }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
