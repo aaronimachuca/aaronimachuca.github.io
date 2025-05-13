@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Van Der Waals Derivation | Aaron Machuca</title>
+  <link rel = 'canonical' href = 'https://aaronmachuca.com/academia/notes/van-der-waals-derivation/'>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Van Der Waals Derivation" />
+<meta property="og:description" content="The Van der Waals Equation of State Notes and figures largely adapted from Schwabl&rsquo;s text on Statistical Mechanics
+These notes were written as a part of my statistical mechanics course (CE C235) final project report. They assume familiarity with fundamental concepts involving but not limited to: statistical ensembles, evaluating gaussian integrals, and obtaining thermodynamic quanities from partition functions. Ordinarily, a model for an ideal gas only involves the momenta of atoms and neglects particle interactions within the Hamiltonian." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aaronmachuca.com/academia/notes/van-der-waals-derivation/" /><meta property="article:section" content="academia" />
+<meta property="article:published_time" content="2025-05-03T18:44:43-07:00" />
+<meta property="article:modified_time" content="2025-05-03T18:44:43-07:00" />
+
+
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Van Der Waals Derivation"/>
+<meta name="twitter:description" content="The Van der Waals Equation of State Notes and figures largely adapted from Schwabl&rsquo;s text on Statistical Mechanics
+These notes were written as a part of my statistical mechanics course (CE C235) final project report. They assume familiarity with fundamental concepts involving but not limited to: statistical ensembles, evaluating gaussian integrals, and obtaining thermodynamic quanities from partition functions. Ordinarily, a model for an ideal gas only involves the momenta of atoms and neglects particle interactions within the Hamiltonian."/>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://aaronmachuca.com/css/styles.1a75b240f064bd15eab1cd5220e088cefec4e0f2e1d89ec893b8e9f684717f348e2f4f40ebd281411923b565c0c32c1415ba37b25cf5f62ea184b82189421bab.css" integrity="sha512-GnWyQPBkvRXqsc1SIOCIzv7E4PLh2J7Ik7jp9oRxfzSOL09A69KBQRkjtWXAwywUFbo3slz19i6hhLghiUIbqw=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+
+
+<link rel="icon" href="/favicon/favicon.png" type="image/png">
+
+
+<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+
+
+<link rel="icon" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+
+
+<link rel="icon" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+  
+  
+</head>
+
+<link rel="stylesheet" href="/css/katex.min.css">
+<script defer="" src="/js/katex.min.js"></script>
+<script defer="" src="/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\[ ", right: "\\]", display: true},
+                {left: "\\(", right: "\\)", display: false},
+            ]
+        });
+    });
+</script>
+
+
+ 
+<body class="max-width mx-auto px3 ltr academia">
+  <div class="content index py4">
+    <div class="side-left"></div>
+    <div class="side-right"></div>
+    <div class="corner-tl"></div>
+    <div class="corner-tr"></div>
+    <div class="corner-bl"></div>
+    <div class="corner-br"></div>
+
+    <header id="header">
+  <a href="https://aaronmachuca.com/">
+    <div id="logo" style="background-image: url(https://i.imgur.com/6p2vUpO.png)"></div>
+
+  <div id="title">
+    <h1 class="custom-font">Aaron Machuca</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x" aria-hidden="true"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/academia/">Academia</a></li>
+      
+        <li><a href="/art-and-poetry/">Art and Poetry</a></li>
+      
+        <li><a href="/photography/">Photography</a></li>
+      
+        <li><a href="/musings/">Musings</a></li>
+      
+    </ul>
+  </div>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</header>
+
+
+
+    <div class="page-markdown">
+    
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="content" itemprop="articleBody">
+  
+    <h1 id="the-van-der-waals-equation-of-state">The Van der Waals Equation of State</h1>
+<p><em>Notes and figures largely adapted from Schwabl&rsquo;s text on Statistical Mechanics</em></p>
+<p>These notes were written as a part of my statistical mechanics course (CE C235) final project report. They assume familiarity with fundamental concepts involving but not limited to: statistical ensembles, evaluating gaussian integrals, and obtaining thermodynamic quanities from partition functions. Ordinarily, a model for an ideal gas only involves the momenta of atoms and neglects particle interactions within the Hamiltonian. However, realistic models of gases are structured with potentials that define how particles can interact with one another.</p>
+<p>Thus, in order to create a model for a classical real gas, we first need to surmise what the interaction potential between atoms will look like. To this end, consider a two-particle potential that is additively decomposed into a &ldquo;hard-core&rdquo; (H.C.) part, $v_{H.C.}(\mathbf{y})$ for $|\mathbf{y}| \leq \sigma$, where $\sigma$ is the hard-core radius, and an attractive part $w(\mathbf{y})$. The total potential then looks like, <br>
+\begin{equation}
+v(\mathbf{y}) = v_{H.C.}(\mathbf{y}) + w(\mathbf{y}).
+\end{equation}
+In this regard, we assume that the molecules have a kind of nearest neighbor potential that only accounts for short-range interactions. The term &ldquo;hard-core&rdquo; refers to the molecules repelling each other at short distances due to an impenetrable radius (much like colliding billiard balls) and are therefore not point-like. With this potential in mind, we can go about building a partition function for a canonical ensemble. Supposing that we have N particles in 3-dimensions, the partition function takes the form, <br>
+\begin{equation}
+Z(T,V,N) = \frac{1}{\lambda^{3N}N!} \int \ldots\int e^{-\beta \sum_{i&lt;j} v(\mathbf{x}_i-\mathbf{x}_j)} d^3x_1 \ldots d^3x_N,
+\end{equation}
+where $\lambda = \frac{h}{\sqrt{2\pi mkT}}$ results from integrating over the momenta and the normalization constant that appears upon integrating over the probability distribution. The $1/N!$ term stems from indistinguishability of the particles.</p>
+<p>As a brief aside, the lambda term (also known as the thermal wavelength) comes from considering quantum effects, in particular, discrete energy states. It is specifically when the thermal energy is much larger than the energy spacing, i.e. $h^2/8mL^2 \ll kT$, that the energy spectrum reaches a continuum, and the distinction between quantum and classic considerations vanish. In effect, this results in $\Delta x \Delta v = \frac{h}{m}$, which is nothing but the uncertainty principle. Within the scope of my class, this was neglected with minimal effect as the mean values obtained from the respective statistical analysis would remain the same.</p>
+<p>Returning back to our partition function, even with our simplified nearest neighbor potential, integrating this partition function analytically is quite difficult. But there are further appropriate assumptions we can impose to carry out the calculation. We can first ignore the attractive interaction and only consider the hard-core potential, in which case, the partition function reduces to,</p>
+<p>\begin{equation}
+Z(T,V,N) = \int \ldots\int e^{-\beta \sum_{i&lt;j} v_{H.C.}(\mathbf{x}_{ij})} d^3x_1 \ldots d^3x_N \approx (V-V_0)^N
+\end{equation}</p>
+<p>This result can be justified as follows: if the hard-core radius of the molecule was 0, i.e. $\sigma = 0$, then the integral would simply evaluate to $V^N$, the result you obtain for an ideal gas. But since each molecule occupies its own volume, say $V_0$, then for $N$ particles, the total volume of the domain is adjusted to $(V-V_0)$ and thus the approximate integral evaluates to $(V-V_0)^N$. This is not exact, however, as the &ldquo;free volume&rdquo; of the domain depends on how the molecules are configured, as seen in the figure below.</p>
+<figure style="width: 80%; margin: 0 auto;">
+    <img src="https://d1eulwzybv7z2h.cloudfront.net/academia/vandwaals/hcmolecules.png" width="100%" height="auto">
+    
+      <figcaption>Figure 1: Two configurations of three atoms in the same volume far apart and closely packed together, where spheres of radius $r_0$ are represented by the solid circles and spheres of radius $2r_0$ are represented by the dashed circles. In the first configuration, $V_0$ is larger than the second.</figcaption>
+    
+  </figure>
+  
+<p>Note, in reference to the figure above, that one can find the upper and lower bound for what $V_0$ is, which comes out to be $4\sqrt{2}Nr_0^3 \leq V_0 \leq \frac{32\pi}{3}Nr_0^3$. The true value of $V_0$, which will be determined later, lies between these extrema. After some immense staring, I still have NO idea how he came up with value for the lower bound. If anyone knows, please let me know, but I don&rsquo;t think it&rsquo;s too important to know beyond building an intuition for what to expect for the value of $V_0$.</p>
+<p>Making use of equation (3), we can recast the original partition function (2) in this form, <br>
+\begin{equation}
+Z(T,V,N) = \frac{(V-V_0)^N}{\lambda^{3N}N!} \frac{\int \ldots\int e^{-H.C.}e^{-\beta \sum_{i&lt;j} w(\mathbf{x}_i-\mathbf{x}_j)} d^3x_1 \ldots d^3x_N}{\int \ldots\int e^{-H.C.} d^3x_1 \ldots d^3x_N},
+\end{equation}</p>
+<p>where H.C. refers to the sum of all contributions of the hard-core potential multiped by $\beta$ and we have effectively multiplied the equation by &ldquo;1&rdquo; by making use of the approximation we determined for the hard-core potential. The second fraction, then, is nothing more than the average of exp{$-\beta \sum_{i&lt;j} w(\mathbf{x}_i-\mathbf{x}_j)$ } for a gas that <em>only</em> experiences hard-core interactions.</p>
+<p>In which case, we can further simplify this calculation by working backwards to understand what the average of the second exponential term in the partition function will evaluate to. To this end, let us consider potentials whose range extends beyond the hard-core radius $\sigma$ and the distance between particles. Then, the potential acting on j from other particles is, $\sum_{i \neq j} w(\mathbf{x}_i-\mathbf{x}_j) \approx (N-1)\int w(\mathbf{x})\frac{dx^3}{V}$. The integral here becomes the average of $w(\mathbf{x})$ and thus, we can evaluate the original sum as follows,</p>
+<p>\begin{equation}
+\sum_{i&lt;j} w(\mathbf{x}_i - \mathbf{x}_j) \equiv \frac{1}{2} \sum_i \sum_{i \neq j} w(\mathbf{x}_i - \mathbf{x}_j) \approx \frac{1}{2}N(N-1) \overline{w} \approx \frac{1}{2}N^2 \overline{w},
+\end{equation}</p>
+<p>\begin{equation}
+\overline{w} = \frac{1}{V}\int w(\mathbf{x}) dx^3 \equiv -\frac{2a}{V}.
+\end{equation}</p>
+<p>The mathematics proceeding the evaluation of the average interaction potential is subtle, but fairly straightforward. The summation is rewritten by exploiting symmetry of the attractive potential so that you can sum over the entire matrix block and then only consider the dominating $N^2$ term. But without context, possibly the most confusing aspect is the evaluation of the average of $w(\mathbf{x})$ as $-\frac{2a}{V}$. This term comes from the second virial coefficient which will be discussed soon in relation to the thermodynamic quantities found from the partition function that follows, <br>
+\begin{equation}
+Z(T,V,N) = \frac{(V-V_0)^N}{\lambda^{3N}N!}e^{-\frac{N(N-1)}{2}\frac{w}{kT}} =\frac{(V-V_0)^N}{\lambda^{3N}N!}e^{\frac{N^2a}{VkT}}.
+\end{equation}
+This is the resulting &ldquo;average-potential approximation,&rdquo; that in effect, replaces the original attractive part of the potential with its average value. There is one further aside that Schwabl discusses by revisiting equation (4), specifically by utilizing a cumulant expansion on the interactive potential term. What is noted is that the higher the temperature is, the more dominant the $\overline{w}/kT$ term is.</p>
+<p>Now, in making use of Stirling&rsquo;s approximation, i.e. $N! \approx N^Ne^{-N}\sqrt{2\pi N}$, we can obtain the free energy as per usual, <br>
+\begin{equation}
+\psi = -\frac{\partial}{\partial \beta} lnZ = -kTN ln\frac{e(V-V_0)}{\lambda^3 N} - \frac{N^2 a}{V},
+\end{equation}
+to which the pressure can be easily found as,</p>
+<p>\begin{equation}
+P = -\left(\frac{\partial \psi}{\partial V}\right)_{T,N} = \frac{kTN}{V-V_0} - \frac{N^2a}{V^2},
+\end{equation}</p>
+<p>and the internal energy can also be found through the relation,</p>
+<p>\begin{equation}
+E = -T^2\left(\frac{\partial}{\partial T} \frac{\psi}{T} \right)_{V,N} = \frac{3}{2} NkT - \frac{N^2a}{V}.
+\end{equation}</p>
+<p>Note the reduction in the internal energy compared to the ideal gas counterpart $E = \frac{3}{2}NkT$!</p>
+<p>What we can do from here is introduce a kind of expansion known as the &ldquo;virial expansion,&rdquo; on the pressure relation in terms of $1/V$ to determine what $V_0$ is. In effect, this is simply a power series expansion for the pressure in terms of the density $\rho = \overline{N}/V$. Yielding the expansion,</p>
+<p>$$
+P = kT\rho[1 + B(T)\rho + C(T)\rho^2 + \ldots],
+$$</p>
+<p>and the coefficient $\rho^n$ within the square brackets is what&rsquo;s known as the (n+1) virial coefficient. Under this light, the second virial coefficient is of particular importance as it determines the leading order correction to the equation of state from an ideal gas. From a qualitative perspective, it can be shown that the second virial coefficient $B(T)$ is,
+$$
+B(T) \approx -\frac{1}{2}[-\frac{4\pi}{3}\sigma^3 + 4\pi \int_{\sigma}^\infty r^2(-v(r))/kT dr] = b - \frac{a}{kT},
+$$
+where
+$$
+b = \frac{2\pi}{3}\sigma^3 = 4\frac{4\pi}{3}r_0^3
+$$
+denotes the &ldquo;fourfold&rdquo; molecular volume for hard spheres of radius $r_0$, $\sigma = 2r_0$ and
+$$
+a = -2\pi\int_{\sigma}^\infty r^2(-v(r))/kT dr = -\frac{1}{2}\int v(\mathbf{x}) \Theta(r-\sigma)dx^3.
+$$
+Now with this, the virial expansion of our pressure term is, <br>
+\begin{equation}
+P = \frac{kTN}{V}[1+\frac{V_0}{V} - \frac{aN}{kTV} + \ldots] \equiv \frac{kTN}{V} [1+(b-\frac{a}{kT})\frac{N}{V}+\ldots].
+\end{equation}</p>
+<p>And thus, it is <em>actually easy</em> to see that $V_0 = Nb$. Altogether then, we find the relation, <br>
+\begin{equation}
+\boxed{P = \frac{kT}{v-b} - \frac{a}{v^2}},
+\end{equation}</p>
+<p>where the term $v=V/N$ is introduced here as the specific volume. Thus, we have finally arrived at the Van der Waals equation of state for <em>real</em> gases. There are some interesting facts to note about this equation in relation to its ideal gas counterpart. Perhaps the most immediate in comparison to the ideal gas law, $P = kT/v$, the volume is replaced by the free volume $v-b$. Something we denoted earlier intuitively as the molecules within our model were not point particles, but rather were furnished with a hard-core radius. If the specific volume is equal to b, then the pressure would become infinite. This is yet another consequence of the hard-core potential model as the molecule is embedded with a repulsive potential in its structure. Additionally, the attractive potential now serves to reduce the pressure as per the term $-a/v^2$, which is another property you might intuitively expect from a real gas.</p>
+<p>We now turn our attention to the contributions of the two terms of the Van der Waals equations to the pressure shapes for isotherms at low and high temperatures. The figure below depicts the family of Van der Waals isotherms.</p>
+<figure style="width: 80%; margin: 0 auto;">
+    <img src="https://d1eulwzybv7z2h.cloudfront.net/academia/vandwaals/isotherms.png" width="100%" height="auto">
+    
+      <figcaption>Figure 2: Family of Van der Waals isotherms in dimensionless units relative to $P_c$ and $v_c$.</figcaption>
+    
+  </figure>
+  
+<p>For temperatures below $T_c$, the isotherms are s-shaped, and above which, they are monotonic. This corresponds to a critical isotherm found at $T_c$ for which the pressure has a point of inflection, i.e. $\frac{\partial P}{\partial V} = \frac{\partial^2 P}{\partial V^2} = 0$. Evaluating these derivatives for the Van der Waals equations leads to the conditions, $-\frac{kT}{(v-b)^2}+\frac{2a}{v^3} = 0$, and $\frac{kT}{(v-b)^3}-\frac{3a}{v^4}=0$. These result in the values,</p>
+<p>\begin{equation}
+v_c = 3b,  kT_c = \frac{8}{27}\frac{a}{b},  P_c = \frac{a}{27b^2}
+\end{equation}</p>
+<p>For the dimensionless ratio, $kT_c/P_c v_c$ is $8/3 = 2.\overline{6}$, the experimental value is supposedly larger, though I couldn&rsquo;t find much texts that cite these values specifically.</p>
+<p>Nevertheless, perhaps what is most astounding to me as a consequence of the Van der Waals equation is the means by which the model we had come up with serves to effectively describe a liquid-gas phase transition, without ever having mentioned that explicitly. Especially considering that the model only takes into account for pair-wise interactions between molecules. Consequently, for this reason, the Van der Waals equation is only approximately valid in terms of the reduction of the molecular volume b and approximating the attractive part of the potential by its average value. If we were to include longer-range interactions, the approximation improves for the attractive interaction potential. Furthermore, neglecting correlation effects further weaken the model, especially at critical points where there are high fluctuations in density from molecule clusters. In any case, the Van der Waals equations serves to provide a good qualitative description of condensation around a critical point. Numerous attempts have been made to rectify the issues found with the Van der Waals equation, among which Clausius suggested the following variant to the equation of state,</p>
+<p>$$
+P = \frac{kT}{v-a} - \frac{c}{T(v+b)^2}.
+$$</p>
+<p>By far, the most glaring issue in the Van der Waals equation is that it is not convex everywhere and thereby violating some stability requirements. This can be seen in the reconstruction of the free energy via the adjusted pressure and can be reconciled with through the Maxwell construction, but that&rsquo;s a discussion for another day.</p>
+<h1 id="references">References</h1>
+<p>[1] Franz Schwabl. Statistical mechanics. Springer Science &amp; Business Media, 2006.</p>
+<p>[2] David T Limmer. Statistical mechanics and stochastic thermodynamics: A textbook on modern approaches in and out of equilibrium. Oxford University Press, 2024.</p>
+
+  
+  </div>
+</article>
+
+
+    
+
+<script>
+  document.querySelectorAll('.gallery .photo-buttons button').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.gallery .photo-buttons button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const firstButton = document.querySelector('.gallery .photo-buttons button');
+  if (firstButton) {
+    firstButton.classList.add('active');
+  }
+});
+
+document.querySelectorAll('.gallery .photo-buttons button').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('.gallery .photo-buttons button').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    button.classList.add('active');
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const details = document.querySelectorAll("details");
+
+  details.forEach((el) => {
+    const summary = el.querySelector("summary");
+    const content = document.createElement("div");
+
+    
+    const contentNodes = Array.from(el.childNodes).filter(
+      (node) => node !== summary
+    );
+    contentNodes.forEach((node) => content.appendChild(node));
+
+    content.style.overflow = "hidden";
+    content.style.maxHeight = "0";
+    content.style.transition = "max-height 0.5s ease";
+
+    el.appendChild(content);
+
+    summary.addEventListener("click", (e) => {
+      e.preventDefault(); 
+      if (!el.open) {
+        el.open = true;
+        requestAnimationFrame(() => {
+          content.style.maxHeight = content.scrollHeight + "px";
+        });
+      } else {
+        content.style.maxHeight = "0";
+        setTimeout(() => {
+          el.open = false;
+        }, 500); 
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+  </div>
+</body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/theme.css?2" type="text/css" media="all" />
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+<script src="/js/gallery.js?2"></script>
+</html>
+
+<script>
+  document.querySelectorAll('details').forEach((detail) => {
+  const summary = detail.querySelector('summary');
+
+  summary.addEventListener('click', (e) => {
+    if (detail.open) {
+      e.preventDefault(); 
+      detail.classList.add('closing'); 
+
+      setTimeout(() => {
+        detail.open = false;
+        detail.classList.remove('closing');
+      }, 500); 
+    }
+  });
+});
+</script>
+
+<head> 
+  
+<link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+
+
+<link rel="icon" href="/favicon/favicon.png" type="image/png">
+
+
+<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+
+
+<link rel="icon" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+
+
+<link rel="icon" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+</head>

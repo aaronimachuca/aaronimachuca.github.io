@@ -1,9 +1,9 @@
 +++
 +++
 
-{{< gallery "https://i.imgur.com/E7OJ0w6.jpeg"
-"https://i.imgur.com/sfiMBP9.jpeg"
-"https://i.imgur.com/AUBF8nO.jpeg"
-"https://i.imgur.com/codyXZN.jpeg"
-"https://i.imgur.com/WzlErqw.jpeg" 
-"https://i.imgur.com/d8jVYQJ.jpeg"   >}}
+{{< gallery "https://d1eulwzybv7z2h.cloudfront.net/photography/Portraits/bryce1.jpg"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Portraits/ruijie1.jpg"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Portraits/laasya1.jpg"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Portraits/laasya2.jpg"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Portraits/sujin1.jpg" 
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Portraits/sujin2.jpg"   >}}

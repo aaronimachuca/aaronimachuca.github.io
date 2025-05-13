@@ -18,8 +18,10 @@ layout = "photography"
 
 Most of the pictures you'll find here were shot on my Nikon D750 with a Nikkor 35mm f2D lens. Though these days I use a Sony Alpha A7 III with a Sigma 35mm f2 lens.
 
-I primarily specialize in street, skate, and portraiture photography, but sometimes I also like to take still-life, landscape, or architectural photography when I don't have the mental bandwidth to be sociable.
+I primarily specialize in street, skate, and portraiture photography, but I also like taking still-life, landscape, and architectural photos when I don't have the mental bandwidth to be sociable.
 
 If you would like to hire me for a photoshoot, my rates are generally around $80/hr, but it depends on the situation. I'm not pressed about counting each minute, and I'll probably lump the shooting and post-production for the hour(s) together to give a ballpark estimate of what I think the photos are worth.
+
+If you're a pro-skater, a could-be fashion model, or pitch a cool idea, I'll do a photoshoot for free.
 
 _There may be applicable discounts for friends :)_

@@ -29,7 +29,7 @@ Returning back to our partition function, even with our simplified nearest neigh
 
 This result can be justified as follows: if the hard-core radius of the molecule was 0, i.e. $\sigma = 0$, then the integral would simply evaluate to $V^N$, the result you obtain for an ideal gas. But since each molecule occupies its own volume, say $V_0$, then for $N$ particles, the total volume of the domain is adjusted to $(V-V_0)$ and thus the approximate integral evaluates to $(V-V_0)^N$. This is not exact, however, as the "free volume" of the domain depends on how the molecules are configured, as seen in the figure below. 
 
-{{< images "https://i.imgur.com/gPYfkes.png" "80%" "Figure 1: Two configurations of three atoms in the same volume far apart and closely packed together, where spheres of radius $r_0$ are represented by the solid circles and spheres of radius $2r_0$ are represented by the dashed circles. In the first configuration, $V_0$ is larger than the second." >}}
+{{< images "https://d1eulwzybv7z2h.cloudfront.net/academia/vandwaals/hcmolecules.png" "80%" "Figure 1: Two configurations of three atoms in the same volume far apart and closely packed together, where spheres of radius $r_0$ are represented by the solid circles and spheres of radius $2r_0$ are represented by the dashed circles. In the first configuration, $V_0$ is larger than the second." >}}
 
 
 
@@ -84,7 +84,7 @@ $$
 
 and the coefficient $\rho^n$ within the square brackets is what's known as the (n+1) virial coefficient. Under this light, the second virial coefficient is of particular importance as it determines the leading order correction to the equation of state from an ideal gas. From a qualitative perspective, it can be shown that the second virial coefficient $B(T)$ is,
 $$
-B(T) \approx -\frac{1}{2}[-\frac{4\pi}{3}\sigma^3 + 4\pi \int_{\sigma}^\infty r^2(-v(r))/kT \: dr] = b - \frac{a}{kT},
+B(T) \approx -\frac{1}{2}[-\frac{4\pi}{3}\sigma^3 + 4\pi \int_{\sigma}^\infty r^2(-v(r))/kT dr] = b - \frac{a}{kT},
 $$
 where
 $$
@@ -92,7 +92,7 @@ b = \frac{2\pi}{3}\sigma^3 = 4\frac{4\pi}{3}r_0^3
 $$
 denotes the "fourfold" molecular volume for hard spheres of radius $r_0$, $\sigma = 2r_0$ and
 $$
-a = -2\pi\int_{\sigma}^\infty r^2(-v(r))/kT \: dr = -\frac{1}{2}\int v(\mathbf{x}) \Theta(r-\sigma)dx^3.
+a = -2\pi\int_{\sigma}^\infty r^2(-v(r))/kT dr = -\frac{1}{2}\int v(\mathbf{x}) \Theta(r-\sigma)dx^3.
 $$
 Now with this, the virial expansion of our pressure term is, \
 \begin{equation}
@@ -108,7 +108,7 @@ where the term $v=V/N$ is introduced here as the specific volume. Thus, we have 
 
 We now turn our attention to the contributions of the two terms of the Van der Waals equations to the pressure shapes for isotherms at low and high temperatures. The figure below depicts the family of Van der Waals isotherms. 
 
-{{< images "https://i.imgur.com/21ST6uQ.png" "80%" "Figure 2: Family of Van der Waals isotherms in dimensionless units relative to $P_c$ and $v_c$.">}}
+{{< images "https://d1eulwzybv7z2h.cloudfront.net/academia/vandwaals/isotherms.png" "80%" "Figure 2: Family of Van der Waals isotherms in dimensionless units relative to $P_c$ and $v_c$.">}}
 
 For temperatures below $T_c$, the isotherms are s-shaped, and above which, they are monotonic. This corresponds to a critical isotherm found at $T_c$ for which the pressure has a point of inflection, i.e. $\frac{\partial P}{\partial V} = \frac{\partial^2 P}{\partial V^2} = 0$. Evaluating these derivatives for the Van der Waals equations leads to the conditions, $-\frac{kT}{(v-b)^2}+\frac{2a}{v^3} = 0$, and $\frac{kT}{(v-b)^3}-\frac{3a}{v^4}=0$. These result in the values, 
 

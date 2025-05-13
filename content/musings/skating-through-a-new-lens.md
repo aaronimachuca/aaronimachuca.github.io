@@ -4,9 +4,9 @@ date = 2024-07-16T11:43:22-07:00
 draft = false
 +++
 
-| ![ollie.jpg](https://i.imgur.com/dnkBNIn.jpeg) | 
+{{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/skating/aaronollie.jpg" "100%">}}
 |:--:| 
-| *Photo by Ruijie Shao* |
+| *Photo(s) by Ruijie Shao* |
 
 Having been born and raised in the slums of eastern Los Angeles, I used to hold a strong disdain for urban society and the lifestyle imposed upon its residents (myself included). This sentiment is of course no secret those who have held a conversation with me for more than a day, but is something I regularly felt compelled to mention because I failed to understand the appeal of big cities. Within the past year, though, my attitudes on this matter have somewhat pivoted with skating and photography being introduced into my life.
 {{% linebreak %}}
@@ -14,8 +14,18 @@ Particpating in hobbies that force me to go outside and interact with the archit
 {{% linebreak %}}
 Adolescent ramblings aside, skating is intriguing to me in how the competition factor is inherently absent in the sport. The thrasher brand that has subconsciously been imprinted in our head when we think about skating culture is comically contradictory to how encouraging the community is at large in supporting their fellow peers. It is a almost purely a battle of self-improvement to overcome the challenges that present itself in street, transition, freestyle, or any other archetypes that emcompass the sport. That's not to say everyone in the community is a saint in baker tees, this is still a sport conceived in California after all. It is inevitable to run into the skate-rat caricature who will sneer at you for mall-grabbing or not being able to kickflip, but I'm a 24-year-old engineer with money in my bank account (I have $20) what do I care what they say. Regardless, it's incredible to me how skating has created context in an enviornment I thought to be an insipid wasteland. Nothing has fundamentally has changed, I just had what was given, presented in a way I've never seen it before. Stairs are perfect to ollie on and off of, ramps are smooth enough to boardslide on, curbs provide just enough friction for grinding slappys, and anything with more than a 5° incline is getting bombed and that's just how it is! Urban development was not meant nor designed for skating, but skaters managed to find a way to perfectly wedge themseleves in on governmental property anyway.
 {{% linebreak %}}
+{{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/skating/hillbomb.jpg" "100%">}}
+{{% linebreak %}}
 Oh by the way, for anyone interested I currently have a 8.25" deck with indy trucks, 97 duro formula four spitfire wheels, and bones reds bearings set up on my board. It serves pretty well for an all-around cruiser, street skateboard and I don't think I'd want to make any drastic adjustments to it anytime soon. One of the major benefits my board has given me above all else is an incentive to explore my cities that I knew less about than the average SF or LA tourist. In the 5+ years that I've lived in the Bay Area, I had probably gone to SF a handful of times before I could cover more distance on some portable wheels. Consequently, I would end up finding nice spots to take photos and made it a habit to bring my camera along with me in case a sick shot filled in the frame of my viewfinder. I never intended or expected these hobbies to be so complementary to one another but I'm really glad it did. 
 {{% linebreak %}}
 Part of what charms me about street photography is being able to make a mundane scene interesting just by adding some basic compositional structure. Funny enough, Michael Slovis's cinematography on Breaking Bad is what originally convinced me of this idea being true. If you can make a lame dump like Albuquerque (no offense) into a national landmark, then surely you could make anything a little more stimulating with enough creativity. Although it definitely helps to have strong subjects enter your frame and do all the heavy lifting for you. And you'd be surprised how many times sparse moments that shout "PUNCTUM!" comes at you in your everday life. It's happened to me so often that I have to wonder how many times I can label a photo as a "miracle shot," before admitting that maybe they weren't just coincidences. The downside is sometimes you have to get in people's faces and disrupt the basic social etiquette boundary construed in our heads. The mixed bag of reactions is interesting to observe in how some people will cheerfully go along with it and how others will mad dog the hell out of you. Regardless, it hasn't stopped me from trying to be bolder and ignore the moral dilemma presented to me as a street photographer. But I'd photograph a grizzly charging at me if it meant I'd end up with a legendary shot to display next to my grave. It's been fun! And adventerous to scout out urban and rural areas alike to create my own narrative snippets I've come across to look forward to the prospect of a new day.
 {{% linebreak %}}
 Where I had once yearned to withdraw as a recluse in the woods (with no relation to any Berkeley math professor...), I can now at least appreciate the cultural colors that paint my neighborhoods in northern and southern California. That's not to say I have completely forgiven the faults readily found every which way you look, but it doesn't fill me with nihilistic dread as much as it did in my youth and young adulthood. Though I have my reservations about California, I hold hope that the paths these pastimes take me will make my time here feel a little more worthwhile.
+
+{{< cloudfrontvideo 
+  src="https://d1eulwzybv7z2h.cloudfront.net/blog%20posts/skating/sk8-final.mp4"
+  width="600"
+  controls="true"
+>}}
+
+

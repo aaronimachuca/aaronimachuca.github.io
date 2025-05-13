@@ -1,0 +1,126 @@
+<div class="simrow-controls">
+  <div class="simrow-categories">
+    <button onclick="showGroup('horizontal')">Horizontal Centers</button>
+    <button onclick="showGroup('vertical')">Vertical Centers</button>
+    <button onclick="showGroup('uncoupled')">Uncoupled</button>
+  </div>
+
+  <div class="simrow-coordinates">
+    <div class="coord-group active" id="horizontal">
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wfsi1.2.mp4')">(0.5, 0.85)</button>
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wfsi2.2.mp4')">(0.5, 0.5)</button>
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wfsi3.2.mp4')">(0.5, 0.35)</button>
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wfsi4.2.mp4')">(0.5, 0.15)</button>
+    </div>
+
+    <div class="coord-group" id="vertical">
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wfsi5.2.mp4')">(0.25, 0.5)</button>
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wfsi6.2.mp4')">(0.5, 0.5)</button>
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wfsi7.2.mp4')">(0.75, 0.5)</button>
+    </div>
+
+    <div class="coord-group" id="uncoupled">
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wuncoupled.2.mp4')">Horizontal: (0.5, 0.85)</button>
+      <button onclick="switchVideo('https://d1eulwzybv7z2h.cloudfront.net/academia/lidcavityfsi/wuncoupled2.2.mp4')">Vertical: (0.75, 0.5)</button>
+    </div>
+  </div>
+</div>
+
+<div class="simrow">
+  <div class="simrow-video" id="video-wrapper">
+    <video id="simrow-vid"
+      src="{{ .Get "src" }}"
+      autoplay
+      muted
+      loop
+      playsinline
+      class="simrow-vidtag visible">
+    </video>
+  </div>
+  <div class="simrow-text">
+    {{ .Inner | markdownify }}
+  </div>
+</div>
+
+<style>
+.simrow-video {
+  position: relative;
+}
+
+.simrow-vidtag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.simrow-vidtag.visible {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.coord-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.coord-group.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+
+.simrow-coordinates {
+  position: relative;
+  min-height: 3rem;
+}
+</style>
+
+<script>
+function showGroup(groupId) {
+  document.querySelectorAll('.coord-group').forEach(group => {
+    group.classList.remove('active');
+  });
+
+  const targetGroup = document.getElementById(groupId);
+  targetGroup.classList.add('active');
+}
+
+function switchVideo(src) {
+  const wrapper = document.getElementById('video-wrapper');
+  const current = document.getElementById('simrow-vid');
+
+  const next = document.createElement('video');
+  next.src = src;
+  next.autoplay = true;
+  next.muted = true;
+  next.loop = true;
+  next.playsInline = true;
+  next.className = 'simrow-vidtag';
+
+  wrapper.appendChild(next);
+
+  next.addEventListener('loadeddata', () => {
+    next.classList.add('visible');
+    setTimeout(() => {
+      wrapper.removeChild(current);
+      next.id = 'simrow-vid';
+    }, 400);
+  });
+}
+</script>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aaron Machuca</title>
+    <link>https://aaronmachuca.com/</link>
+    <description>Recent content on Aaron Machuca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 May 2025 18:44:43 -0700</lastBuildDate>
+    <atom:link href="https://aaronmachuca.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Van Der Waals Derivation</title>
+      <link>https://aaronmachuca.com/academia/notes/van-der-waals-derivation/</link>
+      <pubDate>Sat, 03 May 2025 18:44:43 -0700</pubDate>
+      <guid>https://aaronmachuca.com/academia/notes/van-der-waals-derivation/</guid>
+      <description>The Van der Waals Equation of State Notes and figures largely adapted from Schwabl&amp;rsquo;s text on Statistical Mechanics&#xA;These notes were written as a part of my statistical mechanics course (CE C235) final project report. They assume familiarity with fundamental concepts involving but not limited to: statistical ensembles, evaluating gaussian integrals, and obtaining thermodynamic quanities from partition functions. Ordinarily, a model for an ideal gas only involves the momenta of atoms and neglects particle interactions within the Hamiltonian.</description>
+    </item>
+    <item>
+      <title>Lid-Driven Cavity FSI</title>
+      <link>https://aaronmachuca.com/academia/simulations/lid-driven-cavity-fsi/</link>
+      <pubDate>Sat, 03 May 2025 09:56:24 -0700</pubDate>
+      <guid>https://aaronmachuca.com/academia/simulations/lid-driven-cavity-fsi/</guid>
+      <description>Horizontal Centers&#xD;Vertical Centers&#xD;Uncoupled&#xD;(0.5, 0.85)&#xD;(0.5, 0.5)&#xD;(0.5, 0.35)&#xD;(0.5, 0.15)&#xD;(0.25, 0.5)&#xD;(0.5, 0.5)&#xD;(0.75, 0.5)&#xD;Horizontal: (0.5, 0.85)&#xD;Vertical: (0.75, 0.5)&#xD;Simulation Parameters Solid&#xA;$\rho_s = 1\ \frac{kg}{m^3}$&#xA;$\lambda_s = 15$ Pa, $\mu_s = 30$ Pa&#xA;Fluid&#xA;$\rho_f = 1\ \frac{kg}{m^3}$&#xA;$\mu_f = 0.01\ \frac{N \cdot s}{m^3}$&#xA;Time Step&#xA;$\Delta t = 0.0025\ s$&#xA;Implicit Newmark Values&#xA;$\beta = 0.5$, $\gamma = 1$&#xA;Mesh (4-Node Elem.</description>
+    </item>
+    <item>
+      <title>Cmech</title>
+      <link>https://aaronmachuca.com/academia/notes/cmech/</link>
+      <pubDate>Sat, 03 May 2025 09:56:08 -0700</pubDate>
+      <guid>https://aaronmachuca.com/academia/notes/cmech/</guid>
+      <description>(\ (\ ( -.-) o_(“)(“) he is REALLY lazy, but&#xA;he says he plans on writing up notes over the summer&#xA;and that he swears he really does do mechanics&#xA;even though there&amp;rsquo;s not much to show for it</description>
+    </item>
+    <item>
+      <title>Serge</title>
+      <link>https://aaronmachuca.com/art-and-poetry/artwork/serge/</link>
+      <pubDate>Sun, 23 Feb 2025 20:44:16 -0700</pubDate>
+      <guid>https://aaronmachuca.com/art-and-poetry/artwork/serge/</guid>
+      <description> Reference: Unknown, Serge &amp;amp; Leena on Opassa Beach </description>
+    </item>
+    <item>
+      <title>New Prescription</title>
+      <link>https://aaronmachuca.com/art-and-poetry/poems/anthology/new-prescription/</link>
+      <pubDate>Tue, 16 Jul 2024 15:58:36 -0700</pubDate>
+      <guid>https://aaronmachuca.com/art-and-poetry/poems/anthology/new-prescription/</guid>
+      <description>plucking my feathers licking my wounds what am I to take when I don’t want to eat anymore?</description>
+    </item>
+    <item>
+      <title>Psalm for the Self</title>
+      <link>https://aaronmachuca.com/art-and-poetry/poems/anthology/psalm-for-the-self/</link>
+      <pubDate>Tue, 16 Jul 2024 15:57:54 -0700</pubDate>
+      <guid>https://aaronmachuca.com/art-and-poetry/poems/anthology/psalm-for-the-self/</guid>
+      <description>My life wears a sarong sash of Van Gogh greens &amp;amp; mythic tapestries, of the Earth’s water-blood &amp;amp; soil-skin, dawned of the frost father, Ymir, in his dismembered image. I struggle — to jot tempest movements in a moment, when my marionette muscles strain in age; but I would write still, on broken fingers, even if a humble life would allow me to tenant in Elysium and crown a hero-halo over my brow, I would torch my ghost in ghastly flames, stirred in my scorn to live now, even if in this life the Lord&amp;rsquo;s trumpeters would not bless me with silver-gleamed wisdom.</description>
+    </item>
+    <item>
+      <title>Skating Through a New Lens</title>
+      <link>https://aaronmachuca.com/musings/skating-through-a-new-lens/</link>
+      <pubDate>Tue, 16 Jul 2024 11:43:22 -0700</pubDate>
+      <guid>https://aaronmachuca.com/musings/skating-through-a-new-lens/</guid>
+      <description>Photo(s) by Ruijie Shao Having been born and raised in the slums of eastern Los Angeles, I used to hold a strong disdain for urban society and the lifestyle imposed upon its residents (myself included). This sentiment is of course no secret those who have held a conversation with me for more than a day, but is something I regularly felt compelled to mention because I failed to understand the appeal of big cities.</description>
+    </item>
+    <item>
+      <title>On Art and Poetry</title>
+      <link>https://aaronmachuca.com/musings/on-art-and-poetry/</link>
+      <pubDate>Sun, 14 Jul 2024 11:42:25 -0700</pubDate>
+      <guid>https://aaronmachuca.com/musings/on-art-and-poetry/</guid>
+      <description>&amp;ldquo;The mapping of the human genome was completed early this century. As a result, the evolutionary log of the human race lay open to us. We started with genetic engineering, and in the end, we succeeded in digitizing life itself. But there are things not covered by genetic information. Human memories, ideas. Culture. History. Genes don&amp;rsquo;t contain any record of human history. Is it something that should not be passed on?</description>
+    </item>
+    <item>
+      <title>Star-Sieged Mind</title>
+      <link>https://aaronmachuca.com/art-and-poetry/poems/star-sieged-mind/</link>
+      <pubDate>Tue, 02 Jul 2024 20:26:35 -0700</pubDate>
+      <guid>https://aaronmachuca.com/art-and-poetry/poems/star-sieged-mind/</guid>
+      <description>The voids in my head wish to fill the silence, so they speak your name.&#xA;A whisper whizzing by as a shooting star, I wish upon their jeweled wonders, cosmic seas of speckled fable the Great Bear and her cubs, the legend of Orion, a muse for my writings, to dot my own constellation scribbled idea, outlines a vague contour of your image.&#xA;I have met many a platitude on the dream shorelines voyaging contradiction and clarity, I seek no wisdom but absorb them as I have seen traces of millennium glory, previous experiments before us— scrapped to galatic dust, streamlines of fluidic chaos, a single strip could span a century to decipher in full, or one of the Lord’s lemmas: ℵ,Λ*= ∂i;ψ</description>
+    </item>
+    <item>
+      <title>Drop the Topster</title>
+      <link>https://aaronmachuca.com/musings/drop-the-topster/</link>
+      <pubDate>Wed, 26 Jun 2024 18:14:43 -0700</pubDate>
+      <guid>https://aaronmachuca.com/musings/drop-the-topster/</guid>
+      <description>Who could&amp;rsquo;ve possibly seen this one coming. With apologies to all my friends who had to endure my constantly updated music charts for years on end. But for real this time, here are my current top 42 albums. Music has always played an interesting role in my life as it&amp;rsquo;s always been the one artistic medium I have never had the desire to engage with beyond dabbling, but ACTUALLY dabbling, in some instruments here and there.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://aaronmachuca.com/photography/portfolio/bw-street-set-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aaronmachuca.com/photography/portfolio/bw-street-set-1/</guid>
+      <description>&#xD;1&#xD;2&#xD;3&#xD;4&#xD;5&#xD;6&#xD;7&#xD;8&#xD;«&#xD;»&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://aaronmachuca.com/photography/portfolio/collages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aaronmachuca.com/photography/portfolio/collages/</guid>
+      <description>&#xD;1&#xD;2&#xD;3&#xD;«&#xD;»&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://aaronmachuca.com/photography/portfolio/portraits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aaronmachuca.com/photography/portfolio/portraits/</guid>
+      <description>&#xD;1&#xD;2&#xD;3&#xD;4&#xD;5&#xD;6&#xD;«&#xD;»&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://aaronmachuca.com/photography/portfolio/street-set-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aaronmachuca.com/photography/portfolio/street-set-1/</guid>
+      <description>&#xD;1&#xD;2&#xD;3&#xD;4&#xD;5&#xD;6&#xD;7&#xD;8&#xD;«&#xD;»&#xD;</description>
+    </item>
+  </channel>
+</rss>

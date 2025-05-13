@@ -1,11 +1,11 @@
 +++
 +++
 
-{{< gallery "https://i.imgur.com/RWekfLS.jpeg" 
-"https://i.imgur.com/dEgvYJ3.jpeg" 
-"https://i.imgur.com/JYCnUI9.jpeg" 
-"https://i.imgur.com/bh2849b.jpeg" 
-"https://i.imgur.com/Y64CFHE.jpeg" 
-"https://i.imgur.com/IpJ38aQ.jpeg" 
-"https://i.imgur.com/7kzSpNe.jpeg"
-"https://i.imgur.com/HxgDwMg.jpeg" >}}
+{{< gallery "https://d1eulwzybv7z2h.cloudfront.net/photography/B&W Street Set 1/esmeralda.jpg" 
+"https://d1eulwzybv7z2h.cloudfront.net/photography/B&W Street Set 1/sfmomareflect.jpg" 
+"https://d1eulwzybv7z2h.cloudfront.net/photography/B&W Street Set 1/hollywoodchar.jpg" 
+"https://d1eulwzybv7z2h.cloudfront.net/photography/B&W Street Set 1/lsproularch.jpg" 
+"https://d1eulwzybv7z2h.cloudfront.net/photography/B&W Street Set 1/vbeachollie.jpg" 
+"https://d1eulwzybv7z2h.cloudfront.net/photography/B&W Street Set 1/vportrait.jpg" 
+"https://d1eulwzybv7z2h.cloudfront.net/photography/B&W Street Set 1/vbeach.jpg"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/B&W Street Set 1/fwashing.jpg" >}}

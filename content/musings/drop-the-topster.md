@@ -4,7 +4,7 @@ date = 2024-06-26T18:14:43-07:00
 draft = false
 +++
 Who could've possibly seen this one coming. With apologies to all my friends who had to endure my constantly updated music charts for years on end. But for real this time, here are my current top 42 albums.
-{{< images "https://i.imgur.com/EDM8BfJ.jpeg" "100%">}}
+{{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/topster/top42.png" "100%">}}
 Music has always played an interesting role in my life as it's always been the one artistic medium I have never had the desire to engage with beyond dabbling, but ACTUALLY dabbling, in some instruments here and there. I've always thought that if I were to learn an instrument, I would want it to either be the bass-guitar or cello, but given how much energy my current hobbies expend out of me--it seems unlikely that this will happen anytime soon. Though, I wouldn't mind picking up some vocal lessons to properly learn how to sing or belt out a gnarly scream. 
 {{% linebreak %}}
 Anyway I digress, it would feel unnecessary to clarify how impactful music has been on me or provide some introspection as to what role it has served for me in the grand scheme of things. Most people like music, some people really like music; I so happen to love music that span a wide variety of genres, let's just leave it at that as far as the psychoanalysts are concerned. It wasn't until my early undergrad years that I really tried to broaden my music horizons, and since then I've learned that I am typically partial towards: chamber folk, electronica, hardcore punk, noise, and sometimes ambitious fusions of these genres. My music palette isn't limited to the aforementioned genres as my topster above would suggest, but it's probably the most effective way to appeal to my tastes if someone were to send me recommendations. Although I wouldn't suggest doing so because I would feel really bad if you sent something that I thought it was some hot garbage or even worse, had no reaction towards. The unfortunate reality is I've listened to a fair amount of music and my criteria for "quality" only becomes stricter and better defined the more music I listen to. In any case, I thought it might be fun to give a blurb about what I think about each respective album I have on my chart. I'll probably start with the first five since they're the most significant albums and gradually work my way down over time. 
@@ -12,7 +12,7 @@ Anyway I digress, it would feel unnecessary to clarify how impactful music has b
 On a related note, if you wanna read my spiel discussing Metallica's discography check that out, [here](https://docs.google.com/document/d/1rjGLcd7bPCEs3qYR5i8t5KDwCUvCBmdwYiYghNCjSvc/edit). 
 
 **1. The Hotelier - Home, Like NoPlace Is There**
-{{< centered-images "https://i.imgur.com/MmvLcXq.png" "60%">}}
+{{< centered-images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/topster/home.png" "60%">}}
 
 _"I had a chance to construct something beautiful and I choked"_
 
@@ -24,7 +24,7 @@ I was introduced to this album as per my friend Ruijie's recommendation during m
 {{< /summary  >}}
 
 **2. Daughters - You Won't Get What You Want**
-{{< centered-images "https://i.imgur.com/dgIcuzQ.jpg" "60%">}}
+{{< centered-images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/topster/YWGWYW.jpg" "60%">}}
 
 _"If there is an ocean beyond the waves"_
 
@@ -40,7 +40,7 @@ Of all the possible ways I could've been piplined into becoming a noise rock fan
 {{< /summary  >}}
 
 **3. Mid-Air Thief - Crumbling**
-{{< centered-images "https://i.imgur.com/sQ0T35h.jpg" "60%">}}
+{{< centered-images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/topster/crumbling.jpg" "60%">}}
 
 _"물에 발 담가 모두 함께 정화를 시켜"_
 
@@ -53,7 +53,7 @@ Transitioning onto a lighter note, Crumbling is another album that Ruijie recomm
 {{< /summary  >}}
 
 **4. Deafheaven - Sunbather**
-{{< centered-images "https://i.imgur.com/1tAUICs.jpg" "60%">}}
+{{< centered-images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/topster/sunbather.jpg" "60%">}}
 
 _" 'I'm dying.' \
 'Is it blissful?' \
@@ -68,7 +68,7 @@ And we're back to the despairing music. Deafheaven's one of the few bands I came
 {{< /summary  >}}
 
 **5. Sufjan Stevens - Carrie and Lowell**
-{{< centered-images "https://i.imgur.com/mrd39Ah.jpg" "60%">}}
+{{< centered-images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/topster/carrieandlowell.jpg" "60%">}}
 
 _"Should I tear my heart out now? \
 Everything I feel returns to you somehow"_

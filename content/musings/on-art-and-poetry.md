@@ -31,14 +31,14 @@ This is possibly my favorite book of all time, but for brevity I'll only be focu
 [^1] 
 [^1]: _Louis Le Brocquy, The Táin. Cú Chulainn in warp-spasm 1969_
 
-{{< images "https://i.imgur.com/3NimwH7.png" "100%">}}
+{{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/anp/wspasm.png" "100%">}}
 
 "One horse was lithe and swift-leaping, high-arched and powerful, long-bodied and with great hooves. The other flowing-maned and shining, slight and slender in hoof and heel. In that style, then, he drove out to find his enemies and did his thunder-feat and killed a hundred, then two hundred, then three hundred, then four hundred, then five hundred, where he stopped -- he didn't think it too many to kill in that first attack, his first full battle with the provinces of Ireland."
 
 [^2] 
 [^2]: _Louis Le Brocquy, The Táin. Battle field 1969_
 
-{{< images "https://i.imgur.com/QnO7D1h.png" "100%">}}
+{{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/anp/battlefield.png" "100%">}}
 
 "Ferdia raised up the shield to cover his upper body, but it was too late. The charioteer sent the _gae bolga_ down the stream. 'Beware the _gae bolga_," he said. Cú Chulainn caught it in the fork of his foot and sent it casting toward Ferdia and it went through the deep and sturdy apron of twice-smelted iron, and shattered in three parts the stout strong stone the size of a mill-stone, and went coursing through the highways and byways of his body so that every single joint filled with barbs." 
 
@@ -49,7 +49,7 @@ Cosmogonies underpin mythology as a concept fundamental to their usual worldbuil
 [^3] 
 [^3]: _Kevin Crossley-Holland, THE NORSE MYTHS (New York: Pantheon Books, 1980), p.xxii_
 
-{{< centered-images "https://i.imgur.com/9FKlUUN.png" "80%">}}
+{{< centered-images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/anp/worldtree.png" "80%">}}
 
 Apologies to _The Odyssey_ enthusiasts out there but I'm going to neglect the Greek folklore to provide Norse mythology a chance in the spotlight. A big portion of our information on the Norse mythos primarily comes from Snorri Sturluson's _Prose_ and _Poetic Edda_. ...
 

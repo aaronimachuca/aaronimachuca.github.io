@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academia on Aaron Machuca</title>
+    <link>https://aaronmachuca.com/academia/</link>
+    <description>Recent content in Academia on Aaron Machuca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 May 2025 18:44:43 -0700</lastBuildDate>
+    <atom:link href="https://aaronmachuca.com/academia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Van Der Waals Derivation</title>
+      <link>https://aaronmachuca.com/academia/notes/van-der-waals-derivation/</link>
+      <pubDate>Sat, 03 May 2025 18:44:43 -0700</pubDate>
+      <guid>https://aaronmachuca.com/academia/notes/van-der-waals-derivation/</guid>
+      <description>The Van der Waals Equation of State Notes and figures largely adapted from Schwabl&amp;rsquo;s text on Statistical Mechanics&#xA;These notes were written as a part of my statistical mechanics course (CE C235) final project report. They assume familiarity with fundamental concepts involving but not limited to: statistical ensembles, evaluating gaussian integrals, and obtaining thermodynamic quanities from partition functions. Ordinarily, a model for an ideal gas only involves the momenta of atoms and neglects particle interactions within the Hamiltonian.</description>
+    </item>
+    <item>
+      <title>Lid-Driven Cavity FSI</title>
+      <link>https://aaronmachuca.com/academia/simulations/lid-driven-cavity-fsi/</link>
+      <pubDate>Sat, 03 May 2025 09:56:24 -0700</pubDate>
+      <guid>https://aaronmachuca.com/academia/simulations/lid-driven-cavity-fsi/</guid>
+      <description>Horizontal Centers&#xD;Vertical Centers&#xD;Uncoupled&#xD;(0.5, 0.85)&#xD;(0.5, 0.5)&#xD;(0.5, 0.35)&#xD;(0.5, 0.15)&#xD;(0.25, 0.5)&#xD;(0.5, 0.5)&#xD;(0.75, 0.5)&#xD;Horizontal: (0.5, 0.85)&#xD;Vertical: (0.75, 0.5)&#xD;Simulation Parameters Solid&#xA;$\rho_s = 1\ \frac{kg}{m^3}$&#xA;$\lambda_s = 15$ Pa, $\mu_s = 30$ Pa&#xA;Fluid&#xA;$\rho_f = 1\ \frac{kg}{m^3}$&#xA;$\mu_f = 0.01\ \frac{N \cdot s}{m^3}$&#xA;Time Step&#xA;$\Delta t = 0.0025\ s$&#xA;Implicit Newmark Values&#xA;$\beta = 0.5$, $\gamma = 1$&#xA;Mesh (4-Node Elem.</description>
+    </item>
+    <item>
+      <title>Cmech</title>
+      <link>https://aaronmachuca.com/academia/notes/cmech/</link>
+      <pubDate>Sat, 03 May 2025 09:56:08 -0700</pubDate>
+      <guid>https://aaronmachuca.com/academia/notes/cmech/</guid>
+      <description>(\ (\ ( -.-) o_(“)(“) he is REALLY lazy, but&#xA;he says he plans on writing up notes over the summer&#xA;and that he swears he really does do mechanics&#xA;even though there&amp;rsquo;s not much to show for it</description>
+    </item>
+  </channel>
+</rss>
