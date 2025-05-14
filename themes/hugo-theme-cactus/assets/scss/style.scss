@@ -1059,10 +1059,1200 @@ ul {
 .coord-group button {
   flex: 0 0 auto;
   white-space: nowrap;
+}  
 }
 
+@media (max-width: 768px) {
+  .simrow-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* Make the heading span both columns */
+  .simrow-text h1 {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Make the “Mesh” paragraph (the 5th <p>) span both columns */
+  .simrow-text p:nth-of-type(5) {
+    grid-column: 1 / -1;
+  }
+
+  /* Tidy up spacing on all your parameter paragraphs */
+  .simrow-text p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .simrow-categories {
+    margin-bottom: 0.25rem;    /* less space below the primary buttons */
+    gap: 0.25rem !important;    /* smaller space between each category button */
+    padding: 0 0.5rem !important;  /* reduce left/right inset */
+  }
+
+  .coord-group {
+    gap: 0.25rem !important;    /* smaller space between each coordinate button */
+    padding: 0 0.5rem !important;  /* match the inset of the categories */
+    margin-top: 0.25rem;        /* tighten the vertical spacing to the categories */
+  }
   
 }
 
+@media (max-width: 768px) {
+  /* Remove the forced 3rem height under the coord buttons */
+  .simrow-coordinates {
+    min-height: auto !important;
+    margin-bottom: 0.25rem !important;  /* lift the video up */
+  }
 
+  /* If you still need a little breathing room above the video */
+  .simrow {
+    margin-top: 0.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* shrink space below the “Simulation Parameters” heading */
+  .simrow-text h1 {
+    margin-bottom: -0.35rem !important;
+  }
+
+  /* optionally tighten space above the first param block */
+  .simrow-text p:first-of-type {
+    margin-top: 0rem !important;
+  }
+}
+
+@import "variables";
+@import "colors/{{ site.Params.colortheme | default "white" }}";
+@import "util";
+@import "mixins";
+@import "extend";
+@import "fonts";
+
+// global-reset()
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-top: 2px solid $color-text;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background-color: $color-background;
+  color: $color-text;
+  font-display: swap;
+  font-weight: 400;
+  font-size: $font-size;
+  font-family: $font-family-body;
+  line-height: $line-height;
+  text-rendering: geometricPrecision;
+  flex: 1;
+
+  @include antialias();
+
+  @extend $base-style !optional;
+}
+.content {
+  text-align: justify;
+  text-justify: inter-word;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+
+  p {
+    @include hyphens(auto);
+  }
+  code {
+    @include hyphens(manual);
+  }
+  a {
+    color: $color-text;
+    text-decoration: none;
+    font-weight: 550;
+
+    &:hover {
+      // background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link);
+    }
+  }
+  a.icon {
+    background: none;
+
+    &:hover {
+      // color: $color-link;
+    }
+  }
+  h1 a,
+  .h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    background: none;
+    color: inherit;
+    text-decoration: none;
+  }
+  h1 a:hover,
+  .h1 a:hover,
+  h2 a:hover,
+  h3 a:hover,
+  h4 a:hover,
+  h5 a:hover,
+  h6 a:hover {
+    @include underline(6px, $color-link);
+  }
+  h6 {
+    a {
+      background: none;
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  h6 {
+    a:hover {
+      @include underline(6px, $color-link);
+    }
+  }
+}
+@media (min-width: 540px) {
+  .image-wrap {
+    flex-direction: row;
+    margin-bottom: 2rem;
+
+    .image-block {
+      flex: 1 0 35%;
+      margin-right: 2rem;
+    }
+    p {
+      flex: 1 0 65%;
+    }
+  }
+}
+.max-width {
+  max-width: $page-width;
+}
+@media (max-width: 480px) {  // smaller margins at smaller screen widths
+  .px3 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .my4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 480px) {
+  p {
+    text-align: justify;
+  }
+}
+
+@import "partial/header";
+@import "partial/post/actions_desktop";
+@import "partial/post/actions_mobile";
+@import "partial/index";
+@import "partial/article";
+@import "partial/archive";
+@import "partial/comments";
+@import "partial/footer";
+@import "partial/pagination";
+@import "partial/search";
+@import "partial/tags";
+@import "partial/tooltip";
+@import "partial/categories";
+
+pre {
+  overflow-x: auto;
+  padding: 15px 15px 10px 15px;
+  border: 1px dotted $color-border;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  font-size: 13px;
+  font-family: $font-family-mono;
+  line-height: 22px;
+  position: relative;
+
+  .code-copy-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    border-radius: 0 2px;
+    padding: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 800;
+    font-size: 0.9em;
+    line-height: 1.7;
+    color: #fff;
+    background-color: #8c8c8c;
+    min-width: 60px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0em;
+  }
+
+  .code-copy-btn:hover {
+    background-color: #666;
+    color: #2bbc8a;
+  }
+
+  code {
+    display: block;
+    padding: 0;
+    border: none;
+  }
+}
+
+code {
+  font-family: $font-family-mono;
+  padding: 0 5px;
+  border: 1px dotted $color-border;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.highlight {
+
+  & > div {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+  }
+
+  pre {
+    border: none;
+    background: none;
+  }
+
+  table {
+
+    pre {
+      margin-top: 0;
+    }
+
+    td:first-child {
+      pre {
+        padding-right: 0;
+      }
+    }
+
+    td:last-child {
+      pre {
+        padding-left: 0;
+      }
+    }
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+// adjusting image gallery UI
+.gallery {
+  margin: auto;
+} .main-photo img {
+  width: 100%;
+  height: auto;
+} .gallery .photo-collection {
+  display: flex;
+  overflow-x: scroll;
+} .photo-collection img {
+  min-width: 30%;
+  max-width: 50%;
+  height: auto;
+} .single-image {
+  margin-right: 10em;
+} .photo-buttons {
+  display: flex;
+  justify-content: center;
+} .photo-buttons button {
+  cursor: pointer;
+  width: 2.8%;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 900;
+}
+
+.main-photo {
+  padding-top: 30px;            
+  width: 100%;                 
+  height: auto;                 
+  overflow: hidden;            
+  margin: 0 auto;               
+  border: none;                 
+  background-color: transparent;
+  box-shadow: none;            
+}
+
+.main-photo img {
+  width: 100%;                 
+  height: auto;                
+  object-fit: contain;         
+  display: block;              
+}
+
+.photo-container { 
+  border: none;                 
+  background-color: transparent; 
+}
+
+.gallery .photo-buttons button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.gallery .photo-buttons button:hover {
+  color: #d8ccb4;  
+}
+
+
+.gallery .photo-buttons button.active {
+  color: #d8ccb4; 
+  font-weight: bold; 
+}
+
+.main-photo img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.main-photo img.fade {
+  opacity: 0;
+}
+
+.gallery, .photo-collection {
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+
+  //REALLY BAD BANDAID SOLUTION BUT IT WORKS
+  .gallery .photo-buttons {
+    display: flex;
+    flex-wrap: nowrap; // NEVER wrap, force on one line
+    justify-content: center; // center photo buttons
+    align-items: center; // vertical alignment
+    gap: 0; // NO flexbox gap
+    padding: 0;
+    margin: 0;
+    overflow-x: auto; // Allow scrolling IF absolutely needed 
+  }
+  
+  .gallery .photo-buttons button {
+    flex: 0 0 auto; // don't shrink or grow
+    width: auto;
+    min-width: 15px; // set a tiny minimum clickable width
+    padding: 0 2px; // control horizontal padding manually
+    margin: 0; // kill any button margin
+    font-size: 30px; // control font size exactly
+  }
+  
+// photo button size on mobile devices
+@media (max-width: 768px) {
+  .gallery .photo-buttons button {
+    font-size: 22px;
+    min-width: 13px;
+    width: 1%;
+  }
+  .gallery .photo-buttons {
+    display: flex;
+    min-width: 10%;
+    max-width: 100%;
+  }
+}
+
+// arrows UI adjustments
+.gallery .photo-buttons {
+  position: relative;  
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 0;
+  overflow: hidden; 
+}
+
+.gallery .photo-buttons button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  flex-grow: 0; 
+  margin: 0; 
+}
+
+.gallery .photo-buttons #prev-photo,
+.gallery .photo-buttons #next-photo {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-40%); 
+  font-size: 32px; 
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  margin: 0;
+}
+
+.gallery .photo-buttons #prev-photo {
+  right: 30px;  // move the "previous" arrow reduce spacing
+}
+
+.gallery .photo-buttons #next-photo {
+  right: 0; 
+}
+
+.gallery .photo-buttons button:hover,
+.gallery .photo-buttons #prev-photo:hover,
+.gallery .photo-buttons #next-photo:hover {
+  color: #d8ccb4; 
+}
+
+.gallery .photo-buttons button.active {
+  color: #d8ccb4;
+  font-weight: bold;
+}
+
+// mobile adjustments to arrows
+@media (max-width: 768px) {
+  .gallery .photo-buttons {
+    overflow-x: hidden;  // prevent horizontal overflow
+    overflow-y: hidden;  // prevent vertical overflow
+  }
+
+  .gallery .photo-buttons #prev-photo,
+  .gallery .photo-buttons #next-photo {
+    font-size: 24px; 
+    right: 0px;  // reduce spacing on the mobile version
+    padding-right: 12px;  // add padding to the right
+  }
+
+  .gallery .photo-buttons #prev-photo {
+    right: 20px;  //space between the "previous" and "next" arrows
+  }
+  .gallery .photo-buttons #prev-photo:hover,
+  .gallery .photo-buttons #next-photo:hover {
+    color: black !important;  // force the arrow hover color to black
+  }
+  
+}
+
+// adding scrollbar to nav on mobile
+@media (max-width: 768px) {
+  #nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  #nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  #nav li {
+    flex-shrink: 0;
+    margin: 0;
+  }
+}
+
+// defining custom font for h1
+.custom-font {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+
+// off-white bg color
+body {
+  background-color: #Fefbf2;
+  color: #4e4e4e;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+
+// highlight links on hover
+a:hover {
+  color: #d8ccb4; 
+}
+
+a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; 
+  background-color: #d8ccb4; 
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover::after {
+  background-color: transparent; 
+}
+
+// animation & custom UI for dropdown
+summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+summary::before {
+  content: '➣'; 
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  transition: transform 0.3s ease;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+details.closing > summary::before {
+  transform: rotate(0deg);
+}
+
+summary::-webkit-details-marker {
+  display: none; 
+}
+
+// removes hyperlinks from "Musings" page
+a[href*="/musings/"] {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+a[href*="/musings/"]:hover {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+a[href*="/musings/"]::after,
+a[href*="/musings/"]:hover::after {
+  background-color: transparent !important;
+  content: none !important;
+}
+
+a[href*="/musings/"] {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+// On hover, add underline back to musings links
+header a[href*="/musings/"]:hover {
+  text-decoration: underline !important;
+}
+
+// controls bullet-point/list UI
+ul {
+  list-style: none;  
+  padding-left: 1.2em; 
+  margin-left: 0;  
+  margin-top: 0.4em;  
+  margin-bottom: 0.4em; 
+}
+
+// bold navbar links
+#nav a {
+  font-weight: 250;  
+}
+
+// creating borders
+.content.index.py4 {
+  position: relative;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+// Top and Bottom Borders
+.content.index.py4::before,
+.content.index.py4::after {
+  content: "";
+  position: absolute;
+  background-repeat: repeat-x;
+  background-size: auto 200px;
+  width: calc(100% - 320px);
+  height: 200px;
+  left: 160px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.content.index.py4::before {
+  top: 0;
+  background-image: url('/border/border-top.png');
+}
+
+.content.index.py4::after {
+  bottom: 0;
+  background-image: url('/border/border-bottom.png');
+}
+
+// Left and Right Borders 
+.content.index.py4 > .side-left,
+.content.index.py4 > .side-right {
+  content: "";
+  position: absolute;
+  top: 160px;
+  width: 160px;
+  height: calc(100% - 320px);
+  background-repeat: repeat-y;
+  background-size: 160px auto;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.content.index.py4 > .side-left {
+  left: 0;
+  background-image: url('/border/border-left.png');
+}
+
+.content.index.py4 > .side-right {
+  right: 0;
+  background-image: url('/border/border-right.png');
+}
+
+// Corners
+.content.index.py4 > .corner-tl,
+.content.index.py4 > .corner-tr,
+.content.index.py4 > .corner-bl,
+.content.index.py4 > .corner-br {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.content.index.py4 > .corner-tl {
+  top: 0;
+  left: 0;
+  background-image: url('/border/corner-top-left.png');
+}
+
+.content.index.py4 > .corner-tr {
+  top: 0;
+  right: 0;
+  background-image: url('/border/corner-top-right.png');
+}
+
+.content.index.py4 > .corner-bl {
+  bottom: 0;
+  left: 0;
+  background-image: url('/border/corner-bottom-left.png');
+}
+
+.content.index.py4 > .corner-br {
+  bottom: 0;
+  right: 0;
+  background-image: url('/border/corner-bottom-right.png');
+}
+
+// Bottom Left Corner
+.content.index.py4 > .corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('/border/corner-bottom-left.png');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  pointer-events: none;
+}
+
+// Bottom Right Corner
+.content.index.py4 > .corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('/border/corner-bottom-right.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  background-position: bottom right; 
+}
+
+// mobile UI adjustments
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  header {
+    padding: 5px !important;
+    width: 100%;
+  }
+
+  #logo {
+    background-size: contain !important;
+    height: 50px !important;
+    width: 50px !important;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  header h1 {
+    font-size: 18px !important;
+    margin: 0;
+  }
+
+  #nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  }
+
+  h1 {
+    display: inline-block;
+    max-height: 2rem;
+    overflow: hidden;
+    line-height: 1.1;
+  }
+  
+  // dropdown menu UI adjustments for nav directory pages
+  .photography summary,
+.art-and-poetry summary,
+.academia summary {
+  font-family: 'Oswald', serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.photography details ul,
+.art-and-poetry details ul,
+.academia details ul {
+  margin-left: .65rem;
+}
+
+.photography details,
+.art-and-poetry details,
+.academia details {
+  font-family: 'Roboto Condensed', serif;
+  font-size: 14px;
+}
+
+@media (max-width: 780px) {
+  .photography summary,
+  .art-and-poetry summary,
+  .academia summary {
+    font-size: 1rem;
+    font-family: 'Oswald', serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .photography details,
+  .art-and-poetry details,
+  .academia details {
+  font-family: 'Roboto Condensed', serif;
+  font-size: 12px;
+}
+}
+
+// LaTeX equation styling
+.katex-display {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.katex-display > .katex {
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 600px) {
+  .katex-display {
+    overflow-x: auto;           // enable horizontal scrolling
+    white-space: nowrap;        // prevent wrapping
+    -ms-overflow-style: none;   // for Internet Explorer
+    scrollbar-width: none;      // for Firefox
+    padding-bottom: 0.25rem; 
+  }
+  
+
+  .katex-display::-webkit-scrollbar {
+    display: none;              // hide the scrollbar in WebKit browsers 
+  }
+
+  .eqn-num {
+    display: none !important; // hide equation tags on mobile 
+  }
+}
+
+// font adjustment on home page
+.section-label {
+  font-size: 15px; /* Default for desktop */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .section-label {
+    font-size: 13.5px; /* Smaller on mobile */
+  }
+}
+
+
+.simrow {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.simrow-video {
+  flex: 0 0 70%;
+}
+
+.simrow-vidtag {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  max-width: 100%;
+  display: block;
+}
+
+.simrow-text {
+  flex: 0 0 30%;
+  font-family: inherit;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding-right: 1rem;
+  margin-top: -2rem;
+  margin-left: 0.75rem;
+}
+
+
+.simrow-text h1 {
+  margin-bottom: 0.4rem;
+}
+
+.simrow-text p {
+  margin-top: 0;
+}
+
+.simrow-categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.simrow-categories button {
+  all: unset;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.simrow-categories button:hover {
+  color: #d8ccb4;
+}
+
+.simrow-coordinates {
+  position: relative;
+  height: auto;
+  min-height: 3rem;
+}
+
+.coord-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.coord-group.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.coord-group button {
+  all: unset;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.coord-group button:hover {
+  color: #b0b0b0;
+}
+
+.simrow-video video.fade {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#video-wrapper {
+  position: relative;
+}
+
+.simrow-vidtag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.simrow-vidtag.visible {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .simrow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .simrow-video,
+  .simrow-text {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .simrow-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+
+  .simrow-video {
+    margin-bottom: 1rem;
+  }
+
+
+  #video-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .simrow-vidtag {
+    position: relative !important;
+    width: 100%;
+    height: auto;
+    opacity: 1 !important;
+    pointer-events: auto;
+  }
+
+  .simrow-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+  }
+
+  .simrow-text > * {
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+  .simrow-categories {
+    align-items: center;
+  }
+
+  .simrow-controls {
+    align-items: center;
+  }
+
+  .simrow-categories button,
+  .coord-group button {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    margin: 0.1rem;
+  }
+
+  .simrow-categories,
+.coord-group {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.simrow-categories::-webkit-scrollbar,
+.coord-group::-webkit-scrollbar {
+  display: none;
+}
+
+.simrow-categories button,
+.coord-group button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}  
+}
+
+@media (max-width: 768px) {
+  .simrow-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* Make the heading span both columns */
+  .simrow-text h1 {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Make the “Mesh” paragraph (the 5th <p>) span both columns */
+  .simrow-text p:nth-of-type(5) {
+    grid-column: 1 / -1;
+  }
+
+  /* Tidy up spacing on all your parameter paragraphs */
+  .simrow-text p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .simrow-categories {
+    margin-bottom: 0.25rem;    /* less space below the primary buttons */
+    gap: 0.25rem !important;    /* smaller space between each category button */
+    padding: 0 0.5rem !important;  /* reduce left/right inset */
+  }
+
+  .coord-group {
+    gap: 0.25rem !important;    /* smaller space between each coordinate button */
+    padding: 0 0.5rem !important;  /* match the inset of the categories */
+    margin-top: 0.25rem;        /* tighten the vertical spacing to the categories */
+  }
+  
+}
+
+@media (max-width: 768px) {
+  /* Remove the forced 3rem height under the coord buttons */
+  .simrow-coordinates {
+    min-height: auto !important;
+    margin-bottom: 0.25rem !important;  /* lift the video up */
+  }
+
+  /* If you still need a little breathing room above the video */
+  .simrow {
+    margin-top: 0.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* shrink space below the “Simulation Parameters” heading */
+  .simrow-text h1 {
+    margin-bottom: -0.35rem !important;
+  }
+
+  /* optionally tighten space above the first param block */
+  .simrow-text p:first-of-type {
+    margin-top: 0rem !important;
+  }
+}
 

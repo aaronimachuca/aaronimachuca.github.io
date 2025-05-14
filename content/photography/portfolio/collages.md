@@ -1,6 +1,6 @@
 +++
 +++
 
-{{< gallery "https://d1eulwzybv7z2h.cloudfront.net/photography/collages/muir1.png"
-"https://d1eulwzybv7z2h.cloudfront.net/photography/collages/gilman.png"
-"https://d1eulwzybv7z2h.cloudfront.net/photography/collages/gardenportrait.png"  >}}
+{{< gallery "https://d1eulwzybv7z2h.cloudfront.net/photography/collages/wmuir1.webp"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/collages/wgilman.webp"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/collages/wgardenportrait.png"  >}}
