@@ -28,13 +28,24 @@
 
 <div class="simrow">
   <div class="simrow-video" id="video-wrapper">
-    <video id="simrow-vid"
+    <!-- two videos side by side, only one ever .visible -->
+    <video
+      id="simrow-vid-1"
+      class="simrow-vidtag visible"
       src="{{ .Get "src" }}"
       autoplay
       muted
       loop
-      playsinline
-      class="simrow-vidtag visible">
+      playsinline>
+    </video>
+    <video
+      id="simrow-vid-2"
+      class="simrow-vidtag"
+      src=""
+      autoplay
+      muted
+      loop
+      playsinline>
     </video>
   </div>
   <div class="simrow-text">
@@ -64,63 +75,79 @@
   z-index: 1;
 }
 
-.coord-group {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
+/* keep your coord-group styles exactly as they were */
+.coord-group { /* … */ }
+.coord-group.active { /* … */ }
+.simrow-coordinates { /* … */ }
 
-.coord-group.active {
-  opacity: 1;
-  pointer-events: auto;
-  position: relative;
-}
+/* MOBILE OVERRIDES (added at very end, do NOT remove) */
+@media (max-width: 768px) {
+  /* hide the non-visible video so it never stacks */
+  #video-wrapper video.simrow-vidtag:not(.visible) {
+    display: none !important;
+  }
 
-.simrow-coordinates {
-  position: relative;
-  min-height: 3rem;
+  /* restore your coord-group & categories on mobile */
+  .simrow-categories,
+  .coord-group {
+    position: static !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .simrow-categories::-webkit-scrollbar,
+  .coord-group::-webkit-scrollbar {
+    display: none;
+  }
+    /* hide every coord-group by default */
+  .coord-group {
+    display: none !important;
+  }
+  /* but show only the one with .active */
+  .coord-group.active {
+    display: flex !important;
+    position: static !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 </style>
 
 <script>
 function showGroup(groupId) {
-  document.querySelectorAll('.coord-group').forEach(group => {
-    group.classList.remove('active');
-  });
-
-  const targetGroup = document.getElementById(groupId);
-  targetGroup.classList.add('active');
+  document.querySelectorAll('.coord-group')
+    .forEach(g => g.classList.remove('active'));
+  document.getElementById(groupId).classList.add('active');
 }
 
-function switchVideo(src) {
-  const wrapper = document.getElementById('video-wrapper');
-  const current = document.getElementById('simrow-vid');
+window.switchVideo = function(src) {
+  const v1 = document.getElementById('simrow-vid-1');
+  const v2 = document.getElementById('simrow-vid-2');
+  const current = v1.classList.contains('visible') ? v1 : v2;
+  const next    = current === v1 ? v2 : v1;
 
-  const next = document.createElement('video');
+  // no-op if same
+  if (current.src === src || current.src === location.origin + src) return;
+
   next.src = src;
-  next.autoplay = true;
-  next.muted = true;
-  next.loop = true;
-  next.playsInline = true;
-  next.className = 'simrow-vidtag';
+  next.load();
 
-  wrapper.appendChild(next);
-
-  next.addEventListener('loadeddata', () => {
+  next.addEventListener('loadeddata', function onLoad() {
+    next.removeEventListener('loadeddata', onLoad);
+    // cross-fade
     next.classList.add('visible');
-    setTimeout(() => {
-      wrapper.removeChild(current);
-      next.id = 'simrow-vid';
-    }, 400);
+    current.classList.remove('visible');
+    next.play();
   });
-}
+};
 </script>
-

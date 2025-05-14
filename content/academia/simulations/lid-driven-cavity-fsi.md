@@ -10,7 +10,8 @@ draft = false
 
 **Solid**  
 $\rho_s = 1\ \frac{kg}{m^3}$  
-$\lambda_s = 15$ Pa, $\mu_s = 30$ Pa  
+$\lambda_s = 15$ Pa,\
+ $\mu_s = 30$ Pa  
 
 **Fluid**  
 $\rho_f = 1\ \frac{kg}{m^3}$  
