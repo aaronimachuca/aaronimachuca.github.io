@@ -4,7 +4,13 @@
   {{ partial "math.html" . }}
   <body class="max-width mx-auto px3 ltr section-{{ .Section }} kind-{{ .Kind }}">
     <div class="content index py4">
-      <!-- your border elements… -->
+      <div class="side-left"></div>
+      <div class="side-right"></div>
+      <div class="corner-tl"></div>
+      <div class="corner-tr"></div>
+      <div class="corner-bl"></div>
+      <div class="corner-br"></div>
+
       {{ partial "header.html" . }}
 
       <div class="page-markdown">
@@ -12,19 +18,30 @@
       </div>
 
       {{ partial "footer.html" . }}
-    </div>
+    </div> <!-- ← make sure this closes .content.index.py4 -->
 
+    <!-- now the script lives outside the border container -->
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const firstCatBtn = document.querySelector('.simrow-categories button');
-        if (firstCatBtn) {
-          firstCatBtn.classList.add('active');
-          firstCatBtn.click();
+        // first category button
+        const firstCat = document.querySelector('.simrow-categories button');
+        if (firstCat) {
+          firstCat.classList.add('active');
+          firstCat.click();
         }
+        // then its first coordinate button
+        setTimeout(() => {
+          const firstCoord = document.querySelector('.coord-group.active button');
+          if (firstCoord) {
+            firstCoord.classList.add('active');
+            firstCoord.click();
+          }
+        }, 50);
       });
     </script>
   </body>
 </html>
+
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
