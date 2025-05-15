@@ -150,4 +150,39 @@ window.switchVideo = function(src) {
     next.play();
   });
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  const initGroup = document.querySelector('.coord-group.active')?.id;
+  if (initGroup) {
+    const catBtn = document.querySelector(
+      `.simrow-categories button[onclick="showGroup('${initGroup}')"]`
+    );
+    catBtn?.classList.add('active');
+  }
+
+  const initVid = document.querySelector('.simrow-vidtag.visible');
+  const initSrc = initVid?.getAttribute('src');
+  if (initSrc) {
+    document.querySelectorAll('.coord-group button').forEach(btn => {
+      const m = btn.getAttribute('onclick')?.match(/switchVideo\('(.+)'\)/);
+      if (m?.[1] === initSrc) btn.classList.add('active');
+    });
+  }
+
+  document.querySelectorAll('.simrow-categories button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.simrow-categories button')
+              .forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.coord-group button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.coord-group button')
+              .forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+});
+
 </script>
