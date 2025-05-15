@@ -1186,7 +1186,8 @@ body.kind-section.section-art-and-poetry a.postlink[href*="/poems/anthology/"] {
 // make summary title bold in simulations post
 body.section-academia.kind-page 
   .page-markdown details > summary > i {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
+  font-family: 'Oswald', serif;
 }
 
 // make non-musing postlink underlines consistent 
