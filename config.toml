@@ -33,3 +33,9 @@ theme = 'hugo-theme-cactus'
         name = "Musings"
         url = "/musings/"
         weight = 5
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

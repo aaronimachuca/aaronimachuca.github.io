@@ -23,4 +23,4 @@ I work in the [Computational Solid Mechanics Lab](https://csml.berkeley.edu/) at
 
 Currently, I am looking into the stefan problem to better understand material behavior as it undergoes phase transformations along a moving boundary. Otherwise, I've also been interested in problems involving plastic flow in bingham solids (like gel or toothpaste), mostly because it seems reminiscent to turbulent structures in viscous fluid flow. 
 
-These aren't easy nonlinear problems, but that's what makes them fun, exiciting, *and* modern! And above all else, I hope that my work serves to honor the legacy of my professors and the remarkable mechanicians who have built this field of study.
+These aren't easy nonlinear problems, but that's what makes them fun, exciting, *and* modern! And above all else, I hope that my work serves to honor the legacy of my professors and the remarkable mechanicians who have built this field of study.

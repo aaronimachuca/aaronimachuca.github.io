@@ -3,6 +3,9 @@ title = 'Star-Sieged Mind'
 date = 2024-07-02T20:26:35-07:00
 draft = false
 +++
+<span style="font-size:1.15em; font-weight:bold; margin-bottom: -0.5rem;">
+  Star-Sieged Mind
+</span>
 
 The voids in my head \
 wish to fill the silence, \

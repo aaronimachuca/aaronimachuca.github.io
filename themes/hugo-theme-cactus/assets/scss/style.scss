@@ -314,7 +314,7 @@ code {
 
 .main-photo img {
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.45s ease;
 }
 
 .main-photo img.fade {
@@ -327,6 +327,7 @@ code {
   border: none;
   overflow: hidden;
 }
+
 
   //REALLY BAD BANDAID SOLUTION BUT IT WORKS
   .gallery .photo-buttons {
@@ -1199,5 +1200,49 @@ body.section-academia.kind-page
   text-decoration-thickness: 1px !important;
   text-underline-offset: 0.1em !important;
   text-decoration-color: currentColor !important;
+}
+
+// Algorithm box styling
+.algorithm-box {
+  background: #f0f0f0;
+  border: 1px solid #000000;
+  border-radius: 0;
+  margin: 1.5rem 0;
+}
+
+.algorithm-header {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+}
+
+.algorithm-body {
+  padding: 1rem;
+}
+
+.algorithm-body > *:first-child {
+  margin-top: 0 !important;
+}
+
+.algorithm-body pre,
+.algorithm-body code {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.algorithm-body {
+  padding: 0.25rem 1rem 0.5rem !important; 
+}
+
+.algorithm-body > *:first-child {
+  margin-top: 0 !important;
+}
+
+.algorithm-body > *:last-child {
+  margin-bottom: 0 !important;
 }
 
