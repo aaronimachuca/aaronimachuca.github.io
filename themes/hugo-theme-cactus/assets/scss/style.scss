@@ -354,7 +354,7 @@ code {
 @media (max-width: 768px) {
   .gallery .photo-buttons button {
     font-size: 22px;
-    min-width: 13px;
+    min-width: 12px;
     width: 1%;
   }
   .gallery .photo-buttons {
@@ -1202,7 +1202,7 @@ body.section-academia.kind-page
   text-decoration-color: currentColor !important;
 }
 
-// Algorithm box styling
+// algorithm box styling
 .algorithm-box {
   background: #f0f0f0;
   border: 1px solid #000000;
