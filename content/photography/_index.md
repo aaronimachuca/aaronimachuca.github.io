@@ -15,9 +15,10 @@ layout = "photography"
   </ul>
 {{< /summary >}}
 
+I live for exceptional subjects and clean compositions. I engage street photography with less intention on personal expression and an emphasis on capturing intense, fleeting moments I encounter in my life. Photos that speak for itself with minimal inference and post-editing adulterants are what I strive for when I go out to shoot and present them here. The world speaks with abundance in its beauty, and this is my way of encapsulating its truths.
 
-Most of the pictures you'll find here were shot on my Nikon D750 with a Nikkor 35mm f2D lens. Though these days I use a Sony Alpha A7 III with a Sigma 35mm f2 lens. I primarily specialize in street, skate, and portraiture photography, but I also like taking still-life, landscape, and architectural photos when I don't have the mental bandwidth to be sociable.
+Street is really hard though, so I also specialize in skate and portraiture photography! Landscape and architectural photography less so and usually only when I don't have the mental bandwidth to be sociable.
 
-If you would like to hire me for a photoshoot, my rates are generally around $80/hr, but it depends on the situation. I'm not pressed about counting each minute, and I'll probably lump the shooting and post-production for the hour(s) together to give a ballpark estimate of what I think the photos are worth. BUT, if you're a pro-skater, a could-be model, or pitch a cool idea, I'll do a photoshoot for free.
+My current gear consists of a Sony Alpha A7 III with my trusty Sigma 35mm f2 lens. If you would like to hire me for a photoshoot, my rates are generally around $80/hr, but it depends on the situation. I'm not pressed about counting each minute, and I'll probably lump the shooting and post-production for the hour(s) together to give a ballpark estimate of what I think the photos are worth. BUT, if you're a pro-skater, a could-be model, or pitch a cool idea, I'll do a photoshoot for free.
 
 _There may be applicable discounts for friends :)_
