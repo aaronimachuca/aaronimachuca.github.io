@@ -803,6 +803,15 @@ body.kind-section.section-academia     details {
   box-sizing: border-box;
 }
 
+.katex{
+  font-size: 16px !important; 
+}
+
+@media (max-width: 768px) {
+  .katex{
+    font-size: 14px !important; 
+  }
+}
 
 @media (max-width: 600px) {
   .katex-display {
@@ -1246,3 +1255,26 @@ body.section-academia.kind-page
   margin-bottom: 0 !important;
 }
 
+// styling for prev-next UI
+a[href*="/academia/notes/cmech/"] {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+a[href*="/academia/notes/cmech/"]:hover {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+a[href*="/academia/notes/cmech/"]::after,
+a[href*="/academia/notes/cmech/"]:hover::after {
+  background-color: transparent !important;
+  content: none !important;
+}
+
+
+.prev-next-nav .arrow {
+  font-size: 1.4em;
+  margin: 0 0.3em;
+  user-select: none;
+}

@@ -1,7 +1,8 @@
 <figure style="width: {{ .Get 1 }}; margin: 0 auto;">
-    <img src="{{ .Get 0 }}" width="100%" height="auto">
-    {{ if .Get 2 }}
-      <figcaption>{{ .Get 2 }}</figcaption>
-    {{ end }}
-  </figure>
-  
+  <img src="{{ .Get 0 }}" width="100%" height="auto">
+  {{ if .Get 2 }}
+    <figcaption style="{{ if eq (.Get 3) "center" }}text-align: center;{{ end }}">
+      {{ .Get 2 | markdownify }}
+    </figcaption>
+  {{ end }}
+</figure>

@@ -1,0 +1,33 @@
+{{ $folder := "academia\\notes\\cmech\\" }}
+
+{{ $pages := where .Site.RegularPages "File.Dir" "eq" $folder }}
+{{ $sorted := sort $pages "Date" "asc" }}
+
+{{ $current := .Page }}
+{{ $currentIndex := -1 }}
+
+{{ range $i, $p := $sorted }}
+  {{ if eq $p.File.Path $current.File.Path }}
+    {{ $currentIndex = $i }}
+  {{ end }}
+{{ end }}
+
+<div class="prev-next-nav" style="display:flex; justify-content:space-between; margin-top:2rem;">
+  {{ with index $sorted (add $currentIndex -1) }}
+    <a class="prev" href="{{ .RelPermalink }}">
+      <span class="arrow">«</span> {{ .Title }}
+    </a>
+  {{ else }}
+    <span></span>
+  {{ end }}
+
+  {{ with index $sorted (add $currentIndex 1) }}
+    <a class="next" href="{{ .RelPermalink }}">
+      {{ .Title }} <span class="arrow">»</span>
+    </a>
+  {{ else }}
+    <span></span>
+  {{ end }}
+</div>
+
+
