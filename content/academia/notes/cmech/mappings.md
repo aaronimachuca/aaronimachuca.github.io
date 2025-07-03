@@ -16,3 +16,4 @@ Suppose we are given two mappings $f : \mathcal{U} \rightarrow \mathcal{V}, u \r
 <p style="text-align: center;">
 <a href="http://aaronmachuca.com/academia/notes/cmech/" target="_self">Table of Contents</a>
 </p>
+

@@ -20,3 +20,4 @@ The pair $(x,y)$ is ordered meaning that the element $(x,y)$ in general is not t
 <p style="text-align: center;">
 <a href="http://aaronmachuca.com/academia/notes/cmech/" target="_self">Table of Contents</a>
 </p>
+
