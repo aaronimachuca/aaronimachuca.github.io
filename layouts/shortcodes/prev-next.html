@@ -1,4 +1,4 @@
-{{ $folder := "academia\\notes\\cmech\\" }}
+{{ $folder := "academia/notes/cmech/" }}
 
 {{ $pages := where .Site.RegularPages "File.Dir" "eq" $folder }}
 {{ $sorted := sort $pages "Date" "asc" }}

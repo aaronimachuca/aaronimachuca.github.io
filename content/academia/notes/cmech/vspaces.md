@@ -8,7 +8,7 @@ Vector spaces can be as involved as defining tangent spaces at points on a manif
 
 <ol type="a" style="list-style-type: lower-alpha;">
   <li>$\alpha \mathbf{a} + \beta \mathbf{b} \in \mathcal{V}$ (closure: any linear combination of a vector is a vector),</li>
-  <li>($\mathbf{a} + \mathbf{b}) + \mathbf{c} = \mathbf{a} + (\mathbf{b} + \mathbf{c})$ (associativity with respect to "$+$"),</li>
+  <li>($\mathbf{a} + \mathbf{b}) + \mathbf{c} = \mathbf{a} + (\mathbf{b} + \mathbf{c})$ (associativity with respect to $+$),</li>
   <li>$\mathbf{a} + \mathbf{b} = \mathbf{b} + \mathbf{a}$ (commutativity with respect to $+$),</li>
   <li>There is $\mathbf{0} \in \mathcal{V}$ such that $\mathbf{a} + \mathbf{0} = \mathbf{a}$ (existence of a null element),</li> 
   <li> $\forall$ $\mathbf{a} \in \mathcal{V}$ there is $\mathbf{b} \in \mathcal{V}$ such that $\mathbf{a} + \mathbf{b} = \mathbf{0}$; $\mathbf{b} = -\mathbf{a}$ (existence of an additive inverse),</li>
