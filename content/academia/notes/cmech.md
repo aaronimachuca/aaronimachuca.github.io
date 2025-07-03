@@ -7,7 +7,7 @@ These notes are meant to serve as my own personal documentation for useful refer
 # Table of Contents 
 ## 1. Mathematical Preliminaries
 <ul>
-    <li><a href="http://aaronmachuca.com/academia/notes/cmech/set-theory/">1.1 Set Theory</a>
-    <li><a href="http://aaronmachuca.com/academia/notes/cmech/mappings/">1.2 Mappings</a>
-    <li><a href="http://aaronmachuca.com/academia/notes/cmech/vspaces/">1.3 Vector Spaces</a>
+    <li><a href="/academia/notes/cmech/set-theory/">1.1 Set Theory</a>
+    <li><a href="/academia/notes/cmech/mappings/">1.2 Mappings</a>
+    <li><a href="/academia/notes/cmech/vspaces/">1.3 Vector Spaces</a>
 </ul>
