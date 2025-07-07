@@ -2,7 +2,7 @@
 +++
 
 {{< gallery "https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wsarahhalfgrab.jpg"
-"https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wgalleriaguy2.jpg" 
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wgalleriaguy3.jpg" 
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wmilantunnel.jpg" 
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wcardog.jpg" 
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wbaseballkid.jpg" 
