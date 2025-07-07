@@ -1,4 +1,6 @@
 {{ $folder := "academia/notes/cmech/" }}
+<!-- {{ $folder := "academia\\notes\\cmech\\" }} for local site testing -->
+
 
 {{ $pages := where .Site.RegularPages "File.Dir" "eq" $folder }}
 {{ $sorted := sort $pages "Date" "asc" }}
@@ -29,5 +31,4 @@
     <span></span>
   {{ end }}
 </div>
-
 
