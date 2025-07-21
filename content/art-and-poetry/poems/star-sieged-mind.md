@@ -28,18 +28,18 @@ voyaging contradiction and clarity, \
 I seek no wisdom but absorb \
 them as I have seen traces of \
 millennium glory, previous \
-experiments before us— \
+experiments before us — \
 scrapped to galatic dust, \
-streamlines of fluidic chaos, \
+streams of fluidic chaos, \
 a single strip could span a \
 century to decipher in full, \
 or one of the Lord’s lemmas: \
-ℵ,Λ*= ∂i;ψ
+$\mathbf{\daleth} = \aleph;\_p \Lambda^*. $
 
 Sailing back to world reality, \
 the infinite unknown grounds \
 itself in sunshine delight and \
-the familiar morning sensories \
+familiar morning sensories \
 beautiful birds, singing chirps \
 the branching greenery take \
 my arms, a beautiful world. \
