@@ -1,7 +1,7 @@
 +++
 title = 'Interlude 1 (wip)'
 date = 2025-07-15T13:14:41-07:00
-draft = false
+draft = true
 +++
 
 <span style="font-size:1.15em; font-weight:bold; margin-bottom: -0.5rem;">
@@ -48,4 +48,6 @@ to let my heart be still, \
 be selfish \
 to love what it loves?
 
-
+<span style="font-size:1.15em; font-weight:bold; margin-bottom: -0.5rem;">
+  II. Panther (Of Plath)
+</span>
