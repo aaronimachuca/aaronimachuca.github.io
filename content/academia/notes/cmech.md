@@ -10,4 +10,5 @@ These notes are meant to serve as my own personal documentation for useful refer
     <li><a href="/academia/notes/cmech/set-theory/">1.1 Set Theory</a>
     <li><a href="/academia/notes/cmech/mappings/">1.2 Mappings</a>
     <li><a href="/academia/notes/cmech/vspaces/">1.3 Vector Spaces</a>
+    <li><a href="/academia/notes/cmech/lfunctions/">1.4 Linear Functions</a>
 </ul>
