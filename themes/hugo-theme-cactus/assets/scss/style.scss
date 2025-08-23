@@ -1223,3 +1223,23 @@ a[href*="/academia/notes/cmech/"]:hover::after {
 // restore hover underline just for nav items (inside the Hermit wrapper or not)
 #nav a:hover::after { background-color: currentColor !important; }
 
+// spacing for regular embedded videos (not the simulations stack)
+.hermit-content .page-markdown video,
+.hermit-content .page-markdown p > video,
+.hermit-content .page-markdown figure > video,
+.hermit-content .page-markdown iframe[src*="youtube"],
+.hermit-content .page-markdown iframe[src*="vimeo"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.5rem !important; // add bottom space
+}
+
+// if the wrapper controls spacing instead of the video element
+.hermit-content .page-markdown p:has(> video),
+.hermit-content .page-markdown figure:has(> video) {
+  margin-bottom: 1.5rem !important;
+}
+
+// keep the simulations video stack unchanged
+#video-wrapper .simrow-vidtag { margin: 0 !important; }
