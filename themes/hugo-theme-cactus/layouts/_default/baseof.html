@@ -3,24 +3,324 @@
   {{ partial "head.html" . }}
   {{ partial "math.html" . }}
   <body class="max-width mx-auto px3 ltr section-{{ .Section }} kind-{{ .Kind }}">
-    <div class="content index py4">
-      <div class="side-left"></div>
-      <div class="side-right"></div>
-      <div class="corner-tl"></div>
-      <div class="corner-tr"></div>
-      <div class="corner-bl"></div>
-      <div class="corner-br"></div>
 
-      {{ partial "header.html" . }}
+<style>
+	body{
+		background-color: #fefbf2;
+		margin: 0;
+		padding: 0;
+	}
+	HTML{
+		margin: 0;
+		padding: 0;
+	}
+	.hermit-container{
+		--hermit-basis-t: 100px;
+		--hermit-basis-r: 50px;
+		--hermit-basis-b: 100px;
+		--hermit-basis-l: 50px;
+		--hermit-basis-tl-w: 132px;
+		--hermit-basis-tr-w: 132px;
+		--hermit-basis-crest-h: 100px;
+		--hermit-basis-crest-w: 300px;
+		--hermit-basis-footer-h: 133px;
+		--hermit-basis-footer-w: 400px;
 
-      <div class="page-markdown">
-        {{ block "main" . }}{{ end }}
+		--hermit-t: var(--hermit-basis-t);
+		--hermit-r: var(--hermit-basis-r);
+		--hermit-b: var(--hermit-basis-b);
+		--hermit-l: var(--hermit-basis-l);
+		--hermit-tl-w: var(--hermit-basis-tl-w);
+		--hermit-tr-w: var(--hermit-basis-tr-w);
+		--hermit-crest-h: var(--hermit-basis-crest-h);
+		--hermit-crest-w: var(--hermit-basis-crest-w);
+		--hermit-footer-h: var(--hermit-basis-footer-h);
+		--hermit-footer-w: var(--hermit-basis-footer-w);
+
+		width: 100%;
+		max-width: 990px;
+		margin: 10px auto 10px;
+		box-sizing: border-box;
+		display: block;
+		position: relative;
+		padding: var(--hermit-t) var(--hermit-r) var(--hermit-b) var(--hermit-l);
+
+	}
+		.hermit-content{
+			position: relative;
+			z-index: 2;
+			padding: 5px 10px 40px;
+		}
+		.hermit-content ::selection { background-color: #d8ccb4; color: #fff; }
+      .hermit-content ::-moz-selection { background-color: #bec22d; color: #fff;
+    }
+		.hermit-background{
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+			.hermit-bg-top{
+				position: relative;
+				display: flex;
+				width: 100%;
+				height: var(--hermit-t);
+			}
+			.hermit-bg-middle{
+				display: flex;
+				width: 100%;
+				/*top + bottom in a variable*/
+				height: calc(100% - (var(--hermit-t) - var(--hermit-b)));
+			}
+			.hermit-bg-bottom{
+				position: relative;
+				display: flex;
+				width: 100%;
+				height: var(--hermit-b);
+			}
+
+			.hermit-el{
+				background-size: 100% 100%;
+				box-sizing: border-box;
+			}
+
+
+			/* top */
+			.hermit-bg-t-l-corner{
+				flex-basis: var(--hermit-tl-w);
+				flex-shrink: 1;
+				flex-grow: 1;
+				width: var(--hermit-basis-tl-w);
+				height: var(--hermit-t);
+				background-image: URL("/images/hermit/vines-top-left.png");
+			}
+			.hermit-bg-t-l{
+				width: calc((100% - ((var(--hermit-tl-w) - var(--hermit-r))) - var(--hermit-crest-w)) / 2);
+				background: none;
+				flex-grow: 100;
+				flex-shrink: 100;
+
+				border-image-slice: 100% 0 0 0;
+				border-image-width: var(--hermit-t) 0 0 0 ;
+				border-image-outset: 0 0 0 0;
+				border-image-repeat: round stretch;
+				border-image-source: url("/images/hermit/wave.png");
+				border-style: solid;
+
+				transform: scaleX(-1.01);
+			}
+			.hermit-bg-t-c{
+				height: var(--hermit-crest-h);
+				width: var(--hermit-crest-w);
+				background-image: url("/images/hermit/leviathan.png");
+				flex-grow: 1;
+				flex-shrink: 1;
+				flex-basis: var(--herit-crest-w);
+			}
+			.hermit-bg-t-r{
+				width: calc((100% - ((var(--hermit-tl-w) - var(--hermit-r))) - var(--hermit-crest-w)) / 2);
+				background: none;
+				flex-grow: 100;
+				flex-shrink: 100;
+
+				border-image-slice: 100% 0 0 0;
+				border-image-width: var(--hermit-t) 0 0 0 ;
+				border-image-outset: 0 0 0 0;
+				border-image-repeat: round stretch;
+				border-image-source: url("/images/hermit/wave.png");
+				border-style: solid;
+			}
+			.hermit-bg-t-r-corner{
+				flex-basis: var(--hermit-tr-w);
+				flex-shrink: 1;
+				flex-grow: 1;
+				background-image: URL("/images/hermit/vines-top-right.png");
+				width: var(--hermit-basis-tr-w);
+				height: var(--hermit-t);
+			}
+			/* center */
+			.hermit-bg-m-l{
+				flex-shrink: 1;
+				flex-grow: 1;
+				flex-basis: var(--hermit-l);
+				width: var(--hermit-l);
+				height: 100%;
+				background: none;
+
+				border-image-slice: 0 0 0 100%;
+				border-image-width: 0 0 0 var(--hermit-l);
+				border-image-outset: 0 0 0 0;
+				border-image-repeat: stretch round;
+				border-image-source: url("/images/hermit/vines-border.png");
+				border-style: solid;
+			}
+			.hermit-bg-m-c{
+				flex-shrink: 50;
+				flex-grow: 50;
+				width: calc(100% - (var(--hermit-l) + var(--hermit-r)));
+				height: 100%;
+				background: none;
+			}
+			.hermit-bg-m-r{
+				flex-shrink: 1;
+				flex-grow: 1;
+				flex-basis: var(--hermit-r);
+				width: var(--hermit-r);
+				height: 100%;
+				background: none;
+
+				transform: scaleX(-1);
+
+				border-image-slice: 0 100% 0 0;
+				border-image-width: 0 var(--hermit-r) 0 0 ;
+				border-image-outset: 0 0 0 0;
+				border-image-repeat: stretch round;
+				border-image-source: url("/images/hermit/vines-border.png");
+				border-style: solid;
+			}
+			/* bottom */
+			.hermit-bg-b-l-corner{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: var(--hermit-r);
+				height: var(--hermit-b);
+				background-size: auto 100%;
+				transform: scaleX(-100%);
+				background-repeat: no-repeat;
+				background-image: URL("/images/hermit/bottom-right.png");
+				z-index: 10;
+			}
+			.hermit-bg-b-l{
+				width: 50%;
+				height: var(--hermit-b);
+				flex-basis: 50%;
+				flex-shrink: 100;
+				flex-grow: 100;
+				background-image: URL("/images/hermit/footer-flame.png");
+				background-size: auto 100%;
+				background-repeat: no-repeat;
+				background-position: top right;
+				transform: scaleX(-100%);
+			}
+			.hermit-bg-b-c{
+				width: var(--hermit-footer-w);
+				height: var(--hermit-footer-h);
+				background-image: URL("/images/hermit/footer-extended.png");
+				background-size: 100% 112.5%;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+
+			}
+			.hermit-bg-b-r{
+				width: 50%;
+				height: var(--hermit-b);
+				flex-basis: 50%;
+				flex-shrink: 100;
+				flex-grow: 100;
+				background-size: auto 100%;
+				background-position: top right;
+				background-repeat: no-repeat;
+				background-image: URL("/images/hermit/footer-flame.png");
+			}
+			.hermit-bg-b-r-corner{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: var(--hermit-r);
+				height: var(--hermit-b);
+				background-size: auto 100%;
+				background-repeat: no-repeat;
+				background-image: URL("/images/hermit/bottom-right.png");
+			}
+
+			/* calculate the sizes based on --hermit-scaler, where the default is 1 */
+			.hermit-container{
+				--hermit-scaler: 1;
+				--hermit-t: calc(var(--hermit-basis-t) * var(--hermit-scaler));
+				--hermit-r: calc(var(--hermit-basis-r) * var(--hermit-scaler));
+				--hermit-b: calc(var(--hermit-basis-b) * var(--hermit-scaler));
+				--hermit-l: calc(var(--hermit-basis-l) * var(--hermit-scaler));
+				--hermit-tl-w: calc(var(--hermit-basis-tl-w) * var(--hermit-scaler));
+				--hermit-tr-w: calc(var(--hermit-basis-tr-w) * var(--hermit-scaler));
+				--hermit-crest-h: calc(var(--hermit-basis-crest-h) * var(--hermit-scaler));
+				--hermit-crest-w: calc(var(--hermit-basis-crest-w) * var(--hermit-scaler));
+				--hermit-footer-h: calc(var(--hermit-basis-footer-h) * var(--hermit-scaler));
+				--hermit-footer-w: calc(var(--hermit-basis-footer-w) * var(--hermit-scaler));
+			}
+
+      /* neutralize Cactus layout around the border only */
+      body.max-width { max-width: none !important; }      /* remove the body cap */
+      body.px3       { padding-left: 0 !important;
+                 padding-right: 0 !important; }     /* remove side padding */
+
+      /* Ensure the border stays centered at its intended size */
+      .hermit-container { 
+        max-width: 990px; 
+        margin-left: auto; 
+        margin-right: auto; 
+      }
+
+			/* the border rescales at these specific points to prevent the waves getting crushed */
+			@media screen and (min-width: 1200px){
+				.hermit-container{
+					--hermit-scaler: 1.3;
+				}
+			}
+			@media screen and (max-width: 770px){
+				.hermit-container{
+					--hermit-scaler: 0.777;
+				}
+			}
+			@media screen and (max-width: 580px){
+				.hermit-container{
+					--hermit-scaler: 0.555;
+				}
+			}
+      
+
+</style>
+
+      <div class="hermit-container">
+      <div class="hermit-content">
+        {{ partial "header.html" . }}
+
+        <div class="page-markdown">
+          {{ block "main" . }}{{ end }}
+        </div>
+
+        {{ partial "footer.html" . }}
       </div>
 
-      {{ partial "footer.html" . }}
-    </div> <!-- ← make sure this closes .content.index.py4 -->
+      <div class="hermit-background">
+        <div class="hermit-bg-top">
+          <div class="hermit-el hermit-bg-t-l-corner"></div>
+          <div class="hermit-el hermit-bg-t-l"></div>
+          <div class="hermit-el hermit-bg-t-c"></div>
+          <div class="hermit-el hermit-bg-t-r"></div>
+          <div class="hermit-el hermit-bg-t-r-corner"></div>
+        </div>
+        <div class="hermit-bg-middle">
+          <div class="hermit-el hermit-bg-m-l"></div>
+          <div class="hermit-el hermit-bg-m-c"></div>
+          <div class="hermit-el hermit-bg-m-r"></div>
+        </div>
+        <div class="hermit-bg-bottom">
+          <div class="hermit-el hermit-bg-b-l-corner"></div>
+          <div class="hermit-el hermit-bg-b-l"></div>
+          <div class="hermit-el hermit-bg-b-c"></div>
+          <div class="hermit-el hermit-bg-b-r"></div>
+          <div class="hermit-el hermit-bg-b-r-corner"></div>
+        </div>
+      </div>
+    </div>
 
-    <!-- now the script lives outside the border container -->
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         // first category button
