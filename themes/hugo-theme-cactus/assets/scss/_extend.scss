@@ -7,7 +7,7 @@ h1,
   letter-spacing: .01em;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.25em;
 
   @include antialias();
 }
@@ -113,6 +113,18 @@ table {
   overflow: auto;
   display: block;
 }
+
+@media (max-width: 768px) {
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: $font-size - 4.5px;
+  overflow: auto;
+  display: block;
+  }
+}
+
 th {
   padding: 8px;
   border-bottom: 1px dashed $color-border;
