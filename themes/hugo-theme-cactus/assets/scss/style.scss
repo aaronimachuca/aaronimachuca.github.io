@@ -1087,6 +1087,29 @@ body.kind-section.section-academia     details {
   }
 }
 
+// center the simulation text on mobile inside the hermit border
+@media (max-width: 768px) {
+  .hermit-content .simrow-text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+
+    // works whether your mobile layout is flex or grid 
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  // center the children inside 
+  .hermit-content .simrow-text > * {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  }
+
+
 // active highlights on coord/category buttons
 .simrow-categories button.active {
   color: #d8ccb4;
