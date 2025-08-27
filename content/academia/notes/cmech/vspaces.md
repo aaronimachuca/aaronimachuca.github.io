@@ -114,11 +114,11 @@ where $\delta\_{ij},$ is the *Kronecker delta,* which is defined as
 \end{equation}
 Note that the Kronecker delta is symmetric such that you can freely swap the indices $ij$ without changing anything about the function, i.e. $\delta\_{ij} = \delta\_{ji}$ (this fact will be used quite extensively as we move forward). In the context of linear algebra, you can consider the Kronecker delta as having the same entries to that of an $n \times n$ identity matrix. And like the identity matrix, it holds the property of identity when operating on a vector, i.e. $\sum\_i a\_i \delta\_{ij} = a\_j.$ 
 
-In $E^n$ every set of orthonormal vectors $\\{\mathbf{e}\_1, \mathbf{e}\_2, \ldots, \mathbf{e}\_k\\}$, with $k \leq n$, is linearly independent. To see this, let
+In $E^n$ every set of orthonormal vectors $\\{\mathbf{e}\_1, \mathbf{e}\_2, \ldots, \mathbf{e}\_k\\}$, with $k \leq n$, is linearly independent. This is because if
 \begin{equation}
-    \alpha_1 \mathbf{e}\_1 + \alpha_2 \mathbf{e}\_2 + \ldots + \alpha_k \mathbf{e}\_k,
+    \alpha_1 \mathbf{e}\_1 + \alpha_2 \mathbf{e}\_2 + \ldots + \alpha_k \mathbf{e}\_k = \mathbf{0},
 \end{equation}
-and form a dot product with $\mathbf{e}\_j$, with $j \in \\{1, \ldots, k\\}$ fixed, then we have,
+and we form a dot product with $\mathbf{e}\_j$, with $j \in \\{1, \ldots, k\\}$ fixed, then we have,
 \begin{equation}
     0 = \mathbf{0} \cdot \mathbf{e}\_j = (\sum\_{i=1}^k \alpha\_i \mathbf{e}\_i) \cdot \mathbf{e}\_j = \sum\_{i=1}^k \alpha\_i \mathbf{e}\_i \cdot \mathbf{e}\_j = \sum_{i=1}^k \alpha_i \delta_{ij} = \alpha_j.
 \end{equation}
