@@ -58,7 +58,7 @@ presence in my life and his warmth to keep me grounded. But I also can't STAND h
   </section>
 
   <section id="writing">
-    <span class="h1"><a href="{{ .Site.Params.mainSection | absURL }}">{{ .Site.Params.mainSectionTitle | default "Recent Posts" }}</a></span>
+    <span class="h1">{{ .Site.Params.mainSectionTitle | default "Recent Blog Posts" }}</a></span>
     {{ if (and (and (isset .Site.Params "tagsoverview") (eq .Site.Params.tagsOverview true)) (gt (len .Site.Taxonomies.tags) 0)) }}
     <span class="h2">Topics</span>
     <span class="widget tagcloud">
