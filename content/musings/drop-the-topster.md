@@ -5,7 +5,7 @@ draft = false
 +++
 Who could've possibly seen this one coming. With apologies to all my friends who had to endure my constantly updated music charts for years on end. But for real this time, here are my current top 42 albums.
 
-{{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/topster/top42.png" "100%">}}
+{{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/topster/top42.jpg" "100%">}}
 
 Music has played an interesting role in my life as it's been the one artistic medium I have never had the desire to engage with beyond dabbling, but ACTUALLY dabbling, in some instruments here and there. I've always thought that if I were to learn an instrument, I would want it to either be the bass-guitar or cello but given how much energy my current hobbies expend out of me — it seems unlikely that this will happen anytime soon. Though, I wouldn't mind picking up some vocal lessons to properly learn how to sing or belt out a gnarly scream. 
 
