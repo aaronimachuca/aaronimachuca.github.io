@@ -2,7 +2,7 @@
 +++
 
 {{< gallery "https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wkingfire.jpg"
-"https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wnhorns.jpg"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wballerinas.jpg"
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wmilantunnel.jpg"
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wcardog.jpg" 
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Street Set 1/wbigdawg.jpg" 
