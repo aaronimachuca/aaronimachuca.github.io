@@ -1,8 +1,9 @@
----
-title: "1.6 Vector Products"
-date: 2025-08-24T18:59:59-07:00
-draft: false
----
++++
+title = "1.6 Vector Products"
+date = 2025-08-24T18:59:59-07:00
+weight = 60
+draft = false
++++
 ## 1.6 Vector Products
 From this point on, our focus will primarily be centered around the three-dimensional Euclidean space $E^3$ for its relevance and simplicity. The last vector operation we have yet to discuss, which reduces to a tractable concept overview in the space of $E^3$, is the *vector product* or the *cross product*. This is equivalent to the *exterior product* or *wedge product* defined in the Euclidean space $E^n$ for an arbitrary $n$. Then, the vector product $\mathbf{u} \times \mathbf{v} \in E^3$ of two vectors is defined such that the following properties hold $\forall$ $\mathbf{u}, \mathbf{v}, \mathbf{w} \in E^3$ and $\alpha, \beta \in \mathbb{R}$,
 
@@ -122,7 +123,7 @@ finally altogether, we can rewrite the relation for $e\_{mnp}B$ to get,
     B = \frac{1}{6} e\_{ijk} e\_{mnp} b\_{im} b\_{jn} b\_{kp}.
 \end{equation}
 
-{{< prev-next >}}
+{{< prev-next cycle="false" >}}
 <p style="text-align: center;">
 <a href="http://aaronmachuca.com/academia/notes/cmech/" target="_self">Table of Contents</a>
 </p>

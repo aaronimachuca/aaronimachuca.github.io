@@ -1,6 +1,7 @@
 +++
 title = 'Visiting the Klein Bottle Emporium'
 date = 2025-06-14T16:26:57-07:00
+weight = 10
 draft = false
 +++
 
@@ -29,3 +30,5 @@ You can find tons of fun easter eggs from the Numberphile videos that he has lay
 {{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/kbemporium/wcliff2.jpg" "100%">}}
 
 I cannot emphasize enough how fortunate I feel to have been able to meet and chat with the Klein bottle mastermind himself for those brief 2-3 hours. It was momentous, though it pained me to see Cliff so grief-stricken and I wish there was something I could have said or done to have quelled his heartache. Maybe what I can say is this: Cliff if you're reading this, I hope you are able to find some form of peace with the anguish that plagues you. Thank you for your kindness, your hospitality, and for allowing Tim and I to enter your home to peek into all the topological wonders it has to offer. You are a cherished soul among the math community and your local community in Oakland. I'm dedicating this post to you and your loving wife, to digitally live on forever. 
+
+{{< prev-next cycle="false" >}}

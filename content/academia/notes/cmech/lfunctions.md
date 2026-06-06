@@ -1,6 +1,7 @@
 +++
 title = '1.4 Linear Functions'
 date = 2025-08-11T20:03:05-07:00
+weight = 40
 draft = false
 +++
 ## 1.4 Linear Functions

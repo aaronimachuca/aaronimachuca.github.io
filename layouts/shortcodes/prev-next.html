@@ -1,11 +1,12 @@
-{{ $folder := "academia/notes/cmech/" }}
+{{ $folder := .Page.File.Dir }}
+{{ $cycle := .Get "cycle" | default "true" }}
 
-
-{{ $pages := where .Site.RegularPages "File.Dir" "eq" $folder }}
-{{ $sorted := sort $pages "Date" "asc" }}
+{{ $pages := where .Page.Site.RegularPages "File.Dir" "eq" $folder }}
+{{ $sorted := sort $pages "Weight" "asc" }}
 
 {{ $current := .Page }}
 {{ $currentIndex := -1 }}
+{{ $total := len $sorted }}
 
 {{ range $i, $p := $sorted }}
   {{ if eq $p.File.Path $current.File.Path }}
@@ -13,21 +14,55 @@
   {{ end }}
 {{ end }}
 
-<div class="prev-next-nav" style="display:flex; justify-content:space-between; margin-top:2rem;">
-  {{ with index $sorted (add $currentIndex -1) }}
-    <a class="prev" href="{{ .RelPermalink }}">
-      <span class="arrow">«</span> {{ .Title }}
-    </a>
-  {{ else }}
-    <span></span>
+{{ if and (ge $currentIndex 0) (gt $total 1) }}
+  {{ $prevIndex := sub $currentIndex 1 }}
+  {{ $nextIndex := add $currentIndex 1 }}
+
+  {{ if eq $cycle "true" }}
+    {{ if lt $prevIndex 0 }}
+      {{ $prevIndex = sub $total 1 }}
+    {{ end }}
+
+    {{ if ge $nextIndex $total }}
+      {{ $nextIndex = 0 }}
+    {{ end }}
   {{ end }}
 
-  {{ with index $sorted (add $currentIndex 1) }}
-    <a class="next" href="{{ .RelPermalink }}">
-      {{ .Title }} <span class="arrow">»</span>
-    </a>
-  {{ else }}
-    <span></span>
-  {{ end }}
-</div>
+  <div class="prev-next-nav">
+    {{ if or (eq $cycle "true") (ge $prevIndex 0) }}
+      {{ $prevPage := index $sorted $prevIndex }}
+      <a class="prev" href="{{ $prevPage.RelPermalink }}">
+        <span class="arrow">«</span>
+        <span class="page-title">
+          {{ if $prevPage.Title }}
+            {{ $prevPage.Title }}
+          {{ else if $prevPage.LinkTitle }}
+            {{ $prevPage.LinkTitle }}
+          {{ else }}
+            {{ $prevPage.File.TranslationBaseName | humanize | title }}
+          {{ end }}
+        </span>
+      </a>
+    {{ else }}
+      <span></span>
+    {{ end }}
 
+    {{ if or (eq $cycle "true") (lt $nextIndex $total) }}
+      {{ $nextPage := index $sorted $nextIndex }}
+      <a class="next" href="{{ $nextPage.RelPermalink }}">
+        <span class="page-title">
+          {{ if $nextPage.Title }}
+            {{ $nextPage.Title }}
+          {{ else if $nextPage.LinkTitle }}
+            {{ $nextPage.LinkTitle }}
+          {{ else }}
+            {{ $nextPage.File.TranslationBaseName | humanize | title }}
+          {{ end }}
+        </span>
+        <span class="arrow">»</span>
+      </a>
+    {{ else }}
+      <span></span>
+    {{ end }}
+  </div>
+{{ end }}

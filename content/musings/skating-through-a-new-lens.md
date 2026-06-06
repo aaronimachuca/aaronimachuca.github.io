@@ -1,12 +1,15 @@
 +++
 title = 'Skating Through a New Lens'
 date = 2024-07-16T11:43:22-07:00
+weight = 20
 draft = false
 +++
 
 {{< images "https://d1eulwzybv7z2h.cloudfront.net/blog posts/skating/aaronollie.jpg" "100%">}}
 |:--:| 
-| *Photo(s) by Ruijie Shao* |
+<div style="text-align:center; font-style:italic; font-size:1em; line-height:1; margin:0.15rem 0 0.35rem;">
+  Photo(s) by Ruijie Shao
+</div>
 
 Having been born and raised in the slums of eastern Los Angeles, I used to hold a strong disdain for urban society and the lifestyle imposed upon its residents (me included). This sentiment is of course no secret those who have held a conversation with me for more than a day but is something I regularly felt compelled to mention because I failed to understand the appeal of big cities. Within the past year, though, my attitudes on this matter have somewhat pivoted with skating and photography being introduced into my life.
 
@@ -28,4 +31,4 @@ Where I had once yearned to withdraw as a recluse in the woods (with no relation
   controls="true"
 >}}
 
-
+{{< prev-next >}}

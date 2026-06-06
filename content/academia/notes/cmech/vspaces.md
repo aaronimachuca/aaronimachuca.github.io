@@ -1,6 +1,7 @@
 +++
 title = '1.3 Vector Spaces'
 date = 2025-06-25T18:25:52-07:00
+weight = 30
 draft = false
 +++
 ## 1.3 Vector Spaces 

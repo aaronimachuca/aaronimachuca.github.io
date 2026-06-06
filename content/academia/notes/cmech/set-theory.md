@@ -1,6 +1,7 @@
 +++
 title = '1.1 Set Theory'
 date = 2025-06-22T17:30:26-07:00
+weight = 10
 draft = false
 +++
 ## 1.1 Set Theory
@@ -16,7 +17,7 @@ The *Cartesian product* $X \times Y$ of sets $X$ and $Y$ is a set defined as
 \end{equation}
 The pair $(x,y)$ is ordered meaning that the element $(x,y)$ in general is not the same as the element $(y,x).$ The notation $X^2, X^3, \ldots,$ is used respectively to denote the Cartesian products $X \times X, X \times X \times X, \ldots.$ You're probably already familiar with this through the real coordinate sets $\mathbb{R^2}$ and $\mathbb{R^3}$ with elements $(x,y), (x,y,z)$ respectively. In which case, the *n*-dimensional real coordinate set is simply defined as $\mathbb{R^n} = \mathbb{R} \times \mathbb{R} \ldots \times \mathbb{R},$ where $n \in \mathbb{N}$ and the *n*-tuple $(x\_1, x\_2, \ldots, x\_n)$ is an element of $\mathbb{R^n}.$ 
 
-{{< prev-next >}}
+{{< prev-next cycle="false" >}}
 <p style="text-align: center;">
 <a href="http://aaronmachuca.com/academia/notes/cmech/" target="_self">Table of Contents</a>
 </p>

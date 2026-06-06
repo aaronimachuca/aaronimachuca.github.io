@@ -1,6 +1,7 @@
 +++
 title = '1.5 Change of Basis'
 date = 2025-08-13T14:18:53-07:00
+weight = 50
 draft = false
 +++
 ## 1.5 Change of Basis

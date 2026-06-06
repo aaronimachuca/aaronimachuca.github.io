@@ -1,6 +1,7 @@
 +++
 title = 'On Art and Poetry'
 date = 2024-07-14T11:42:25-07:00
+weight = 30
 draft = false
 +++
 
@@ -135,3 +136,4 @@ despoiling the vineyards,\
 
 Seizing the foxes, as if to say any attempts to contain the lover's affection for one another would prove troublesome in their scampering and unbounded joy. The word "little" serves to reinforce the mischievous nature of foxes as they ruin the vineyards, unmindful of their surroundings due to their focus placed in each other. The contradiction in the ending line, "our vineyards are in bloom," is immediately resolved with the clever usage of "our" reconfiguring the previous line as a metaphor for their love. 
 
+{{< prev-next >}}

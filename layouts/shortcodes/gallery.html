@@ -1,5 +1,6 @@
 {{ $num_photos := .Params | len }}
 {{ $img_counter := 1 }}
+
 <div class="gallery">
   <div class="photo-buttons">
     {{ range $index, $img := .Params }}
@@ -8,9 +9,25 @@
         type="button" 
         data-src="{{ $img }}" 
         data-index="{{ $index }}"
-      >{{ $img_counter }}</button>
+        data-number="{{ $img_counter }}"
+      >
+        <span class="number-img-wrap">
+          <img 
+            class="number-img number-default"
+            src="/images/photo-numbers/{{ $img_counter }}.png" 
+            alt="{{ $img_counter }}"
+          >
+          <img 
+            class="number-img number-active"
+            src="/images/photo-numbers/{{ $img_counter }}active.png" 
+            alt=""
+            aria-hidden="true"
+          >
+        </span>
+      </button>
       {{ $img_counter = add $img_counter 1 }}
     {{ end }}
+
     <button id="prev-photo" class="arrow" type="button">«</button>
     <button id="next-photo" class="arrow" type="button">»</button>
   </div>
@@ -23,74 +40,85 @@
 </div>
 
 <script>
-  let currentIndex = 0;
+  (() => {
+    const script = document.currentScript;
+    const gallery = script.previousElementSibling;
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const mainPhoto = document.getElementById("main-photo");
-    const buttons = document.querySelectorAll(".photo-button");
-    const prev = document.getElementById("prev-photo");
-    const next = document.getElementById("next-photo");
+    document.addEventListener("DOMContentLoaded", () => {
+      let currentIndex = 0;
 
-    let isFirstLoad = true;
+      const mainPhoto = gallery.querySelector("#main-photo");
+      const buttons = gallery.querySelectorAll(".photo-button");
+      const prev = gallery.querySelector("#prev-photo");
+      const next = gallery.querySelector("#next-photo");
 
-    function updateGallery(index, animate = true) {
-      const button = buttons[index];
-      const newSrc = button.dataset.src;
+      function updateGallery(index, animate = true) {
+        const button = buttons[index];
+        if (!button) return;
 
-      currentIndex = index;
-      buttons.forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
+        const newSrc = button.dataset.src;
+        currentIndex = index;
 
-      if (!animate) {
-        mainPhoto.src = newSrc;
-        return;
+        buttons.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        if (!animate) {
+          mainPhoto.src = newSrc;
+          return;
+        }
+
+        const preload = new Image();
+        preload.src = newSrc;
+
+        preload.onload = () => {
+          mainPhoto.classList.add("fade");
+
+          setTimeout(() => {
+            mainPhoto.src = newSrc;
+
+            requestAnimationFrame(() => {
+              mainPhoto.classList.remove("fade");
+            });
+          }, 300);
+        };
       }
 
-      const preload = new Image();
-      preload.src = newSrc;
+      buttons.forEach((btn, idx) => {
+        btn.addEventListener("click", () => {
+          updateGallery(idx);
+          prev.classList.remove("active");
+          next.classList.remove("active");
+          btn.blur();
+        });
+      });
 
-      preload.onload = () => {
-        mainPhoto.classList.add("fade");
-        setTimeout(() => {
-          mainPhoto.src = newSrc;
-          requestAnimationFrame(() => {
-            mainPhoto.classList.remove("fade");
-          });
-        }, 300);
-      };
-    }
+      function shiftImage(dir) {
+        const total = buttons.length;
+        const newIndex = (currentIndex + dir + total) % total;
 
-    if (buttons.length > 0) {
-      updateGallery(0, false);
-    }
-
-    buttons.forEach((btn, idx) => {
-      btn.addEventListener("click", () => {
-        updateGallery(idx);
+        updateGallery(newIndex);
         prev.classList.remove("active");
         next.classList.remove("active");
+      }
+
+      prev.addEventListener("click", (e) => {
+        shiftImage(-1);
+        e.preventDefault();
+        prev.blur();
       });
-    });
 
-    function shiftImage(dir) {
-      const total = buttons.length;
-      const newIndex = (currentIndex + dir + total) % total;
-      updateGallery(newIndex);
-      prev.classList.remove("active");
-      next.classList.remove("active");
-    }
+      next.addEventListener("click", (e) => {
+        shiftImage(1);
+        e.preventDefault();
+        next.blur();
+      });
 
-    prev.addEventListener("click", (e) => {
-      shiftImage(-1);
-      e.preventDefault();
-      prev.blur();
+      if (buttons.length > 0) {
+        updateGallery(0, false);
+      }
     });
-
-    next.addEventListener("click", (e) => {
-      shiftImage(1);
-      e.preventDefault();
-      next.blur();
-    });
-  });
+  })();
 </script>
-

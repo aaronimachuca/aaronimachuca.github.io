@@ -1,6 +1,7 @@
 +++
 title = '1.2 Mappings'
 date = 2025-06-24T20:02:19-07:00
+weight = 20
 draft = false
 +++
 ## 1.2 Mappings

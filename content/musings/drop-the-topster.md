@@ -1,6 +1,7 @@
 +++
 title = 'Drop the Topster'
 date = 2024-06-26T18:14:43-07:00
+weight = 40
 draft = false
 +++
 Who could've possibly seen this one coming. With apologies to all my friends who had to endure my constantly updated music charts for years on end. But for real this time, here are my current top 42 albums.
@@ -173,3 +174,5 @@ While I'm not very well-versed with EDM or House music, this album is probably o
 
 4.5+/5
 {{< /summary  >}}
+
+{{< prev-next cycle="false" >}}
