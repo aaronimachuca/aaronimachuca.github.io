@@ -495,7 +495,7 @@ code {
   }
 
   .gallery .photo-buttons .number-img {
-    height: 14px;
+    height: 16px;
   }
 
   .gallery .photo-buttons button {
@@ -506,7 +506,7 @@ code {
 
   .gallery .photo-buttons #prev-photo,
   .gallery .photo-buttons #next-photo {
-    font-size: 14px;
+    font-size: 18px;
     right: 0px;
     padding-right: 12px;
   }
@@ -641,20 +641,20 @@ body.section-academia.kind-page .page-markdown details > summary > i {
   body.kind-section.section-photography summary,
   body.kind-section.section-art-and-poetry summary,
   body.kind-section.section-academia summary {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
   }
 
   body.kind-section.section-photography details,
   body.kind-section.section-art-and-poetry details,
   body.kind-section.section-academia details {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 768px) {
   body {
-    font-size: 11px;
+    font-size: 12.5px;
   }
 
   header {
@@ -668,7 +668,7 @@ body.section-academia.kind-page .page-markdown details > summary > i {
   }
 
   .katex {
-    font-size: 12px !important;
+    font-size: 13.5px !important;
   }
 
   .section-label {
@@ -874,7 +874,7 @@ body.section-academia.kind-page .page-markdown details > summary > i {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 0.5rem 1rem;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     line-height: 1.4;
     text-align: center;
     position: relative;
@@ -914,7 +914,7 @@ body.section-academia.kind-page .page-markdown details > summary > i {
 
   .simrow-categories button,
   .coord-group button {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     padding: 0.25rem 0.5rem;
     margin: 0.1rem;
     flex: 0 0 auto;
@@ -1609,9 +1609,9 @@ a[href*="/academia/notes/cmech/"]:hover::after {
 
 @media screen and (max-width: 580px) {
   :root {
-    --mobile-h2-font: 0.7rem;
-    --mobile-section-label-font: 11px;
-    --mobile-time-font: 11px;
+    --mobile-h2-font: 0.8rem;
+    --mobile-section-label-font: 13.5px;
+    --mobile-time-font: 13px;
   }
 
   h2,
