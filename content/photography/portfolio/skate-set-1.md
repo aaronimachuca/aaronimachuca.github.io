@@ -10,6 +10,7 @@ weight: 20
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Skate Set 1/wdavidollie.jpg"
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Skate Set 1/wkaipolejam.jpg"
 "https://d1eulwzybv7z2h.cloudfront.net/photography/Skate Set 1/wltskate.jpg"
-"https://d1eulwzybv7z2h.cloudfront.net/photography/Skate Set 1/wtpeaks.jpg" >}}
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Skate Set 1/wjacksonfnoseslide.jpg"
+"https://d1eulwzybv7z2h.cloudfront.net/photography/Skate Set 1/wlindavistabowl.jpg" >}}
 
 {{< prev-next >}}
